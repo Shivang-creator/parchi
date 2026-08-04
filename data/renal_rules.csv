@@ -1,0 +1,46 @@
+# Indicative figures compiled from published ICMR-AMRSN / WHO GLASS / CDSCO / NPPA / NCVBDC patterns. Reconstructed for demonstration. Not for clinical use.
+antibiotic,crcl_min,crcl_max,action,dose_fraction,guidance
+Nitrofurantoin,0,30,CONTRAINDICATED,0.0,Fails to reach therapeutic urinary concentration and accumulates. Do not use below CrCl 30.
+Nitrofurantoin,30,999,KEEP,1.0,Standard dose.
+Amikacin,0,20,CONTRAINDICATED,0.0,Avoid; use an alternative or dose by levels only.
+Amikacin,20,40,EXTEND,0.5,Extend interval to 48 h; monitor trough levels.
+Amikacin,40,60,EXTEND,0.75,Extend interval to 36 h; monitor levels.
+Amikacin,60,999,KEEP,1.0,Standard once-daily dose.
+Gentamicin,0,20,CONTRAINDICATED,0.0,Avoid; nephrotoxic in established renal failure.
+Gentamicin,20,40,EXTEND,0.5,Extend interval to 48 h; monitor levels.
+Gentamicin,40,60,EXTEND,0.75,Extend interval to 36 h.
+Gentamicin,60,999,KEEP,1.0,Standard once-daily dose.
+Meropenem,0,10,REDUCE,0.25,500 mg every 24 h.
+Meropenem,10,26,REDUCE,0.33,500 mg every 12 h.
+Meropenem,26,51,REDUCE,0.5,1 g every 12 h.
+Meropenem,51,999,KEEP,1.0,1 g every 8 h.
+Imipenem-Cilastatin,0,15,CONTRAINDICATED,0.0,Seizure risk; avoid unless on dialysis.
+Imipenem-Cilastatin,15,30,REDUCE,0.5,Halve the daily dose.
+Imipenem-Cilastatin,30,60,REDUCE,0.75,Reduce to 500 mg every 8 h.
+Imipenem-Cilastatin,60,999,KEEP,1.0,Standard dose.
+Piperacillin-Tazobactam,0,20,REDUCE,0.5,2.25 g every 8 h.
+Piperacillin-Tazobactam,20,40,REDUCE,0.67,2.25 g every 6 h.
+Piperacillin-Tazobactam,40,999,KEEP,1.0,4.5 g every 6 h.
+Cefepime,0,11,REDUCE,0.25,500 mg every 24 h.
+Cefepime,11,30,REDUCE,0.5,1 g every 24 h.
+Cefepime,30,60,REDUCE,0.67,1 g every 12 h.
+Cefepime,60,999,KEEP,1.0,Standard dose.
+Ciprofloxacin,0,30,REDUCE,0.5,Halve the dose or extend to every 24 h.
+Ciprofloxacin,30,999,KEEP,1.0,Standard dose.
+Levofloxacin,0,20,REDUCE,0.25,250 mg every 48 h.
+Levofloxacin,20,50,REDUCE,0.5,250 mg every 24 h.
+Levofloxacin,50,999,KEEP,1.0,500 mg every 24 h.
+Cotrimoxazole,0,15,CONTRAINDICATED,0.0,Avoid below CrCl 15.
+Cotrimoxazole,15,30,REDUCE,0.5,Halve the dose.
+Cotrimoxazole,30,999,KEEP,1.0,Standard dose.
+Vancomycin,0,20,EXTEND,0.25,Dose by level only; interval often 48-72 h.
+Vancomycin,20,50,EXTEND,0.5,Extend interval; target trough 15-20 mg/L.
+Vancomycin,50,999,KEEP,1.0,Standard dose; still confirm by trough.
+Colistin,0,30,REDUCE,0.5,Substantial reduction; nephrotoxicity is dose-related.
+Colistin,30,60,REDUCE,0.75,Reduce maintenance dose.
+Colistin,60,999,KEEP,1.0,Standard dose.
+Amoxicillin-Clavulanate,0,10,REDUCE,0.33,625 mg every 24 h.
+Amoxicillin-Clavulanate,10,30,REDUCE,0.67,625 mg every 12 h.
+Amoxicillin-Clavulanate,30,999,KEEP,1.0,625 mg every 8 h.
+Ampicillin,0,10,EXTEND,0.5,Extend interval to every 12 h.
+Ampicillin,10,999,KEEP,1.0,Standard dose.

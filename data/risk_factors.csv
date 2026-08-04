@@ -1,0 +1,10 @@
+# Indicative figures compiled from published ICMR-AMRSN / WHO GLASS / CDSCO / NPPA / NCVBDC patterns. Reconstructed for demonstration. Not for clinical use.
+factor,susceptibility_multiplier,rationale
+Antibiotics in the last 90 days,0.78,Strongest single predictor of a resistant isolate
+Hospitalised in the last 90 days,0.84,Healthcare-associated exposure to nosocomial strains
+Indwelling urinary catheter,0.86,"Biofilm-associated, typically MDR organisms"
+Central venous line,0.85,Device-associated bloodstream organisms
+Mechanical ventilation,0.8,Ventilator-associated pneumonia skews to Acinetobacter/Pseudomonas
+Immunosuppressed / on chemotherapy,0.88,"Broader organism range, lower reserve"
+Resident of a long-term care facility,0.85,Colonisation with resistant flora
+Known prior MDR isolate,0.62,Past colonisation strongly predicts recurrence

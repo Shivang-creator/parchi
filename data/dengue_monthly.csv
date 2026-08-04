@@ -1,0 +1,1346 @@
+# Indicative figures compiled from published ICMR-AMRSN / WHO GLASS / CDSCO / NPPA / NCVBDC patterns. Reconstructed for demonstration. Not for clinical use.
+state,year,month,cases
+Kerala,2018,1,46
+Kerala,2018,2,40
+Kerala,2018,3,45
+Kerala,2018,4,61
+Kerala,2018,5,85
+Kerala,2018,6,132
+Kerala,2018,7,261
+Kerala,2018,8,525
+Kerala,2018,9,713
+Kerala,2018,10,715
+Kerala,2018,11,728
+Kerala,2018,12,368
+Kerala,2019,1,55
+Kerala,2019,2,44
+Kerala,2019,3,48
+Kerala,2019,4,61
+Kerala,2019,5,103
+Kerala,2019,6,161
+Kerala,2019,7,295
+Kerala,2019,8,589
+Kerala,2019,9,1041
+Kerala,2019,10,1237
+Kerala,2019,11,785
+Kerala,2019,12,482
+Kerala,2020,1,39
+Kerala,2020,2,30
+Kerala,2020,3,31
+Kerala,2020,4,43
+Kerala,2020,5,61
+Kerala,2020,6,95
+Kerala,2020,7,216
+Kerala,2020,8,350
+Kerala,2020,9,622
+Kerala,2020,10,757
+Kerala,2020,11,547
+Kerala,2020,12,313
+Kerala,2021,1,37
+Kerala,2021,2,33
+Kerala,2021,3,36
+Kerala,2021,4,49
+Kerala,2021,5,56
+Kerala,2021,6,114
+Kerala,2021,7,184
+Kerala,2021,8,391
+Kerala,2021,9,569
+Kerala,2021,10,780
+Kerala,2021,11,646
+Kerala,2021,12,348
+Kerala,2022,1,52
+Kerala,2022,2,52
+Kerala,2022,3,45
+Kerala,2022,4,51
+Kerala,2022,5,92
+Kerala,2022,6,171
+Kerala,2022,7,307
+Kerala,2022,8,450
+Kerala,2022,9,807
+Kerala,2022,10,970
+Kerala,2022,11,793
+Kerala,2022,12,498
+Kerala,2023,1,112
+Kerala,2023,2,92
+Kerala,2023,3,107
+Kerala,2023,4,146
+Kerala,2023,5,200
+Kerala,2023,6,325
+Kerala,2023,7,675
+Kerala,2023,8,1382
+Kerala,2023,9,1719
+Kerala,2023,10,2126
+Kerala,2023,11,1794
+Kerala,2023,12,1003
+Kerala,2024,1,70
+Kerala,2024,2,65
+Kerala,2024,3,64
+Kerala,2024,4,92
+Kerala,2024,5,134
+Kerala,2024,6,205
+Kerala,2024,7,413
+Kerala,2024,8,719
+Kerala,2024,9,1572
+Kerala,2024,10,1602
+Kerala,2024,11,1266
+Kerala,2024,12,541
+Karnataka,2018,1,66
+Karnataka,2018,2,48
+Karnataka,2018,3,56
+Karnataka,2018,4,74
+Karnataka,2018,5,118
+Karnataka,2018,6,167
+Karnataka,2018,7,343
+Karnataka,2018,8,666
+Karnataka,2018,9,1073
+Karnataka,2018,10,1311
+Karnataka,2018,11,737
+Karnataka,2018,12,559
+Karnataka,2019,1,187
+Karnataka,2019,2,149
+Karnataka,2019,3,184
+Karnataka,2019,4,225
+Karnataka,2019,5,361
+Karnataka,2019,6,578
+Karnataka,2019,7,1086
+Karnataka,2019,8,2262
+Karnataka,2019,9,3111
+Karnataka,2019,10,4180
+Karnataka,2019,11,2478
+Karnataka,2019,12,1824
+Karnataka,2020,1,53
+Karnataka,2020,2,40
+Karnataka,2020,3,42
+Karnataka,2020,4,57
+Karnataka,2020,5,71
+Karnataka,2020,6,125
+Karnataka,2020,7,231
+Karnataka,2020,8,440
+Karnataka,2020,9,682
+Karnataka,2020,10,966
+Karnataka,2020,11,719
+Karnataka,2020,12,367
+Karnataka,2021,1,98
+Karnataka,2021,2,67
+Karnataka,2021,3,85
+Karnataka,2021,4,102
+Karnataka,2021,5,153
+Karnataka,2021,6,248
+Karnataka,2021,7,423
+Karnataka,2021,8,977
+Karnataka,2021,9,1384
+Karnataka,2021,10,1489
+Karnataka,2021,11,1336
+Karnataka,2021,12,818
+Karnataka,2022,1,126
+Karnataka,2022,2,96
+Karnataka,2022,3,91
+Karnataka,2022,4,122
+Karnataka,2022,5,187
+Karnataka,2022,6,304
+Karnataka,2022,7,821
+Karnataka,2022,8,1142
+Karnataka,2022,9,1651
+Karnataka,2022,10,1812
+Karnataka,2022,11,1769
+Karnataka,2022,12,1078
+Karnataka,2023,1,237
+Karnataka,2023,2,168
+Karnataka,2023,3,198
+Karnataka,2023,4,317
+Karnataka,2023,5,417
+Karnataka,2023,6,663
+Karnataka,2023,7,1210
+Karnataka,2023,8,2405
+Karnataka,2023,9,3564
+Karnataka,2023,10,4638
+Karnataka,2023,11,3765
+Karnataka,2023,12,2090
+Karnataka,2024,1,166
+Karnataka,2024,2,110
+Karnataka,2024,3,122
+Karnataka,2024,4,180
+Karnataka,2024,5,252
+Karnataka,2024,6,396
+Karnataka,2024,7,851
+Karnataka,2024,8,1200
+Karnataka,2024,9,2398
+Karnataka,2024,10,2925
+Karnataka,2024,11,2166
+Karnataka,2024,12,1427
+Maharashtra,2018,1,104
+Maharashtra,2018,2,78
+Maharashtra,2018,3,83
+Maharashtra,2018,4,105
+Maharashtra,2018,5,186
+Maharashtra,2018,6,241
+Maharashtra,2018,7,546
+Maharashtra,2018,8,1143
+Maharashtra,2018,9,1711
+Maharashtra,2018,10,1824
+Maharashtra,2018,11,1381
+Maharashtra,2018,12,897
+Maharashtra,2019,1,180
+Maharashtra,2019,2,170
+Maharashtra,2019,3,166
+Maharashtra,2019,4,205
+Maharashtra,2019,5,301
+Maharashtra,2019,6,533
+Maharashtra,2019,7,1037
+Maharashtra,2019,8,1802
+Maharashtra,2019,9,3161
+Maharashtra,2019,10,3664
+Maharashtra,2019,11,3026
+Maharashtra,2019,12,1462
+Maharashtra,2020,1,38
+Maharashtra,2020,2,35
+Maharashtra,2020,3,36
+Maharashtra,2020,4,54
+Maharashtra,2020,5,66
+Maharashtra,2020,6,107
+Maharashtra,2020,7,243
+Maharashtra,2020,8,329
+Maharashtra,2020,9,655
+Maharashtra,2020,10,872
+Maharashtra,2020,11,754
+Maharashtra,2020,12,397
+Maharashtra,2021,1,150
+Maharashtra,2021,2,127
+Maharashtra,2021,3,142
+Maharashtra,2021,4,184
+Maharashtra,2021,5,246
+Maharashtra,2021,6,390
+Maharashtra,2021,7,768
+Maharashtra,2021,8,1485
+Maharashtra,2021,9,2913
+Maharashtra,2021,10,3146
+Maharashtra,2021,11,2269
+Maharashtra,2021,12,1141
+Maharashtra,2022,1,95
+Maharashtra,2022,2,97
+Maharashtra,2022,3,97
+Maharashtra,2022,4,130
+Maharashtra,2022,5,167
+Maharashtra,2022,6,255
+Maharashtra,2022,7,594
+Maharashtra,2022,8,1075
+Maharashtra,2022,9,1257
+Maharashtra,2022,10,2218
+Maharashtra,2022,11,1478
+Maharashtra,2022,12,881
+Maharashtra,2023,1,159
+Maharashtra,2023,2,168
+Maharashtra,2023,3,159
+Maharashtra,2023,4,227
+Maharashtra,2023,5,322
+Maharashtra,2023,6,612
+Maharashtra,2023,7,1043
+Maharashtra,2023,8,2054
+Maharashtra,2023,9,3005
+Maharashtra,2023,10,3963
+Maharashtra,2023,11,3007
+Maharashtra,2023,12,1448
+Maharashtra,2024,1,149
+Maharashtra,2024,2,112
+Maharashtra,2024,3,129
+Maharashtra,2024,4,164
+Maharashtra,2024,5,240
+Maharashtra,2024,6,377
+Maharashtra,2024,7,769
+Maharashtra,2024,8,1358
+Maharashtra,2024,9,2032
+Maharashtra,2024,10,2723
+Maharashtra,2024,11,1972
+Maharashtra,2024,12,1207
+Tamil Nadu,2018,1,49
+Tamil Nadu,2018,2,51
+Tamil Nadu,2018,3,47
+Tamil Nadu,2018,4,67
+Tamil Nadu,2018,5,103
+Tamil Nadu,2018,6,165
+Tamil Nadu,2018,7,271
+Tamil Nadu,2018,8,483
+Tamil Nadu,2018,9,1036
+Tamil Nadu,2018,10,1150
+Tamil Nadu,2018,11,750
+Tamil Nadu,2018,12,482
+Tamil Nadu,2019,1,118
+Tamil Nadu,2019,2,101
+Tamil Nadu,2019,3,106
+Tamil Nadu,2019,4,131
+Tamil Nadu,2019,5,186
+Tamil Nadu,2019,6,260
+Tamil Nadu,2019,7,556
+Tamil Nadu,2019,8,1109
+Tamil Nadu,2019,9,1779
+Tamil Nadu,2019,10,2114
+Tamil Nadu,2019,11,1654
+Tamil Nadu,2019,12,851
+Tamil Nadu,2020,1,32
+Tamil Nadu,2020,2,22
+Tamil Nadu,2020,3,24
+Tamil Nadu,2020,4,33
+Tamil Nadu,2020,5,51
+Tamil Nadu,2020,6,71
+Tamil Nadu,2020,7,147
+Tamil Nadu,2020,8,291
+Tamil Nadu,2020,9,533
+Tamil Nadu,2020,10,585
+Tamil Nadu,2020,11,414
+Tamil Nadu,2020,12,231
+Tamil Nadu,2021,1,77
+Tamil Nadu,2021,2,66
+Tamil Nadu,2021,3,67
+Tamil Nadu,2021,4,87
+Tamil Nadu,2021,5,140
+Tamil Nadu,2021,6,207
+Tamil Nadu,2021,7,396
+Tamil Nadu,2021,8,855
+Tamil Nadu,2021,9,1090
+Tamil Nadu,2021,10,1504
+Tamil Nadu,2021,11,1248
+Tamil Nadu,2021,12,620
+Tamil Nadu,2022,1,83
+Tamil Nadu,2022,2,71
+Tamil Nadu,2022,3,73
+Tamil Nadu,2022,4,93
+Tamil Nadu,2022,5,129
+Tamil Nadu,2022,6,223
+Tamil Nadu,2022,7,499
+Tamil Nadu,2022,8,678
+Tamil Nadu,2022,9,1139
+Tamil Nadu,2022,10,1390
+Tamil Nadu,2022,11,1250
+Tamil Nadu,2022,12,699
+Tamil Nadu,2023,1,103
+Tamil Nadu,2023,2,90
+Tamil Nadu,2023,3,109
+Tamil Nadu,2023,4,128
+Tamil Nadu,2023,5,198
+Tamil Nadu,2023,6,283
+Tamil Nadu,2023,7,667
+Tamil Nadu,2023,8,1240
+Tamil Nadu,2023,9,1682
+Tamil Nadu,2023,10,1871
+Tamil Nadu,2023,11,1805
+Tamil Nadu,2023,12,776
+Tamil Nadu,2024,1,82
+Tamil Nadu,2024,2,72
+Tamil Nadu,2024,3,77
+Tamil Nadu,2024,4,87
+Tamil Nadu,2024,5,141
+Tamil Nadu,2024,6,294
+Tamil Nadu,2024,7,426
+Tamil Nadu,2024,8,928
+Tamil Nadu,2024,9,1481
+Tamil Nadu,2024,10,1606
+Tamil Nadu,2024,11,1262
+Tamil Nadu,2024,12,744
+Delhi,2018,1,34
+Delhi,2018,2,24
+Delhi,2018,3,30
+Delhi,2018,4,41
+Delhi,2018,5,52
+Delhi,2018,6,94
+Delhi,2018,7,184
+Delhi,2018,8,294
+Delhi,2018,9,475
+Delhi,2018,10,583
+Delhi,2018,11,494
+Delhi,2018,12,298
+Delhi,2019,1,24
+Delhi,2019,2,21
+Delhi,2019,3,17
+Delhi,2019,4,27
+Delhi,2019,5,45
+Delhi,2019,6,69
+Delhi,2019,7,155
+Delhi,2019,8,264
+Delhi,2019,9,432
+Delhi,2019,10,433
+Delhi,2019,11,361
+Delhi,2019,12,207
+Delhi,2020,1,14
+Delhi,2020,2,11
+Delhi,2020,3,13
+Delhi,2020,4,17
+Delhi,2020,5,21
+Delhi,2020,6,31
+Delhi,2020,7,63
+Delhi,2020,8,141
+Delhi,2020,9,205
+Delhi,2020,10,214
+Delhi,2020,11,192
+Delhi,2020,12,135
+Delhi,2021,1,125
+Delhi,2021,2,90
+Delhi,2021,3,100
+Delhi,2021,4,135
+Delhi,2021,5,206
+Delhi,2021,6,324
+Delhi,2021,7,688
+Delhi,2021,8,1256
+Delhi,2021,9,1965
+Delhi,2021,10,2208
+Delhi,2021,11,1577
+Delhi,2021,12,1143
+Delhi,2022,1,53
+Delhi,2022,2,43
+Delhi,2022,3,52
+Delhi,2022,4,57
+Delhi,2022,5,93
+Delhi,2022,6,170
+Delhi,2022,7,268
+Delhi,2022,8,527
+Delhi,2022,9,912
+Delhi,2022,10,957
+Delhi,2022,11,723
+Delhi,2022,12,463
+Delhi,2023,1,109
+Delhi,2023,2,100
+Delhi,2023,3,93
+Delhi,2023,4,109
+Delhi,2023,5,184
+Delhi,2023,6,333
+Delhi,2023,7,550
+Delhi,2023,8,931
+Delhi,2023,9,1832
+Delhi,2023,10,2250
+Delhi,2023,11,1561
+Delhi,2023,12,915
+Delhi,2024,1,53
+Delhi,2024,2,55
+Delhi,2024,3,53
+Delhi,2024,4,73
+Delhi,2024,5,111
+Delhi,2024,6,180
+Delhi,2024,7,350
+Delhi,2024,8,628
+Delhi,2024,9,922
+Delhi,2024,10,1288
+Delhi,2024,11,951
+Delhi,2024,12,541
+Uttar Pradesh,2018,1,40
+Uttar Pradesh,2018,2,37
+Uttar Pradesh,2018,3,34
+Uttar Pradesh,2018,4,46
+Uttar Pradesh,2018,5,78
+Uttar Pradesh,2018,6,103
+Uttar Pradesh,2018,7,184
+Uttar Pradesh,2018,8,392
+Uttar Pradesh,2018,9,693
+Uttar Pradesh,2018,10,846
+Uttar Pradesh,2018,11,624
+Uttar Pradesh,2018,12,357
+Uttar Pradesh,2019,1,114
+Uttar Pradesh,2019,2,101
+Uttar Pradesh,2019,3,96
+Uttar Pradesh,2019,4,133
+Uttar Pradesh,2019,5,209
+Uttar Pradesh,2019,6,319
+Uttar Pradesh,2019,7,721
+Uttar Pradesh,2019,8,1254
+Uttar Pradesh,2019,9,2088
+Uttar Pradesh,2019,10,2264
+Uttar Pradesh,2019,11,2025
+Uttar Pradesh,2019,12,1206
+Uttar Pradesh,2020,1,41
+Uttar Pradesh,2020,2,39
+Uttar Pradesh,2020,3,42
+Uttar Pradesh,2020,4,54
+Uttar Pradesh,2020,5,78
+Uttar Pradesh,2020,6,120
+Uttar Pradesh,2020,7,234
+Uttar Pradesh,2020,8,416
+Uttar Pradesh,2020,9,728
+Uttar Pradesh,2020,10,852
+Uttar Pradesh,2020,11,594
+Uttar Pradesh,2020,12,382
+Uttar Pradesh,2021,1,330
+Uttar Pradesh,2021,2,336
+Uttar Pradesh,2021,3,293
+Uttar Pradesh,2021,4,384
+Uttar Pradesh,2021,5,695
+Uttar Pradesh,2021,6,1139
+Uttar Pradesh,2021,7,2277
+Uttar Pradesh,2021,8,3803
+Uttar Pradesh,2021,9,5718
+Uttar Pradesh,2021,10,6741
+Uttar Pradesh,2021,11,5817
+Uttar Pradesh,2021,12,3041
+Uttar Pradesh,2022,1,207
+Uttar Pradesh,2022,2,188
+Uttar Pradesh,2022,3,202
+Uttar Pradesh,2022,4,318
+Uttar Pradesh,2022,5,466
+Uttar Pradesh,2022,6,671
+Uttar Pradesh,2022,7,1370
+Uttar Pradesh,2022,8,2344
+Uttar Pradesh,2022,9,4595
+Uttar Pradesh,2022,10,4456
+Uttar Pradesh,2022,11,3632
+Uttar Pradesh,2022,12,1866
+Uttar Pradesh,2023,1,159
+Uttar Pradesh,2023,2,111
+Uttar Pradesh,2023,3,136
+Uttar Pradesh,2023,4,160
+Uttar Pradesh,2023,5,265
+Uttar Pradesh,2023,6,417
+Uttar Pradesh,2023,7,919
+Uttar Pradesh,2023,8,1390
+Uttar Pradesh,2023,9,2495
+Uttar Pradesh,2023,10,2774
+Uttar Pradesh,2023,11,2239
+Uttar Pradesh,2023,12,1359
+Uttar Pradesh,2024,1,97
+Uttar Pradesh,2024,2,108
+Uttar Pradesh,2024,3,99
+Uttar Pradesh,2024,4,136
+Uttar Pradesh,2024,5,219
+Uttar Pradesh,2024,6,364
+Uttar Pradesh,2024,7,700
+Uttar Pradesh,2024,8,1194
+Uttar Pradesh,2024,9,1929
+Uttar Pradesh,2024,10,2573
+Uttar Pradesh,2024,11,2059
+Uttar Pradesh,2024,12,1041
+West Bengal,2018,1,62
+West Bengal,2018,2,49
+West Bengal,2018,3,41
+West Bengal,2018,4,56
+West Bengal,2018,5,97
+West Bengal,2018,6,148
+West Bengal,2018,7,317
+West Bengal,2018,8,564
+West Bengal,2018,9,947
+West Bengal,2018,10,1119
+West Bengal,2018,11,813
+West Bengal,2018,12,484
+West Bengal,2019,1,81
+West Bengal,2019,2,67
+West Bengal,2019,3,76
+West Bengal,2019,4,101
+West Bengal,2019,5,138
+West Bengal,2019,6,247
+West Bengal,2019,7,500
+West Bengal,2019,8,765
+West Bengal,2019,9,1301
+West Bengal,2019,10,1598
+West Bengal,2019,11,1277
+West Bengal,2019,12,722
+West Bengal,2020,1,15
+West Bengal,2020,2,15
+West Bengal,2020,3,16
+West Bengal,2020,4,21
+West Bengal,2020,5,32
+West Bengal,2020,6,47
+West Bengal,2020,7,96
+West Bengal,2020,8,178
+West Bengal,2020,9,277
+West Bengal,2020,10,327
+West Bengal,2020,11,305
+West Bengal,2020,12,142
+West Bengal,2021,1,90
+West Bengal,2021,2,92
+West Bengal,2021,3,88
+West Bengal,2021,4,105
+West Bengal,2021,5,160
+West Bengal,2021,6,263
+West Bengal,2021,7,480
+West Bengal,2021,8,1147
+West Bengal,2021,9,1592
+West Bengal,2021,10,2089
+West Bengal,2021,11,1453
+West Bengal,2021,12,977
+West Bengal,2022,1,278
+West Bengal,2022,2,217
+West Bengal,2022,3,269
+West Bengal,2022,4,289
+West Bengal,2022,5,433
+West Bengal,2022,6,836
+West Bengal,2022,7,1549
+West Bengal,2022,8,2651
+West Bengal,2022,9,3638
+West Bengal,2022,10,5529
+West Bengal,2022,11,4656
+West Bengal,2022,12,2548
+West Bengal,2023,1,111
+West Bengal,2023,2,127
+West Bengal,2023,3,109
+West Bengal,2023,4,152
+West Bengal,2023,5,223
+West Bengal,2023,6,368
+West Bengal,2023,7,714
+West Bengal,2023,8,1361
+West Bengal,2023,9,2283
+West Bengal,2023,10,3152
+West Bengal,2023,11,2243
+West Bengal,2023,12,1328
+West Bengal,2024,1,108
+West Bengal,2024,2,83
+West Bengal,2024,3,97
+West Bengal,2024,4,120
+West Bengal,2024,5,202
+West Bengal,2024,6,314
+West Bengal,2024,7,522
+West Bengal,2024,8,1104
+West Bengal,2024,9,1606
+West Bengal,2024,10,1841
+West Bengal,2024,11,1482
+West Bengal,2024,12,843
+Rajasthan,2018,1,112
+Rajasthan,2018,2,91
+Rajasthan,2018,3,106
+Rajasthan,2018,4,128
+Rajasthan,2018,5,159
+Rajasthan,2018,6,339
+Rajasthan,2018,7,717
+Rajasthan,2018,8,1238
+Rajasthan,2018,9,1762
+Rajasthan,2018,10,2225
+Rajasthan,2018,11,1632
+Rajasthan,2018,12,1115
+Rajasthan,2019,1,183
+Rajasthan,2019,2,165
+Rajasthan,2019,3,155
+Rajasthan,2019,4,191
+Rajasthan,2019,5,373
+Rajasthan,2019,6,484
+Rajasthan,2019,7,951
+Rajasthan,2019,8,1469
+Rajasthan,2019,9,2399
+Rajasthan,2019,10,3365
+Rajasthan,2019,11,2595
+Rajasthan,2019,12,1294
+Rajasthan,2020,1,22
+Rajasthan,2020,2,19
+Rajasthan,2020,3,21
+Rajasthan,2020,4,26
+Rajasthan,2020,5,46
+Rajasthan,2020,6,66
+Rajasthan,2020,7,127
+Rajasthan,2020,8,267
+Rajasthan,2020,9,431
+Rajasthan,2020,10,395
+Rajasthan,2020,11,340
+Rajasthan,2020,12,216
+Rajasthan,2021,1,148
+Rajasthan,2021,2,119
+Rajasthan,2021,3,147
+Rajasthan,2021,4,160
+Rajasthan,2021,5,268
+Rajasthan,2021,6,379
+Rajasthan,2021,7,789
+Rajasthan,2021,8,1264
+Rajasthan,2021,9,2332
+Rajasthan,2021,10,3298
+Rajasthan,2021,11,2109
+Rajasthan,2021,12,1243
+Rajasthan,2022,1,120
+Rajasthan,2022,2,114
+Rajasthan,2022,3,110
+Rajasthan,2022,4,169
+Rajasthan,2022,5,244
+Rajasthan,2022,6,348
+Rajasthan,2022,7,756
+Rajasthan,2022,8,1565
+Rajasthan,2022,9,2133
+Rajasthan,2022,10,2751
+Rajasthan,2022,11,1955
+Rajasthan,2022,12,971
+Rajasthan,2023,1,115
+Rajasthan,2023,2,87
+Rajasthan,2023,3,107
+Rajasthan,2023,4,131
+Rajasthan,2023,5,155
+Rajasthan,2023,6,274
+Rajasthan,2023,7,577
+Rajasthan,2023,8,1086
+Rajasthan,2023,9,1877
+Rajasthan,2023,10,2248
+Rajasthan,2023,11,1699
+Rajasthan,2023,12,1141
+Rajasthan,2024,1,77
+Rajasthan,2024,2,72
+Rajasthan,2024,3,86
+Rajasthan,2024,4,122
+Rajasthan,2024,5,154
+Rajasthan,2024,6,285
+Rajasthan,2024,7,511
+Rajasthan,2024,8,879
+Rajasthan,2024,9,1300
+Rajasthan,2024,10,1847
+Rajasthan,2024,11,1380
+Rajasthan,2024,12,870
+Gujarat,2018,1,49
+Gujarat,2018,2,44
+Gujarat,2018,3,48
+Gujarat,2018,4,53
+Gujarat,2018,5,77
+Gujarat,2018,6,164
+Gujarat,2018,7,281
+Gujarat,2018,8,497
+Gujarat,2018,9,826
+Gujarat,2018,10,879
+Gujarat,2018,11,815
+Gujarat,2018,12,401
+Gujarat,2019,1,186
+Gujarat,2019,2,183
+Gujarat,2019,3,223
+Gujarat,2019,4,251
+Gujarat,2019,5,333
+Gujarat,2019,6,639
+Gujarat,2019,7,1170
+Gujarat,2019,8,1908
+Gujarat,2019,9,4000
+Gujarat,2019,10,4699
+Gujarat,2019,11,3341
+Gujarat,2019,12,2083
+Gujarat,2020,1,20
+Gujarat,2020,2,15
+Gujarat,2020,3,18
+Gujarat,2020,4,19
+Gujarat,2020,5,29
+Gujarat,2020,6,58
+Gujarat,2020,7,103
+Gujarat,2020,8,196
+Gujarat,2020,9,280
+Gujarat,2020,10,350
+Gujarat,2020,11,301
+Gujarat,2020,12,158
+Gujarat,2021,1,74
+Gujarat,2021,2,72
+Gujarat,2021,3,74
+Gujarat,2021,4,77
+Gujarat,2021,5,115
+Gujarat,2021,6,241
+Gujarat,2021,7,383
+Gujarat,2021,8,703
+Gujarat,2021,9,1164
+Gujarat,2021,10,1406
+Gujarat,2021,11,1192
+Gujarat,2021,12,652
+Gujarat,2022,1,60
+Gujarat,2022,2,49
+Gujarat,2022,3,55
+Gujarat,2022,4,63
+Gujarat,2022,5,96
+Gujarat,2022,6,198
+Gujarat,2022,7,336
+Gujarat,2022,8,578
+Gujarat,2022,9,918
+Gujarat,2022,10,1061
+Gujarat,2022,11,920
+Gujarat,2022,12,453
+Gujarat,2023,1,74
+Gujarat,2023,2,59
+Gujarat,2023,3,64
+Gujarat,2023,4,92
+Gujarat,2023,5,109
+Gujarat,2023,6,202
+Gujarat,2023,7,410
+Gujarat,2023,8,641
+Gujarat,2023,9,1080
+Gujarat,2023,10,1144
+Gujarat,2023,11,977
+Gujarat,2023,12,625
+Gujarat,2024,1,55
+Gujarat,2024,2,43
+Gujarat,2024,3,53
+Gujarat,2024,4,67
+Gujarat,2024,5,90
+Gujarat,2024,6,155
+Gujarat,2024,7,321
+Gujarat,2024,8,601
+Gujarat,2024,9,878
+Gujarat,2024,10,1105
+Gujarat,2024,11,857
+Gujarat,2024,12,501
+Madhya Pradesh,2018,1,57
+Madhya Pradesh,2018,2,34
+Madhya Pradesh,2018,3,43
+Madhya Pradesh,2018,4,49
+Madhya Pradesh,2018,5,94
+Madhya Pradesh,2018,6,120
+Madhya Pradesh,2018,7,246
+Madhya Pradesh,2018,8,442
+Madhya Pradesh,2018,9,760
+Madhya Pradesh,2018,10,878
+Madhya Pradesh,2018,11,621
+Madhya Pradesh,2018,12,406
+Madhya Pradesh,2019,1,43
+Madhya Pradesh,2019,2,40
+Madhya Pradesh,2019,3,42
+Madhya Pradesh,2019,4,62
+Madhya Pradesh,2019,5,84
+Madhya Pradesh,2019,6,111
+Madhya Pradesh,2019,7,268
+Madhya Pradesh,2019,8,512
+Madhya Pradesh,2019,9,770
+Madhya Pradesh,2019,10,858
+Madhya Pradesh,2019,11,686
+Madhya Pradesh,2019,12,325
+Madhya Pradesh,2020,1,13
+Madhya Pradesh,2020,2,12
+Madhya Pradesh,2020,3,12
+Madhya Pradesh,2020,4,14
+Madhya Pradesh,2020,5,22
+Madhya Pradesh,2020,6,44
+Madhya Pradesh,2020,7,81
+Madhya Pradesh,2020,8,117
+Madhya Pradesh,2020,9,228
+Madhya Pradesh,2020,10,293
+Madhya Pradesh,2020,11,192
+Madhya Pradesh,2020,12,125
+Madhya Pradesh,2021,1,142
+Madhya Pradesh,2021,2,109
+Madhya Pradesh,2021,3,117
+Madhya Pradesh,2021,4,165
+Madhya Pradesh,2021,5,277
+Madhya Pradesh,2021,6,378
+Madhya Pradesh,2021,7,869
+Madhya Pradesh,2021,8,1502
+Madhya Pradesh,2021,9,2524
+Madhya Pradesh,2021,10,2856
+Madhya Pradesh,2021,11,2028
+Madhya Pradesh,2021,12,1264
+Madhya Pradesh,2022,1,59
+Madhya Pradesh,2022,2,48
+Madhya Pradesh,2022,3,60
+Madhya Pradesh,2022,4,68
+Madhya Pradesh,2022,5,111
+Madhya Pradesh,2022,6,180
+Madhya Pradesh,2022,7,279
+Madhya Pradesh,2022,8,628
+Madhya Pradesh,2022,9,920
+Madhya Pradesh,2022,10,1028
+Madhya Pradesh,2022,11,797
+Madhya Pradesh,2022,12,493
+Madhya Pradesh,2023,1,45
+Madhya Pradesh,2023,2,49
+Madhya Pradesh,2023,3,45
+Madhya Pradesh,2023,4,63
+Madhya Pradesh,2023,5,84
+Madhya Pradesh,2023,6,153
+Madhya Pradesh,2023,7,275
+Madhya Pradesh,2023,8,463
+Madhya Pradesh,2023,9,808
+Madhya Pradesh,2023,10,996
+Madhya Pradesh,2023,11,628
+Madhya Pradesh,2023,12,467
+Madhya Pradesh,2024,1,44
+Madhya Pradesh,2024,2,35
+Madhya Pradesh,2024,3,38
+Madhya Pradesh,2024,4,52
+Madhya Pradesh,2024,5,69
+Madhya Pradesh,2024,6,112
+Madhya Pradesh,2024,7,270
+Madhya Pradesh,2024,8,423
+Madhya Pradesh,2024,9,680
+Madhya Pradesh,2024,10,752
+Madhya Pradesh,2024,11,570
+Madhya Pradesh,2024,12,342
+Punjab,2018,1,188
+Punjab,2018,2,150
+Punjab,2018,3,169
+Punjab,2018,4,195
+Punjab,2018,5,328
+Punjab,2018,6,518
+Punjab,2018,7,1023
+Punjab,2018,8,1806
+Punjab,2018,9,2661
+Punjab,2018,10,3002
+Punjab,2018,11,2533
+Punjab,2018,12,1465
+Punjab,2019,1,118
+Punjab,2019,2,97
+Punjab,2019,3,120
+Punjab,2019,4,160
+Punjab,2019,5,218
+Punjab,2019,6,340
+Punjab,2019,7,887
+Punjab,2019,8,986
+Punjab,2019,9,2272
+Punjab,2019,10,1988
+Punjab,2019,11,1739
+Punjab,2019,12,1190
+Punjab,2020,1,83
+Punjab,2020,2,84
+Punjab,2020,3,93
+Punjab,2020,4,115
+Punjab,2020,5,183
+Punjab,2020,6,267
+Punjab,2020,7,614
+Punjab,2020,8,997
+Punjab,2020,9,1795
+Punjab,2020,10,2157
+Punjab,2020,11,1489
+Punjab,2020,12,862
+Punjab,2021,1,305
+Punjab,2021,2,223
+Punjab,2021,3,203
+Punjab,2021,4,277
+Punjab,2021,5,478
+Punjab,2021,6,802
+Punjab,2021,7,1573
+Punjab,2021,8,2929
+Punjab,2021,9,4685
+Punjab,2021,10,5198
+Punjab,2021,11,4166
+Punjab,2021,12,2666
+Punjab,2022,1,119
+Punjab,2022,2,112
+Punjab,2022,3,132
+Punjab,2022,4,124
+Punjab,2022,5,196
+Punjab,2022,6,406
+Punjab,2022,7,630
+Punjab,2022,8,1260
+Punjab,2022,9,1990
+Punjab,2022,10,2661
+Punjab,2022,11,1827
+Punjab,2022,12,1275
+Punjab,2023,1,111
+Punjab,2023,2,89
+Punjab,2023,3,86
+Punjab,2023,4,118
+Punjab,2023,5,160
+Punjab,2023,6,340
+Punjab,2023,7,549
+Punjab,2023,8,899
+Punjab,2023,9,1778
+Punjab,2023,10,2154
+Punjab,2023,11,1343
+Punjab,2023,12,1015
+Punjab,2024,1,77
+Punjab,2024,2,52
+Punjab,2024,3,72
+Punjab,2024,4,71
+Punjab,2024,5,154
+Punjab,2024,6,217
+Punjab,2024,7,482
+Punjab,2024,8,728
+Punjab,2024,9,1262
+Punjab,2024,10,1313
+Punjab,2024,11,1071
+Punjab,2024,12,619
+Haryana,2018,1,22
+Haryana,2018,2,18
+Haryana,2018,3,18
+Haryana,2018,4,25
+Haryana,2018,5,43
+Haryana,2018,6,72
+Haryana,2018,7,121
+Haryana,2018,8,245
+Haryana,2018,9,366
+Haryana,2018,10,454
+Haryana,2018,11,373
+Haryana,2018,12,201
+Haryana,2019,1,13
+Haryana,2019,2,12
+Haryana,2019,3,13
+Haryana,2019,4,16
+Haryana,2019,5,21
+Haryana,2019,6,42
+Haryana,2019,7,87
+Haryana,2019,8,158
+Haryana,2019,9,204
+Haryana,2019,10,275
+Haryana,2019,11,191
+Haryana,2019,12,114
+Haryana,2020,1,14
+Haryana,2020,2,15
+Haryana,2020,3,16
+Haryana,2020,4,19
+Haryana,2020,5,33
+Haryana,2020,6,58
+Haryana,2020,7,93
+Haryana,2020,8,176
+Haryana,2020,9,264
+Haryana,2020,10,376
+Haryana,2020,11,228
+Haryana,2020,12,144
+Haryana,2021,1,144
+Haryana,2021,2,98
+Haryana,2021,3,121
+Haryana,2021,4,167
+Haryana,2021,5,229
+Haryana,2021,6,364
+Haryana,2021,7,901
+Haryana,2021,8,1296
+Haryana,2021,9,2511
+Haryana,2021,10,3112
+Haryana,2021,11,1996
+Haryana,2021,12,1376
+Haryana,2022,1,46
+Haryana,2022,2,31
+Haryana,2022,3,42
+Haryana,2022,4,61
+Haryana,2022,5,80
+Haryana,2022,6,144
+Haryana,2022,7,268
+Haryana,2022,8,393
+Haryana,2022,9,817
+Haryana,2022,10,1055
+Haryana,2022,11,783
+Haryana,2022,12,416
+Haryana,2023,1,55
+Haryana,2023,2,44
+Haryana,2023,3,51
+Haryana,2023,4,54
+Haryana,2023,5,73
+Haryana,2023,6,160
+Haryana,2023,7,268
+Haryana,2023,8,425
+Haryana,2023,9,744
+Haryana,2023,10,896
+Haryana,2023,11,800
+Haryana,2023,12,384
+Haryana,2024,1,32
+Haryana,2024,2,26
+Haryana,2024,3,33
+Haryana,2024,4,43
+Haryana,2024,5,53
+Haryana,2024,6,102
+Haryana,2024,7,221
+Haryana,2024,8,348
+Haryana,2024,9,573
+Haryana,2024,10,750
+Haryana,2024,11,445
+Haryana,2024,12,320
+Andhra Pradesh,2018,1,53
+Andhra Pradesh,2018,2,47
+Andhra Pradesh,2018,3,50
+Andhra Pradesh,2018,4,48
+Andhra Pradesh,2018,5,96
+Andhra Pradesh,2018,6,150
+Andhra Pradesh,2018,7,309
+Andhra Pradesh,2018,8,488
+Andhra Pradesh,2018,9,730
+Andhra Pradesh,2018,10,962
+Andhra Pradesh,2018,11,824
+Andhra Pradesh,2018,12,454
+Andhra Pradesh,2019,1,70
+Andhra Pradesh,2019,2,61
+Andhra Pradesh,2019,3,53
+Andhra Pradesh,2019,4,85
+Andhra Pradesh,2019,5,101
+Andhra Pradesh,2019,6,179
+Andhra Pradesh,2019,7,312
+Andhra Pradesh,2019,8,623
+Andhra Pradesh,2019,9,1108
+Andhra Pradesh,2019,10,1275
+Andhra Pradesh,2019,11,994
+Andhra Pradesh,2019,12,567
+Andhra Pradesh,2020,1,17
+Andhra Pradesh,2020,2,15
+Andhra Pradesh,2020,3,15
+Andhra Pradesh,2020,4,20
+Andhra Pradesh,2020,5,28
+Andhra Pradesh,2020,6,56
+Andhra Pradesh,2020,7,79
+Andhra Pradesh,2020,8,147
+Andhra Pradesh,2020,9,287
+Andhra Pradesh,2020,10,297
+Andhra Pradesh,2020,11,273
+Andhra Pradesh,2020,12,141
+Andhra Pradesh,2021,1,60
+Andhra Pradesh,2021,2,51
+Andhra Pradesh,2021,3,62
+Andhra Pradesh,2021,4,74
+Andhra Pradesh,2021,5,90
+Andhra Pradesh,2021,6,178
+Andhra Pradesh,2021,7,357
+Andhra Pradesh,2021,8,575
+Andhra Pradesh,2021,9,972
+Andhra Pradesh,2021,10,1139
+Andhra Pradesh,2021,11,722
+Andhra Pradesh,2021,12,575
+Andhra Pradesh,2022,1,71
+Andhra Pradesh,2022,2,62
+Andhra Pradesh,2022,3,77
+Andhra Pradesh,2022,4,90
+Andhra Pradesh,2022,5,145
+Andhra Pradesh,2022,6,197
+Andhra Pradesh,2022,7,476
+Andhra Pradesh,2022,8,746
+Andhra Pradesh,2022,9,1287
+Andhra Pradesh,2022,10,1478
+Andhra Pradesh,2022,11,1124
+Andhra Pradesh,2022,12,700
+Andhra Pradesh,2023,1,65
+Andhra Pradesh,2023,2,71
+Andhra Pradesh,2023,3,83
+Andhra Pradesh,2023,4,85
+Andhra Pradesh,2023,5,125
+Andhra Pradesh,2023,6,261
+Andhra Pradesh,2023,7,469
+Andhra Pradesh,2023,8,811
+Andhra Pradesh,2023,9,1364
+Andhra Pradesh,2023,10,1619
+Andhra Pradesh,2023,11,1239
+Andhra Pradesh,2023,12,732
+Andhra Pradesh,2024,1,64
+Andhra Pradesh,2024,2,58
+Andhra Pradesh,2024,3,56
+Andhra Pradesh,2024,4,70
+Andhra Pradesh,2024,5,121
+Andhra Pradesh,2024,6,201
+Andhra Pradesh,2024,7,327
+Andhra Pradesh,2024,8,627
+Andhra Pradesh,2024,9,1242
+Andhra Pradesh,2024,10,1386
+Andhra Pradesh,2024,11,982
+Andhra Pradesh,2024,12,552
+Telangana,2018,1,48
+Telangana,2018,2,39
+Telangana,2018,3,53
+Telangana,2018,4,67
+Telangana,2018,5,108
+Telangana,2018,6,150
+Telangana,2018,7,332
+Telangana,2018,8,571
+Telangana,2018,9,959
+Telangana,2018,10,1130
+Telangana,2018,11,841
+Telangana,2018,12,432
+Telangana,2019,1,157
+Telangana,2019,2,122
+Telangana,2019,3,153
+Telangana,2019,4,187
+Telangana,2019,5,308
+Telangana,2019,6,457
+Telangana,2019,7,1029
+Telangana,2019,8,1794
+Telangana,2019,9,2771
+Telangana,2019,10,2665
+Telangana,2019,11,2366
+Telangana,2019,12,1442
+Telangana,2020,1,22
+Telangana,2020,2,22
+Telangana,2020,3,27
+Telangana,2020,4,30
+Telangana,2020,5,49
+Telangana,2020,6,82
+Telangana,2020,7,134
+Telangana,2020,8,281
+Telangana,2020,9,352
+Telangana,2020,10,466
+Telangana,2020,11,383
+Telangana,2020,12,231
+Telangana,2021,1,89
+Telangana,2021,2,67
+Telangana,2021,3,70
+Telangana,2021,4,97
+Telangana,2021,5,121
+Telangana,2021,6,298
+Telangana,2021,7,517
+Telangana,2021,8,871
+Telangana,2021,9,1323
+Telangana,2021,10,1790
+Telangana,2021,11,1258
+Telangana,2021,12,723
+Telangana,2022,1,95
+Telangana,2022,2,83
+Telangana,2022,3,83
+Telangana,2022,4,94
+Telangana,2022,5,157
+Telangana,2022,6,274
+Telangana,2022,7,603
+Telangana,2022,8,1047
+Telangana,2022,9,1841
+Telangana,2022,10,2067
+Telangana,2022,11,1634
+Telangana,2022,12,983
+Telangana,2023,1,85
+Telangana,2023,2,82
+Telangana,2023,3,91
+Telangana,2023,4,118
+Telangana,2023,5,186
+Telangana,2023,6,321
+Telangana,2023,7,591
+Telangana,2023,8,974
+Telangana,2023,9,1579
+Telangana,2023,10,2054
+Telangana,2023,11,1511
+Telangana,2023,12,785
+Telangana,2024,1,89
+Telangana,2024,2,62
+Telangana,2024,3,76
+Telangana,2024,4,83
+Telangana,2024,5,144
+Telangana,2024,6,208
+Telangana,2024,7,408
+Telangana,2024,8,692
+Telangana,2024,9,1303
+Telangana,2024,10,1347
+Telangana,2024,11,1247
+Telangana,2024,12,592
+Odisha,2018,1,68
+Odisha,2018,2,47
+Odisha,2018,3,52
+Odisha,2018,4,70
+Odisha,2018,5,103
+Odisha,2018,6,194
+Odisha,2018,7,327
+Odisha,2018,8,574
+Odisha,2018,9,1030
+Odisha,2018,10,1217
+Odisha,2018,11,962
+Odisha,2018,12,500
+Odisha,2019,1,49
+Odisha,2019,2,39
+Odisha,2019,3,43
+Odisha,2019,4,51
+Odisha,2019,5,69
+Odisha,2019,6,121
+Odisha,2019,7,282
+Odisha,2019,8,385
+Odisha,2019,9,696
+Odisha,2019,10,957
+Odisha,2019,11,589
+Odisha,2019,12,355
+Odisha,2020,1,13
+Odisha,2020,2,10
+Odisha,2020,3,12
+Odisha,2020,4,15
+Odisha,2020,5,20
+Odisha,2020,6,37
+Odisha,2020,7,59
+Odisha,2020,8,120
+Odisha,2020,9,195
+Odisha,2020,10,227
+Odisha,2020,11,192
+Odisha,2020,12,112
+Odisha,2021,1,79
+Odisha,2021,2,60
+Odisha,2021,3,69
+Odisha,2021,4,85
+Odisha,2021,5,168
+Odisha,2021,6,215
+Odisha,2021,7,498
+Odisha,2021,8,890
+Odisha,2021,9,1460
+Odisha,2021,10,1666
+Odisha,2021,11,1353
+Odisha,2021,12,770
+Odisha,2022,1,60
+Odisha,2022,2,53
+Odisha,2022,3,62
+Odisha,2022,4,84
+Odisha,2022,5,116
+Odisha,2022,6,193
+Odisha,2022,7,318
+Odisha,2022,8,609
+Odisha,2022,9,1074
+Odisha,2022,10,1181
+Odisha,2022,11,970
+Odisha,2022,12,531
+Odisha,2023,1,56
+Odisha,2023,2,41
+Odisha,2023,3,46
+Odisha,2023,4,57
+Odisha,2023,5,94
+Odisha,2023,6,163
+Odisha,2023,7,280
+Odisha,2023,8,579
+Odisha,2023,9,959
+Odisha,2023,10,1014
+Odisha,2023,11,758
+Odisha,2023,12,582
+Odisha,2024,1,48
+Odisha,2024,2,42
+Odisha,2024,3,46
+Odisha,2024,4,44
+Odisha,2024,5,72
+Odisha,2024,6,139
+Odisha,2024,7,244
+Odisha,2024,8,431
+Odisha,2024,9,737
+Odisha,2024,10,857
+Odisha,2024,11,676
+Odisha,2024,12,413
+Bihar,2018,1,22
+Bihar,2018,2,20
+Bihar,2018,3,23
+Bihar,2018,4,33
+Bihar,2018,5,52
+Bihar,2018,6,69
+Bihar,2018,7,142
+Bihar,2018,8,253
+Bihar,2018,9,424
+Bihar,2018,10,500
+Bihar,2018,11,330
+Bihar,2018,12,235
+Bihar,2019,1,85
+Bihar,2019,2,65
+Bihar,2019,3,76
+Bihar,2019,4,94
+Bihar,2019,5,143
+Bihar,2019,6,293
+Bihar,2019,7,500
+Bihar,2019,8,883
+Bihar,2019,9,1327
+Bihar,2019,10,1612
+Bihar,2019,11,1178
+Bihar,2019,12,788
+Bihar,2020,1,6
+Bihar,2020,2,5
+Bihar,2020,3,6
+Bihar,2020,4,7
+Bihar,2020,5,10
+Bihar,2020,6,16
+Bihar,2020,7,37
+Bihar,2020,8,53
+Bihar,2020,9,97
+Bihar,2020,10,103
+Bihar,2020,11,81
+Bihar,2020,12,46
+Bihar,2021,1,8
+Bihar,2021,2,7
+Bihar,2021,3,7
+Bihar,2021,4,7
+Bihar,2021,5,11
+Bihar,2021,6,21
+Bihar,2021,7,43
+Bihar,2021,8,83
+Bihar,2021,9,127
+Bihar,2021,10,149
+Bihar,2021,11,104
+Bihar,2021,12,62
+Bihar,2022,1,161
+Bihar,2022,2,124
+Bihar,2022,3,136
+Bihar,2022,4,199
+Bihar,2022,5,278
+Bihar,2022,6,481
+Bihar,2022,7,911
+Bihar,2022,8,1490
+Bihar,2022,9,2693
+Bihar,2022,10,3604
+Bihar,2022,11,2697
+Bihar,2022,12,1519
+Bihar,2023,1,79
+Bihar,2023,2,81
+Bihar,2023,3,77
+Bihar,2023,4,79
+Bihar,2023,5,144
+Bihar,2023,6,215
+Bihar,2023,7,443
+Bihar,2023,8,778
+Bihar,2023,9,1196
+Bihar,2023,10,1499
+Bihar,2023,11,1003
+Bihar,2023,12,680
+Bihar,2024,1,64
+Bihar,2024,2,58
+Bihar,2024,3,67
+Bihar,2024,4,60
+Bihar,2024,5,117
+Bihar,2024,6,215
+Bihar,2024,7,394
+Bihar,2024,8,602
+Bihar,2024,9,1044
+Bihar,2024,10,1264
+Bihar,2024,11,720
+Bihar,2024,12,595

@@ -1,0 +1,92 @@
+# Indicative figures compiled from published ICMR-AMRSN / WHO GLASS / CDSCO / NPPA / NCVBDC patterns. Reconstructed for demonstration. Not for clinical use.
+site,setting,organism,prior
+Urinary tract infection,OPD,Escherichia coli,0.7152
+Urinary tract infection,OPD,Klebsiella pneumoniae,0.117
+Urinary tract infection,OPD,Enterococcus spp,0.0585
+Urinary tract infection,OPD,Pseudomonas aeruginosa,0.0468
+Urinary tract infection,OPD,Acinetobacter baumannii,0.0234
+Urinary tract infection,OPD,Staphylococcus aureus,0.039
+Urinary tract infection,Ward,Escherichia coli,0.5074
+Urinary tract infection,Ward,Klebsiella pneumoniae,0.2214
+Urinary tract infection,Ward,Enterococcus spp,0.1107
+Urinary tract infection,Ward,Pseudomonas aeruginosa,0.0886
+Urinary tract infection,Ward,Acinetobacter baumannii,0.0443
+Urinary tract infection,Ward,Staphylococcus aureus,0.0277
+Urinary tract infection,ICU,Escherichia coli,0.3991
+Urinary tract infection,ICU,Klebsiella pneumoniae,0.2758
+Urinary tract infection,ICU,Enterococcus spp,0.1379
+Urinary tract infection,ICU,Pseudomonas aeruginosa,0.1103
+Urinary tract infection,ICU,Acinetobacter baumannii,0.0552
+Urinary tract infection,ICU,Staphylococcus aureus,0.0218
+Bloodstream infection / sepsis,OPD,Klebsiella pneumoniae,0.1679
+Bloodstream infection / sepsis,OPD,Escherichia coli,0.3284
+Bloodstream infection / sepsis,OPD,Staphylococcus aureus,0.2687
+Bloodstream infection / sepsis,OPD,Acinetobacter baumannii,0.1007
+Bloodstream infection / sepsis,OPD,Pseudomonas aeruginosa,0.0672
+Bloodstream infection / sepsis,OPD,Enterococcus spp,0.0672
+Bloodstream infection / sepsis,Ward,Klebsiella pneumoniae,0.2679
+Bloodstream infection / sepsis,Ward,Escherichia coli,0.1964
+Bloodstream infection / sepsis,Ward,Staphylococcus aureus,0.1607
+Bloodstream infection / sepsis,Ward,Acinetobacter baumannii,0.1607
+Bloodstream infection / sepsis,Ward,Pseudomonas aeruginosa,0.1071
+Bloodstream infection / sepsis,Ward,Enterococcus spp,0.1071
+Bloodstream infection / sepsis,ICU,Klebsiella pneumoniae,0.3084
+Bloodstream infection / sepsis,ICU,Escherichia coli,0.1429
+Bloodstream infection / sepsis,ICU,Staphylococcus aureus,0.1169
+Bloodstream infection / sepsis,ICU,Acinetobacter baumannii,0.1851
+Bloodstream infection / sepsis,ICU,Pseudomonas aeruginosa,0.1234
+Bloodstream infection / sepsis,ICU,Enterococcus spp,0.1234
+Pneumonia / lower respiratory,OPD,Klebsiella pneumoniae,0.2049
+Pneumonia / lower respiratory,OPD,Acinetobacter baumannii,0.161
+Pneumonia / lower respiratory,OPD,Pseudomonas aeruginosa,0.1463
+Pneumonia / lower respiratory,OPD,Staphylococcus aureus,0.1951
+Pneumonia / lower respiratory,OPD,Escherichia coli,0.1626
+Pneumonia / lower respiratory,OPD,Streptococcus pneumoniae,0.1301
+Pneumonia / lower respiratory,Ward,Klebsiella pneumoniae,0.2947
+Pneumonia / lower respiratory,Ward,Acinetobacter baumannii,0.2316
+Pneumonia / lower respiratory,Ward,Pseudomonas aeruginosa,0.2105
+Pneumonia / lower respiratory,Ward,Staphylococcus aureus,0.1053
+Pneumonia / lower respiratory,Ward,Escherichia coli,0.0877
+Pneumonia / lower respiratory,Ward,Streptococcus pneumoniae,0.0702
+Pneumonia / lower respiratory,ICU,Klebsiella pneumoniae,0.3264
+Pneumonia / lower respiratory,ICU,Acinetobacter baumannii,0.2564
+Pneumonia / lower respiratory,ICU,Pseudomonas aeruginosa,0.2331
+Pneumonia / lower respiratory,ICU,Staphylococcus aureus,0.0736
+Pneumonia / lower respiratory,ICU,Escherichia coli,0.0613
+Pneumonia / lower respiratory,ICU,Streptococcus pneumoniae,0.0491
+Skin / soft tissue,OPD,Staphylococcus aureus,0.672
+Skin / soft tissue,OPD,Pseudomonas aeruginosa,0.0715
+Skin / soft tissue,OPD,Escherichia coli,0.1466
+Skin / soft tissue,OPD,Klebsiella pneumoniae,0.055
+Skin / soft tissue,OPD,Enterococcus spp,0.055
+Skin / soft tissue,Ward,Staphylococcus aureus,0.5159
+Skin / soft tissue,Ward,Pseudomonas aeruginosa,0.1463
+Skin / soft tissue,Ward,Escherichia coli,0.1126
+Skin / soft tissue,Ward,Klebsiella pneumoniae,0.1126
+Skin / soft tissue,Ward,Enterococcus spp,0.1126
+Skin / soft tissue,ICU,Staphylococcus aureus,0.4241
+Skin / soft tissue,ICU,Pseudomonas aeruginosa,0.1904
+Skin / soft tissue,ICU,Escherichia coli,0.0925
+Skin / soft tissue,ICU,Klebsiella pneumoniae,0.1465
+Skin / soft tissue,ICU,Enterococcus spp,0.1465
+Intra-abdominal,OPD,Escherichia coli,0.6452
+Intra-abdominal,OPD,Klebsiella pneumoniae,0.1419
+Intra-abdominal,OPD,Enterococcus spp,0.0968
+Intra-abdominal,OPD,Pseudomonas aeruginosa,0.0645
+Intra-abdominal,OPD,Acinetobacter baumannii,0.0516
+Intra-abdominal,Ward,Escherichia coli,0.4054
+Intra-abdominal,Ward,Klebsiella pneumoniae,0.2378
+Intra-abdominal,Ward,Enterococcus spp,0.1622
+Intra-abdominal,Ward,Pseudomonas aeruginosa,0.1081
+Intra-abdominal,Ward,Acinetobacter baumannii,0.0865
+Intra-abdominal,ICU,Escherichia coli,0.301
+Intra-abdominal,ICU,Klebsiella pneumoniae,0.2796
+Intra-abdominal,ICU,Enterococcus spp,0.1906
+Intra-abdominal,ICU,Pseudomonas aeruginosa,0.1271
+Intra-abdominal,ICU,Acinetobacter baumannii,0.1017
+Enteric fever (typhoid),OPD,Salmonella Typhi,0.95
+Enteric fever (typhoid),OPD,Escherichia coli,0.05
+Enteric fever (typhoid),Ward,Salmonella Typhi,0.95
+Enteric fever (typhoid),Ward,Escherichia coli,0.05
+Enteric fever (typhoid),ICU,Salmonella Typhi,0.95
+Enteric fever (typhoid),ICU,Escherichia coli,0.05

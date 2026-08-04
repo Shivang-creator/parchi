@@ -1,0 +1,20 @@
+# Indicative figures compiled from published ICMR-AMRSN / WHO GLASS / CDSCO / NPPA / NCVBDC patterns. Reconstructed for demonstration. Not for clinical use.
+antibiotic,drug_class,spectrum,route,adult_dose,peds_mg_per_kg_per_day,doses_per_day,price_brand,price_generic,price_janaushadhi,renal_adjust,who_aware
+Nitrofurantoin,Nitrofuran,1,PO,100 mg,5,2,12.0,6.0,3.0,1,Access
+Cotrimoxazole,Folate inhibitor,1,PO,960 mg (DS),8,2,6.0,2.5,1.0,1,Access
+Doxycycline,Tetracycline,2,PO,100 mg,4,2,8.0,3.0,1.5,0,Access
+Amoxicillin-Clavulanate,Beta-lactam/BLI,2,PO,625 mg,30,3,15.0,8.0,4.0,1,Access
+Ampicillin,Aminopenicillin,1,IV,1 g,100,4,18.0,9.0,5.0,1,Access
+Azithromycin,Macrolide,2,PO,500 mg,10,1,35.0,12.0,6.0,0,Watch
+Ciprofloxacin,Fluoroquinolone,3,PO,500 mg,20,2,12.0,4.0,2.0,1,Watch
+Levofloxacin,Fluoroquinolone,3,PO,500 mg,10,1,28.0,10.0,5.0,1,Watch
+Gentamicin,Aminoglycoside,2,IV,5 mg/kg,5,1,22.0,11.0,6.0,1,Access
+Amikacin,Aminoglycoside,3,IV,15 mg/kg,15,1,60.0,30.0,16.0,1,Access
+Ceftriaxone,3rd-gen cephalosporin,3,IV,1 g,75,1,60.0,25.0,15.0,0,Watch
+Cefepime,4th-gen cephalosporin,4,IV,1 g,100,3,200.0,90.0,0.0,1,Watch
+Piperacillin-Tazobactam,Beta-lactam/BLI,4,IV,4.5 g,300,4,450.0,200.0,0.0,1,Watch
+Meropenem,Carbapenem,5,IV,1 g,60,3,1100.0,350.0,0.0,1,Watch
+Imipenem-Cilastatin,Carbapenem,5,IV,500 mg,60,4,600.0,280.0,0.0,1,Watch
+Vancomycin,Glycopeptide,4,IV,1 g,45,2,400.0,180.0,0.0,1,Watch
+Linezolid,Oxazolidinone,4,PO/IV,600 mg,30,2,90.0,35.0,18.0,0,Reserve
+Colistin,Polymyxin,5,IV,3 MIU,75,3,520.0,300.0,0.0,1,Reserve

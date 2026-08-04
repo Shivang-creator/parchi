@@ -1,0 +1,19 @@
+# Indicative figures compiled from published ICMR-AMRSN / WHO GLASS / CDSCO / NPPA / NCVBDC patterns. Reconstructed for demonstration. Not for clinical use.
+drug,interacts_with,severity,effect
+Linezolid,SSRI / SNRI antidepressant,MAJOR,Serotonin syndrome. Linezolid is a reversible MAO inhibitor.
+Linezolid,Tramadol,MAJOR,Serotonin syndrome risk.
+Ciprofloxacin,Warfarin,MAJOR,INR rises sharply; bleeding risk.
+Levofloxacin,Warfarin,MAJOR,INR rises sharply; bleeding risk.
+Cotrimoxazole,Warfarin,MAJOR,Marked INR elevation.
+Cotrimoxazole,Methotrexate,MAJOR,Additive myelosuppression.
+Cotrimoxazole,ACE inhibitor / ARB,MODERATE,"Hyperkalaemia, especially in CKD."
+Azithromycin,Ondansetron,MODERATE,Additive QT prolongation.
+Levofloxacin,Ondansetron,MODERATE,Additive QT prolongation.
+Azithromycin,Amiodarone,MAJOR,"QT prolongation, torsades risk."
+Amikacin,Vancomycin,MAJOR,Additive nephrotoxicity.
+Gentamicin,Vancomycin,MAJOR,Additive nephrotoxicity.
+Amikacin,Furosemide,MODERATE,Additive oto- and nephrotoxicity.
+Gentamicin,Furosemide,MODERATE,Additive oto- and nephrotoxicity.
+Colistin,Amikacin,MAJOR,Compounded nephrotoxicity; monitor creatinine daily.
+Ciprofloxacin,Antacid / calcium / iron,MODERATE,Chelation cuts absorption. Separate doses by 2 hours.
+Ciprofloxacin,Theophylline,MAJOR,Theophylline toxicity.
