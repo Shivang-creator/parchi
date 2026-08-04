@@ -1,8 +1,8 @@
+# Runtime only. Streamlit Community Cloud installs this on every build, so it
+# stays minimal — dev and tooling dependencies live in requirements-dev.txt.
 streamlit>=1.40
 plotly>=6.0
 pandas>=2.0
 numpy>=2.0
 scipy>=1.13
 certifi
-pytest>=8.0
-playwright>=1.40   # tools/shoot.py only, not needed to run the app

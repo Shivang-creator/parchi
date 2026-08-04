@@ -295,8 +295,10 @@ for the licensed real series and nothing downstream changes.
 ## Running it
 
 ```bash
-pip install -r requirements.txt
-python build_data.py          # emits the 19 curated CSVs
+pip install -r requirements.txt        # runtime only
+pip install -r requirements-dev.txt    # + pytest, ruff, playwright
+
+python build_data.py          # emits the 19 curated CSVs (already committed)
 python fetch_facilities.py    # optional: live OSM facility extract
 streamlit run app.py
 
