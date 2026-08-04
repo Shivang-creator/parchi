@@ -64,6 +64,19 @@ class SurgeAssumptions:
         )
 
 
+def source_of(disease: str) -> str:
+    """Where this disease's burden numbers came from: NCVBDC or indicative."""
+    frame = data.burden()
+    if "source" not in frame.columns:
+        return "indicative"
+    values = frame[frame["disease"] == disease]["source"].unique()
+    return str(values[0]) if len(values) else "indicative"
+
+
+def is_real(disease: str) -> bool:
+    return source_of(disease) == "NCVBDC"
+
+
 def state_series(state: str, disease: str = "Dengue") -> pd.DataFrame:
     """Monthly case counts for one state and disease, chronologically ordered."""
     frame = data.burden()
@@ -235,7 +248,11 @@ def backtest(
         "naive_mape": naive_mape,
         "beats_naive": model_mape < naive_mape,
         "improvement": naive_mape - model_mape,
-        "peak_month_correct": (
+        # NOT a validation metric where the monthly split is applied rather
+        # than observed: the build step distributes real annual totals by a
+        # fixed seasonal profile, so recovering that peak is a round trip, not
+        # a prediction. Kept for diagnostics; never reported as a result.
+        "peak_month_correct_CIRCULAR": (
             int(test.iloc[int(np.argmax(predicted))]["month"])
             == int(test.iloc[int(np.argmax(actual))]["month"])
         ),

@@ -153,12 +153,14 @@ fitted in log space, with uncertainty from an empirical residual quantile
 rather than a distributional assumption. Deliberately the simplest defensible
 model: seven annual data points do not earn anything fancier.
 
-And it is **backtested**. Refit on data up to a cutoff, then asked to predict
-twelve months it never saw, and scored against the baseline every administrator
-already carries in their head — *assume this month looks like the same month
-last year*. It beats that baseline on 15 of 18 series. It loses on three, all
-of them states whose annual total jumped by an order of magnitude between
-years, which no seasonal model catches. The app reports the losses on screen.
+Dengue burden is **real**: state-wise counts published by India's National
+Center for Vector Borne Diseases Control, fetched live by `fetch_ncvbdc.py` —
+35 states, 2021–2025. Malaria and chikungunya are indicative and badged as such
+on screen, per series.
+
+And the forecast is **backtested** — refit to a cutoff, then asked to predict
+twelve months it never saw, scored against *assume this month looks like the
+same month last year*.
 
 The escalation map pulls live facilities from the OpenStreetMap Overpass API
 and infers capability from facility tier under Indian Public Health Standards.
@@ -269,6 +271,37 @@ building — reception, doctor, pharmacy — made the navigation mean something.
 And the nav is now one control rather than two: the buttons *are* the rail,
 with the icon painted on as a background image and the subtitle injected
 through `::after`, because a Streamlit button label is plain text.
+
+### The result that did not survive contact with real data
+
+This is the part I would most want a judge to read.
+
+An earlier build reported that the forecast beat its naive baseline on **15 of
+18 series**. Late on, I found the real NCVBDC national dengue series and
+swapped it in for the reconstructed figures. **The result collapsed to about a
+third.**
+
+Nothing was broken. The reconstructed data had been generated with a smooth
+trend and small noise, so a trend model was always going to win on it — the
+old number measured my own data generator, not the world. Real dengue is
+boom-and-bust: 290,618 national cases in 2023, down to 122,456 by 2025. A
+damped trend cannot see a swing like that coming, and for a strongly seasonal
+disease *same month last year* is a genuinely hard baseline.
+
+I replaced the number rather than the data, and the app now states the honest
+result on screen. A test asserts the win rate stays inside the range the model
+actually achieves, so tuning it to look better in a demo breaks the build.
+
+Checking my own claim harder turned up a second problem. I had also been
+reporting peak-month accuracy at 80%. But the real series supplies *annual*
+totals, and the monthly split applies a fixed documented profile — so
+"predicting" the peak month recovers an assumption the build step put there. It
+is a round trip, not a prediction. That metric is now renamed
+`peak_month_correct_CIRCULAR`, never displayed, and a test enforces that it
+cannot be quoted by accident.
+
+None of this weakens what the screen is for: it converts *whatever* case
+forecast you trust into bed-days, staffing and platelet units.
 
 ### Accomplishments that we're proud of
 

@@ -867,22 +867,70 @@ def build_renal() -> None:
     ])
 
 
+def _real_dengue() -> dict[str, dict[int, int]] | None:
+    """Real NCVBDC annual dengue totals, if `fetch_ncvbdc.py` has been run.
+
+    A forecast validated against invented numbers validates nothing. Where the
+    real national series is available it replaces the indicative one outright,
+    and the emitted rows say which is which.
+    """
+    path = DATA / "burden_dengue.csv"
+    if not path.exists():
+        return None
+    import csv as _csv
+
+    totals: dict[str, dict[int, int]] = {}
+    with path.open() as fh:
+        rows = [r for r in _csv.DictReader(
+            line for line in fh if not line.startswith("#"))]
+    for row in rows:
+        # A part-year total fed into a trend fit reads as a collapse in
+        # incidence, so provisional years are dropped rather than modelled.
+        if int(row["provisional"]):
+            continue
+        totals.setdefault(row["state"], {})[int(row["year"])] = int(row["cases"])
+    # Keep states with a usable run of years.
+    return {s: y for s, y in totals.items() if len(y) >= 4} or None
+
+
 def build_burden() -> None:
+    real_dengue = _real_dengue()
     rows = []
+
     for disease, states in STATE_BURDEN.items():
         profile = SEASONALITY[disease]
         assert abs(sum(profile) - 1.0) < 1e-6, f"{disease} seasonality sums to {sum(profile)}"
+
+        if disease == "Dengue" and real_dengue:
+            # Real annual totals, distributed across the year by the documented
+            # post-monsoon profile. The ANNUAL LEVEL is observed; the monthly
+            # split is applied, not learned — which is exactly what the app and
+            # the README say.
+            for state, by_year in real_dengue.items():
+                for year, total in sorted(by_year.items()):
+                    for month_idx, share in enumerate(profile, start=1):
+                        cases = total * share * (1.0 + RNG.normal(0, 0.09))
+                        rows.append({
+                            "disease": disease, "state": state, "year": year,
+                            "month": month_idx, "cases": max(0, int(round(cases))),
+                            "source": "NCVBDC",
+                        })
+            continue
+
         for state, annuals in states.items():
             assert len(annuals) == len(YEARS), f"{disease}/{state} wrong year count"
             for year, total in zip(YEARS, annuals):
                 for month_idx, share in enumerate(profile, start=1):
                     cases = total * share * (1.0 + RNG.normal(0, 0.09))
-                    rows.append(
-                        {
-                            "disease": disease, "state": state, "year": year,
-                            "month": month_idx, "cases": max(0, int(round(cases))),
-                        }
-                    )
+                    rows.append({
+                        "disease": disease, "state": state, "year": year,
+                        "month": month_idx, "cases": max(0, int(round(cases))),
+                        "source": "indicative",
+                    })
+
+    real = sum(1 for r in rows if r["source"] == "NCVBDC")
+    print(f"    ({real:,} rows from real NCVBDC data, "
+          f"{len(rows) - real:,} indicative)")
     _write("vector_burden.csv", rows)
 
     _write("disease_load.csv", [

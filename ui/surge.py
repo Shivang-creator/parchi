@@ -36,6 +36,26 @@ def render() -> None:
     ink = DISEASE_INK.get(disease, theme.RX)
     defaults = forecast.SurgeAssumptions.for_disease(disease)
 
+    # Provenance is per-series, and the app says so rather than averaging its
+    # honesty across the dataset.
+    real = forecast.is_real(disease)
+    st.markdown(
+        (c.stamp("REAL DATA · NCVBDC, GOVT OF INDIA", theme.SAFE) if real
+         else c.stamp("INDICATIVE FIGURES", theme.CAUTION))
+        + "<span style='font-size:11.5px;color:var(--ink-3);margin-left:12px'>"
+        + ("State-wise dengue counts published by the National Center for "
+           "Vector Borne Diseases Control, Ministry of Health &amp; Family "
+           "Welfare. Annual totals are observed; the monthly split applies the "
+           "documented post-monsoon profile."
+           if real else
+           f"{disease} burden is reconstructed from published magnitudes — "
+           f"the real series was not machine-readable. Dengue is real; this "
+           f"is not.")
+        + "</span>",
+        unsafe_allow_html=True,
+    )
+    st.write("")
+
     with st.expander("Conversion assumptions — every factor is yours to change"):
         st.markdown(
             f"Defaults are the reported load profile for **{disease.lower()}**, "
@@ -213,20 +233,18 @@ def render() -> None:
         st.markdown(
             "A forecast nobody has scored is an opinion. The pipeline is refit "
             "on data up to a cutoff, then asked to predict twelve months it was "
-            "never shown — and compared against the naive baseline any "
-            "administrator already has in their head: *assume this month looks "
-            "like the same month last year.*"
+            "never shown — and compared against the baseline every administrator "
+            "already has in their head: *assume this month looks like the same "
+            "month last year.*"
         )
 
         b1, b2, b3 = st.columns(3)
-        b1.metric("Model error (MAPE)", f"{scored['model_mape']:.1f}%",
-                  delta_color="off")
-        b2.metric("Naive seasonal baseline", f"{scored['naive_mape']:.1f}%",
-                  delta_color="off")
+        b1.metric("Model error (MAPE)", f"{scored['model_mape']:.0f}%", delta_color="off")
+        b2.metric("Naive seasonal baseline", f"{scored['naive_mape']:.0f}%", delta_color="off")
         b3.metric(
             "Against the baseline",
             "better" if scored["beats_naive"] else "worse",
-            f"{abs(scored['improvement']):.1f} points",
+            f"{abs(scored['improvement']):.0f} points",
             delta_color="normal" if scored["beats_naive"] else "inverse",
         )
 
@@ -246,30 +264,48 @@ def render() -> None:
         holdout.update_xaxes(tickangle=-45)
         st.plotly_chart(holdout, width="stretch", config={"displayModeBar": False})
 
-        if scored["beats_naive"]:
+        if real:
+            st.markdown(
+                c.note(
+                    "HONEST RESULT",
+                    "The model beats this baseline on about a third of states",
+                    "On the reconstructed data this project shipped with earlier "
+                    "it won 15 of 18 series. Against the <b>real</b> NCVBDC "
+                    "national series it wins about a third — and that is the "
+                    "number worth reporting.<br><br>"
+                    "Real dengue is boom-and-bust: a national peak of 290,618 "
+                    "cases in 2023, then a fall to 122,456 by 2025. A damped "
+                    "trend cannot anticipate a swing like that, and for a "
+                    "strongly seasonal disease <i>same month last year</i> is a "
+                    "genuinely hard baseline to beat. The earlier result was "
+                    "flattering because the data was smooth by construction.<br><br>"
+                    "What this screen is actually for does not depend on winning "
+                    "that comparison: it converts <i>whatever</i> case forecast "
+                    "you trust into bed-days, staffing and platelet units. "
+                    "Substitute your own state projection and every number below "
+                    "re-bases.",
+                    theme.CAUTION,
+                ),
+                unsafe_allow_html=True,
+            )
             st.markdown(
                 c.caveat(
-                    f"Peak month was predicted "
-                    f"<b>{'correctly' if scored['peak_month_correct'] else 'one month off'}</b>. "
-                    f"Across every series in the dataset the model beats the naive "
-                    f"baseline in <b>15 of 18</b> — and loses in three. It loses "
-                    f"where a state's annual total jumped by an order of magnitude "
-                    f"between years, which no seasonal model catches and which is "
-                    f"worth stating rather than hiding."
+                    "Deliberately <b>not</b> reported: peak-month accuracy. The "
+                    "real series gives annual totals, and the monthly split "
+                    "applies a fixed documented profile — so recovering the peak "
+                    "month is a round trip through our own assumption, not a "
+                    "prediction. Only the annual level is genuinely observed, so "
+                    "only the annual level is scored."
                 ),
                 unsafe_allow_html=True,
             )
         else:
             st.markdown(
-                c.note(
-                    "HONEST RESULT", "The naive baseline wins here",
-                    f"For {disease.lower()} in {state}, last-year-same-month beats "
-                    f"this model by {abs(scored['improvement']):.1f} points of MAPE. "
-                    f"That happens where the annual total swung by an order of "
-                    f"magnitude between years — a level shift the seasonal "
-                    f"decomposition cannot see coming. Use the band, not the point "
-                    f"estimate, for this state.",
-                    theme.CAUTION,
+                c.caveat(
+                    f"This backtest runs against <b>indicative</b> {disease.lower()} "
+                    f"figures, so it measures internal consistency rather than "
+                    f"real-world accuracy. Switch to dengue for a result scored "
+                    f"against the real national series."
                 ),
                 unsafe_allow_html=True,
             )

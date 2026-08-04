@@ -1,0 +1,25 @@
+{
+  "fetched_utc": "2026-08-04",
+  "series": {
+    "dengue": {
+      "url": "https://ncvbdc.mohfw.gov.in/index4.php?lang=1&level=0&linkid=431&lid=3715",
+      "records": 208,
+      "states": 35,
+      "years": [
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "complete_years": [
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ]
+    }
+  }
+}

@@ -417,6 +417,7 @@ def test_seasonal_index_is_a_distribution():
 
 
 def test_dengue_peaks_post_monsoon():
+    """Sanity check on the applied profile, not evidence about the model."""
     index = forecast.seasonal_index("Kerala", "Dengue")
     assert int(index.idxmax()) in (9, 10, 11)
 
@@ -427,7 +428,19 @@ def test_uncertainty_band_contains_the_point_estimate():
     assert (frame["cases"] <= frame["upper"]).all()
 
 
-def test_backtest_beats_the_naive_baseline_on_most_series():
+def test_backtest_runs_and_reports_honestly_on_real_data():
+    """The model does NOT beat the naive baseline on most real series.
+
+    On the reconstructed data this project shipped with earlier it won 15 of
+    18. Swapping in the real NCVBDC national series, it wins about a third —
+    because real dengue is a boom-bust series (a 2023 national peak, then a
+    48% fall by 2025) that a damped trend cannot anticipate, and because
+    'same month last year' is a genuinely strong baseline for a seasonal
+    disease.
+
+    This test asserts the honest range rather than a flattering one, so that
+    tuning the model to look good in the demo breaks the build.
+    """
     wins = total = 0
     for disease in data.diseases():
         for state in data.states(disease):
@@ -435,9 +448,35 @@ def test_backtest_beats_the_naive_baseline_on_most_series():
             if not scored:
                 continue
             total += 1
+            assert scored["model_mape"] >= 0
+            assert scored["naive_mape"] >= 0
             wins += bool(scored["beats_naive"])
-    assert total > 20
-    assert wins / total > 0.6, f"only beat the baseline on {wins}/{total}"
+    assert total > 30
+    assert 0.2 < wins / total < 0.85, (
+        f"beat the baseline on {wins}/{total} — outside the range this model "
+        f"honestly achieves; check whether the metric has been gamed"
+    )
+
+
+def test_peak_month_accuracy_is_never_reported_as_validation():
+    """Seasonality is applied, not observed, so recovering it proves nothing.
+
+    Real data supplies annual totals; the build step distributes them by a
+    fixed documented profile. Any 'we predict the peak month' claim would be
+    a round trip. The key is named to make that impossible to quote by
+    accident.
+    """
+    scored = forecast.backtest("Kerala", "Dengue")
+    assert "peak_month_correct" not in scored
+    assert "peak_month_correct_CIRCULAR" in scored
+
+
+def test_dengue_burden_is_real_and_the_others_are_labelled():
+    assert forecast.is_real("Dengue")
+    assert forecast.source_of("Dengue") == "NCVBDC"
+    for disease in data.diseases():
+        if disease != "Dengue":
+            assert not forecast.is_real(disease)
 
 
 def test_disease_load_differs_by_disease():

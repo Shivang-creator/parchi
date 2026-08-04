@@ -127,13 +127,33 @@ translates them into **extra OPD screens, admissions, bed-days and platelet
 units** — then tells you whether your bed count survives the peak, and stacks
 every disease together because a hospital does not get one outbreak at a time.
 
+Dengue burden is **real**: state-wise counts published by the National Center
+for Vector Borne Diseases Control (NCVBDC), Ministry of Health & Family
+Welfare — 35 states, 2021–2025, fetched live by `fetch_ncvbdc.py`. Malaria and
+chikungunya remain indicative and are labelled as such **on screen, per series**.
+
 The forecast is **backtested**: refit on data up to a cutoff, then asked to
 predict twelve months it never saw, scored against the baseline every
 administrator already has — *assume this month looks like the same month last
-year*. It beats that baseline on **15 of 18 series**, and loses on three. It
-loses where a state's annual total jumped by an order of magnitude between
-years, which no seasonal model catches. The app says so on screen rather than
-reporting only the wins.
+year*.
+
+**It beats that baseline on about a third of real state series, and the app
+says so.** An earlier build scored 15 of 18 — against reconstructed data that
+was smooth by construction. Swapping in the real national series, that result
+did not survive, and the honest number replaced it. Real dengue is
+boom-and-bust: a national peak of 290,618 cases in 2023 falling to 122,456 by
+2025. A damped trend cannot anticipate a swing like that, and for a strongly
+seasonal disease *same month last year* is a hard baseline.
+
+That does not undermine what the screen is for. It converts *whatever* case
+forecast you trust into bed-days, staffing and platelet units; substitute your
+own state projection and every downstream number re-bases.
+
+**Deliberately not reported: peak-month accuracy.** The real series gives
+annual totals and the monthly split applies a fixed documented profile, so
+recovering the peak month is a round trip through our own assumption rather
+than a prediction. Only the annual level is observed, so only the annual level
+is scored. A test asserts the metric is never surfaced under a quotable name.
 
 ### 6 · Escalation — the nearest facility that can actually treat this
 
@@ -275,7 +295,14 @@ a recent endpoint with intermediate years reconstructed — **the direction and
 magnitude of each trend are real; the individual year points are not
 observations.**
 
-`data/facilities.csv` is the exception: it is a **live OpenStreetMap extract**,
+**Two series are real, not indicative.** `data/burden_dengue.csv` is fetched
+live from NCVBDC (Ministry of Health & Family Welfare) — state-wise dengue
+cases and deaths, 2021–2026, with provisional part-years excluded from every
+model. `data/burden_source.json` records the URL and retrieval date. The app
+badges provenance per disease, so a viewer is never left guessing which
+numbers are observed.
+
+`data/facilities.csv` is likewise real: a **live OpenStreetMap extract**,
 fetched at build time. Facility *locations* are real. Facility *capability* is
 inferred from tier under IPHS norms — and only for public facilities, because
 OpenStreetMap tags a one-doctor nursing home and a 900-bed tertiary centre
@@ -298,7 +325,8 @@ for the licensed real series and nothing downstream changes.
 pip install -r requirements.txt        # runtime only
 pip install -r requirements-dev.txt    # + pytest, ruff, playwright
 
-python build_data.py          # emits the 19 curated CSVs (already committed)
+python fetch_ncvbdc.py        # real dengue burden, live from the health ministry
+python build_data.py          # emits the curated CSVs (already committed)
 python fetch_facilities.py    # optional: live OSM facility extract
 streamlit run app.py
 
