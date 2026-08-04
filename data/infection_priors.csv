@@ -1,92 +1,194 @@
 # Indicative figures compiled from published ICMR-AMRSN / WHO GLASS / CDSCO / NPPA / NCVBDC patterns. Reconstructed for demonstration. Not for clinical use.
-site,setting,organism,prior
-Urinary tract infection,OPD,Escherichia coli,0.7152
-Urinary tract infection,OPD,Klebsiella pneumoniae,0.117
-Urinary tract infection,OPD,Enterococcus spp,0.0585
-Urinary tract infection,OPD,Pseudomonas aeruginosa,0.0468
-Urinary tract infection,OPD,Acinetobacter baumannii,0.0234
-Urinary tract infection,OPD,Staphylococcus aureus,0.039
-Urinary tract infection,Ward,Escherichia coli,0.5074
-Urinary tract infection,Ward,Klebsiella pneumoniae,0.2214
-Urinary tract infection,Ward,Enterococcus spp,0.1107
-Urinary tract infection,Ward,Pseudomonas aeruginosa,0.0886
-Urinary tract infection,Ward,Acinetobacter baumannii,0.0443
-Urinary tract infection,Ward,Staphylococcus aureus,0.0277
-Urinary tract infection,ICU,Escherichia coli,0.3991
-Urinary tract infection,ICU,Klebsiella pneumoniae,0.2758
-Urinary tract infection,ICU,Enterococcus spp,0.1379
-Urinary tract infection,ICU,Pseudomonas aeruginosa,0.1103
-Urinary tract infection,ICU,Acinetobacter baumannii,0.0552
-Urinary tract infection,ICU,Staphylococcus aureus,0.0218
-Bloodstream infection / sepsis,OPD,Klebsiella pneumoniae,0.1679
-Bloodstream infection / sepsis,OPD,Escherichia coli,0.3284
-Bloodstream infection / sepsis,OPD,Staphylococcus aureus,0.2687
-Bloodstream infection / sepsis,OPD,Acinetobacter baumannii,0.1007
-Bloodstream infection / sepsis,OPD,Pseudomonas aeruginosa,0.0672
-Bloodstream infection / sepsis,OPD,Enterococcus spp,0.0672
-Bloodstream infection / sepsis,Ward,Klebsiella pneumoniae,0.2679
-Bloodstream infection / sepsis,Ward,Escherichia coli,0.1964
-Bloodstream infection / sepsis,Ward,Staphylococcus aureus,0.1607
-Bloodstream infection / sepsis,Ward,Acinetobacter baumannii,0.1607
-Bloodstream infection / sepsis,Ward,Pseudomonas aeruginosa,0.1071
-Bloodstream infection / sepsis,Ward,Enterococcus spp,0.1071
-Bloodstream infection / sepsis,ICU,Klebsiella pneumoniae,0.3084
-Bloodstream infection / sepsis,ICU,Escherichia coli,0.1429
-Bloodstream infection / sepsis,ICU,Staphylococcus aureus,0.1169
-Bloodstream infection / sepsis,ICU,Acinetobacter baumannii,0.1851
-Bloodstream infection / sepsis,ICU,Pseudomonas aeruginosa,0.1234
-Bloodstream infection / sepsis,ICU,Enterococcus spp,0.1234
-Pneumonia / lower respiratory,OPD,Klebsiella pneumoniae,0.2049
-Pneumonia / lower respiratory,OPD,Acinetobacter baumannii,0.161
-Pneumonia / lower respiratory,OPD,Pseudomonas aeruginosa,0.1463
-Pneumonia / lower respiratory,OPD,Staphylococcus aureus,0.1951
-Pneumonia / lower respiratory,OPD,Escherichia coli,0.1626
-Pneumonia / lower respiratory,OPD,Streptococcus pneumoniae,0.1301
-Pneumonia / lower respiratory,Ward,Klebsiella pneumoniae,0.2947
-Pneumonia / lower respiratory,Ward,Acinetobacter baumannii,0.2316
-Pneumonia / lower respiratory,Ward,Pseudomonas aeruginosa,0.2105
-Pneumonia / lower respiratory,Ward,Staphylococcus aureus,0.1053
-Pneumonia / lower respiratory,Ward,Escherichia coli,0.0877
-Pneumonia / lower respiratory,Ward,Streptococcus pneumoniae,0.0702
-Pneumonia / lower respiratory,ICU,Klebsiella pneumoniae,0.3264
-Pneumonia / lower respiratory,ICU,Acinetobacter baumannii,0.2564
-Pneumonia / lower respiratory,ICU,Pseudomonas aeruginosa,0.2331
-Pneumonia / lower respiratory,ICU,Staphylococcus aureus,0.0736
-Pneumonia / lower respiratory,ICU,Escherichia coli,0.0613
-Pneumonia / lower respiratory,ICU,Streptococcus pneumoniae,0.0491
-Skin / soft tissue,OPD,Staphylococcus aureus,0.672
-Skin / soft tissue,OPD,Pseudomonas aeruginosa,0.0715
-Skin / soft tissue,OPD,Escherichia coli,0.1466
-Skin / soft tissue,OPD,Klebsiella pneumoniae,0.055
-Skin / soft tissue,OPD,Enterococcus spp,0.055
-Skin / soft tissue,Ward,Staphylococcus aureus,0.5159
-Skin / soft tissue,Ward,Pseudomonas aeruginosa,0.1463
-Skin / soft tissue,Ward,Escherichia coli,0.1126
-Skin / soft tissue,Ward,Klebsiella pneumoniae,0.1126
-Skin / soft tissue,Ward,Enterococcus spp,0.1126
-Skin / soft tissue,ICU,Staphylococcus aureus,0.4241
-Skin / soft tissue,ICU,Pseudomonas aeruginosa,0.1904
-Skin / soft tissue,ICU,Escherichia coli,0.0925
-Skin / soft tissue,ICU,Klebsiella pneumoniae,0.1465
-Skin / soft tissue,ICU,Enterococcus spp,0.1465
-Intra-abdominal,OPD,Escherichia coli,0.6452
-Intra-abdominal,OPD,Klebsiella pneumoniae,0.1419
-Intra-abdominal,OPD,Enterococcus spp,0.0968
-Intra-abdominal,OPD,Pseudomonas aeruginosa,0.0645
-Intra-abdominal,OPD,Acinetobacter baumannii,0.0516
-Intra-abdominal,Ward,Escherichia coli,0.4054
-Intra-abdominal,Ward,Klebsiella pneumoniae,0.2378
-Intra-abdominal,Ward,Enterococcus spp,0.1622
-Intra-abdominal,Ward,Pseudomonas aeruginosa,0.1081
-Intra-abdominal,Ward,Acinetobacter baumannii,0.0865
-Intra-abdominal,ICU,Escherichia coli,0.301
-Intra-abdominal,ICU,Klebsiella pneumoniae,0.2796
-Intra-abdominal,ICU,Enterococcus spp,0.1906
-Intra-abdominal,ICU,Pseudomonas aeruginosa,0.1271
-Intra-abdominal,ICU,Acinetobacter baumannii,0.1017
-Enteric fever (typhoid),OPD,Salmonella Typhi,0.95
-Enteric fever (typhoid),OPD,Escherichia coli,0.05
-Enteric fever (typhoid),Ward,Salmonella Typhi,0.95
-Enteric fever (typhoid),Ward,Escherichia coli,0.05
-Enteric fever (typhoid),ICU,Salmonella Typhi,0.95
-Enteric fever (typhoid),ICU,Escherichia coli,0.05
+site,setting,organism,gram,prior
+Urinary tract infection,OPD,Escherichia coli,gram-negative,0.7069
+Urinary tract infection,OPD,Klebsiella pneumoniae,gram-negative,0.0874
+Urinary tract infection,OPD,Enterococcus spp,gram-positive,0.0463
+Urinary tract infection,OPD,Proteus mirabilis,gram-negative,0.09
+Urinary tract infection,OPD,Pseudomonas aeruginosa,gram-negative,0.0308
+Urinary tract infection,OPD,Citrobacter spp,gram-negative,0.0154
+Urinary tract infection,OPD,Acinetobacter baumannii,gram-negative,0.0103
+Urinary tract infection,OPD,Staphylococcus aureus,gram-positive,0.0129
+Urinary tract infection,Ward,Escherichia coli,gram-negative,0.5121
+Urinary tract infection,Ward,Klebsiella pneumoniae,gram-negative,0.1899
+Urinary tract infection,Ward,Enterococcus spp,gram-positive,0.1006
+Urinary tract infection,Ward,Proteus mirabilis,gram-negative,0.0652
+Urinary tract infection,Ward,Pseudomonas aeruginosa,gram-negative,0.067
+Urinary tract infection,Ward,Citrobacter spp,gram-negative,0.0335
+Urinary tract infection,Ward,Acinetobacter baumannii,gram-negative,0.0223
+Urinary tract infection,Ward,Staphylococcus aureus,gram-positive,0.0093
+Urinary tract infection,ICU,Escherichia coli,gram-negative,0.407
+Urinary tract infection,ICU,Klebsiella pneumoniae,gram-negative,0.2453
+Urinary tract infection,ICU,Enterococcus spp,gram-positive,0.1299
+Urinary tract infection,ICU,Proteus mirabilis,gram-negative,0.0518
+Urinary tract infection,ICU,Pseudomonas aeruginosa,gram-negative,0.0866
+Urinary tract infection,ICU,Citrobacter spp,gram-negative,0.0433
+Urinary tract infection,ICU,Acinetobacter baumannii,gram-negative,0.0289
+Urinary tract infection,ICU,Staphylococcus aureus,gram-positive,0.0074
+Bloodstream infection / sepsis,OPD,Klebsiella pneumoniae,gram-negative,0.1429
+Bloodstream infection / sepsis,OPD,Escherichia coli,gram-negative,0.3247
+Bloodstream infection / sepsis,OPD,Staphylococcus aureus,gram-positive,0.2597
+Bloodstream infection / sepsis,OPD,Acinetobacter baumannii,gram-negative,0.0844
+Bloodstream infection / sepsis,OPD,Coagulase-negative Staph,gram-positive,0.0649
+Bloodstream infection / sepsis,OPD,Pseudomonas aeruginosa,gram-negative,0.0584
+Bloodstream infection / sepsis,OPD,Enterococcus spp,gram-positive,0.0519
+Bloodstream infection / sepsis,OPD,Enterobacter cloacae,gram-negative,0.013
+Bloodstream infection / sepsis,Ward,Klebsiella pneumoniae,gram-negative,0.234
+Bloodstream infection / sepsis,Ward,Escherichia coli,gram-negative,0.1773
+Bloodstream infection / sepsis,Ward,Staphylococcus aureus,gram-positive,0.1418
+Bloodstream infection / sepsis,Ward,Acinetobacter baumannii,gram-negative,0.1383
+Bloodstream infection / sepsis,Ward,Coagulase-negative Staph,gram-positive,0.1064
+Bloodstream infection / sepsis,Ward,Pseudomonas aeruginosa,gram-negative,0.0957
+Bloodstream infection / sepsis,Ward,Enterococcus spp,gram-positive,0.0851
+Bloodstream infection / sepsis,Ward,Enterobacter cloacae,gram-negative,0.0213
+Bloodstream infection / sepsis,ICU,Klebsiella pneumoniae,gram-negative,0.2668
+Bloodstream infection / sepsis,ICU,Escherichia coli,gram-negative,0.1244
+Bloodstream infection / sepsis,ICU,Staphylococcus aureus,gram-positive,0.0995
+Bloodstream infection / sepsis,ICU,Acinetobacter baumannii,gram-negative,0.1576
+Bloodstream infection / sepsis,ICU,Coagulase-negative Staph,gram-positive,0.1213
+Bloodstream infection / sepsis,ICU,Pseudomonas aeruginosa,gram-negative,0.1091
+Bloodstream infection / sepsis,ICU,Enterococcus spp,gram-positive,0.097
+Bloodstream infection / sepsis,ICU,Enterobacter cloacae,gram-negative,0.0243
+Pneumonia — community acquired,OPD,Streptococcus pneumoniae,gram-positive,0.3587
+Pneumonia — community acquired,OPD,Atypical pathogens,atypical,0.2242
+Pneumonia — community acquired,OPD,Haemophilus influenzae,gram-negative,0.1794
+Pneumonia — community acquired,OPD,Klebsiella pneumoniae,gram-negative,0.0628
+Pneumonia — community acquired,OPD,Staphylococcus aureus,gram-positive,0.1121
+Pneumonia — community acquired,OPD,Escherichia coli,gram-negative,0.0448
+Pneumonia — community acquired,OPD,Pseudomonas aeruginosa,gram-negative,0.009
+Pneumonia — community acquired,OPD,Acinetobacter baumannii,gram-negative,0.009
+Pneumonia — community acquired,Ward,Streptococcus pneumoniae,gram-positive,0.3089
+Pneumonia — community acquired,Ward,Atypical pathogens,atypical,0.1931
+Pneumonia — community acquired,Ward,Haemophilus influenzae,gram-negative,0.1544
+Pneumonia — community acquired,Ward,Klebsiella pneumoniae,gram-negative,0.1622
+Pneumonia — community acquired,Ward,Staphylococcus aureus,gram-positive,0.0965
+Pneumonia — community acquired,Ward,Escherichia coli,gram-negative,0.0386
+Pneumonia — community acquired,Ward,Pseudomonas aeruginosa,gram-negative,0.0232
+Pneumonia — community acquired,Ward,Acinetobacter baumannii,gram-negative,0.0232
+Pneumonia — community acquired,ICU,Streptococcus pneumoniae,gram-positive,0.2733
+Pneumonia — community acquired,ICU,Atypical pathogens,atypical,0.1708
+Pneumonia — community acquired,ICU,Haemophilus influenzae,gram-negative,0.1366
+Pneumonia — community acquired,ICU,Klebsiella pneumoniae,gram-negative,0.2331
+Pneumonia — community acquired,ICU,Staphylococcus aureus,gram-positive,0.0854
+Pneumonia — community acquired,ICU,Escherichia coli,gram-negative,0.0342
+Pneumonia — community acquired,ICU,Pseudomonas aeruginosa,gram-negative,0.0333
+Pneumonia — community acquired,ICU,Acinetobacter baumannii,gram-negative,0.0333
+Pneumonia — hospital / ventilator,Ward,Acinetobacter baumannii,gram-negative,0.3098
+Pneumonia — hospital / ventilator,Ward,Klebsiella pneumoniae,gram-negative,0.2685
+Pneumonia — hospital / ventilator,Ward,Pseudomonas aeruginosa,gram-negative,0.2272
+Pneumonia — hospital / ventilator,Ward,Staphylococcus aureus,gram-positive,0.1119
+Pneumonia — hospital / ventilator,Ward,Escherichia coli,gram-negative,0.0516
+Pneumonia — hospital / ventilator,Ward,Enterobacter cloacae,gram-negative,0.031
+Pneumonia — hospital / ventilator,ICU,Acinetobacter baumannii,gram-negative,0.3306
+Pneumonia — hospital / ventilator,ICU,Klebsiella pneumoniae,gram-negative,0.2865
+Pneumonia — hospital / ventilator,ICU,Pseudomonas aeruginosa,gram-negative,0.2424
+Pneumonia — hospital / ventilator,ICU,Staphylococcus aureus,gram-positive,0.0735
+Pneumonia — hospital / ventilator,ICU,Escherichia coli,gram-negative,0.0339
+Pneumonia — hospital / ventilator,ICU,Enterobacter cloacae,gram-negative,0.0331
+Skin / soft tissue,OPD,Staphylococcus aureus,gram-positive,0.6032
+Skin / soft tissue,OPD,Streptococcus pyogenes,gram-positive,0.1856
+Skin / soft tissue,OPD,Pseudomonas aeruginosa,gram-negative,0.051
+Skin / soft tissue,OPD,Escherichia coli,gram-negative,0.1044
+Skin / soft tissue,OPD,Klebsiella pneumoniae,gram-negative,0.0325
+Skin / soft tissue,OPD,Enterococcus spp,gram-positive,0.0232
+Skin / soft tissue,Ward,Staphylococcus aureus,gram-positive,0.4971
+Skin / soft tissue,Ward,Streptococcus pyogenes,gram-positive,0.153
+Skin / soft tissue,Ward,Pseudomonas aeruginosa,gram-negative,0.1262
+Skin / soft tissue,Ward,Escherichia coli,gram-negative,0.086
+Skin / soft tissue,Ward,Klebsiella pneumoniae,gram-negative,0.0803
+Skin / soft tissue,Ward,Enterococcus spp,gram-positive,0.0574
+Skin / soft tissue,ICU,Staphylococcus aureus,gram-positive,0.4268
+Skin / soft tissue,ICU,Streptococcus pyogenes,gram-positive,0.1313
+Skin / soft tissue,ICU,Pseudomonas aeruginosa,gram-negative,0.176
+Skin / soft tissue,ICU,Escherichia coli,gram-negative,0.0739
+Skin / soft tissue,ICU,Klebsiella pneumoniae,gram-negative,0.112
+Skin / soft tissue,ICU,Enterococcus spp,gram-positive,0.08
+Intra-abdominal,OPD,Escherichia coli,gram-negative,0.5249
+Intra-abdominal,OPD,Klebsiella pneumoniae,gram-negative,0.105
+Intra-abdominal,OPD,Bacteroides fragilis,anaerobe,0.221
+Intra-abdominal,OPD,Enterococcus spp,gram-positive,0.0718
+Intra-abdominal,OPD,Pseudomonas aeruginosa,gram-negative,0.0442
+Intra-abdominal,OPD,Acinetobacter baumannii,gram-negative,0.0331
+Intra-abdominal,Ward,Escherichia coli,gram-negative,0.348
+Intra-abdominal,Ward,Klebsiella pneumoniae,gram-negative,0.2088
+Intra-abdominal,Ward,Bacteroides fragilis,anaerobe,0.1465
+Intra-abdominal,Ward,Enterococcus spp,gram-positive,0.1429
+Intra-abdominal,Ward,Pseudomonas aeruginosa,gram-negative,0.0879
+Intra-abdominal,Ward,Acinetobacter baumannii,gram-negative,0.0659
+Intra-abdominal,ICU,Escherichia coli,gram-negative,0.2644
+Intra-abdominal,ICU,Klebsiella pneumoniae,gram-negative,0.2578
+Intra-abdominal,ICU,Bacteroides fragilis,anaerobe,0.1113
+Intra-abdominal,ICU,Enterococcus spp,gram-positive,0.1764
+Intra-abdominal,ICU,Pseudomonas aeruginosa,gram-negative,0.1086
+Intra-abdominal,ICU,Acinetobacter baumannii,gram-negative,0.0814
+Diabetic foot infection,OPD,Staphylococcus aureus,gram-positive,0.4474
+Diabetic foot infection,OPD,Pseudomonas aeruginosa,gram-negative,0.0947
+Diabetic foot infection,OPD,Escherichia coli,gram-negative,0.1842
+Diabetic foot infection,OPD,Klebsiella pneumoniae,gram-negative,0.0632
+Diabetic foot infection,OPD,Enterococcus spp,gram-positive,0.0526
+Diabetic foot infection,OPD,Bacteroides fragilis,anaerobe,0.0921
+Diabetic foot infection,OPD,Proteus mirabilis,gram-negative,0.0658
+Diabetic foot infection,Ward,Staphylococcus aureus,gram-positive,0.3148
+Diabetic foot infection,Ward,Pseudomonas aeruginosa,gram-negative,0.2
+Diabetic foot infection,Ward,Escherichia coli,gram-negative,0.1296
+Diabetic foot infection,Ward,Klebsiella pneumoniae,gram-negative,0.1333
+Diabetic foot infection,Ward,Enterococcus spp,gram-positive,0.1111
+Diabetic foot infection,Ward,Bacteroides fragilis,anaerobe,0.0648
+Diabetic foot infection,Ward,Proteus mirabilis,gram-negative,0.0463
+Diabetic foot infection,ICU,Staphylococcus aureus,gram-positive,0.2464
+Diabetic foot infection,ICU,Pseudomonas aeruginosa,gram-negative,0.2543
+Diabetic foot infection,ICU,Escherichia coli,gram-negative,0.1014
+Diabetic foot infection,ICU,Klebsiella pneumoniae,gram-negative,0.1696
+Diabetic foot infection,ICU,Enterococcus spp,gram-positive,0.1413
+Diabetic foot infection,ICU,Bacteroides fragilis,anaerobe,0.0507
+Diabetic foot infection,ICU,Proteus mirabilis,gram-negative,0.0362
+Surgical site infection,OPD,Staphylococcus aureus,gram-positive,0.4932
+Surgical site infection,OPD,Escherichia coli,gram-negative,0.2603
+Surgical site infection,OPD,Klebsiella pneumoniae,gram-negative,0.0877
+Surgical site infection,OPD,Pseudomonas aeruginosa,gram-negative,0.0658
+Surgical site infection,OPD,Enterococcus spp,gram-positive,0.0493
+Surgical site infection,OPD,Acinetobacter baumannii,gram-negative,0.0438
+Surgical site infection,Ward,Staphylococcus aureus,gram-positive,0.3303
+Surgical site infection,Ward,Escherichia coli,gram-negative,0.1743
+Surgical site infection,Ward,Klebsiella pneumoniae,gram-negative,0.1761
+Surgical site infection,Ward,Pseudomonas aeruginosa,gram-negative,0.1321
+Surgical site infection,Ward,Enterococcus spp,gram-positive,0.0991
+Surgical site infection,Ward,Acinetobacter baumannii,gram-negative,0.0881
+Surgical site infection,ICU,Staphylococcus aureus,gram-positive,0.2522
+Surgical site infection,ICU,Escherichia coli,gram-negative,0.1331
+Surgical site infection,ICU,Klebsiella pneumoniae,gram-negative,0.2186
+Surgical site infection,ICU,Pseudomonas aeruginosa,gram-negative,0.1639
+Surgical site infection,ICU,Enterococcus spp,gram-positive,0.1229
+Surgical site infection,ICU,Acinetobacter baumannii,gram-negative,0.1093
+Bacterial meningitis,Ward,Streptococcus pneumoniae,gram-positive,0.4
+Bacterial meningitis,Ward,Haemophilus influenzae,gram-negative,0.0952
+Bacterial meningitis,Ward,Klebsiella pneumoniae,gram-negative,0.1714
+Bacterial meningitis,Ward,Escherichia coli,gram-negative,0.1238
+Bacterial meningitis,Ward,Staphylococcus aureus,gram-positive,0.0952
+Bacterial meningitis,Ward,Acinetobacter baumannii,gram-negative,0.1143
+Bacterial meningitis,ICU,Streptococcus pneumoniae,gram-positive,0.3394
+Bacterial meningitis,ICU,Haemophilus influenzae,gram-negative,0.0808
+Bacterial meningitis,ICU,Klebsiella pneumoniae,gram-negative,0.2364
+Bacterial meningitis,ICU,Escherichia coli,gram-negative,0.1051
+Bacterial meningitis,ICU,Staphylococcus aureus,gram-positive,0.0808
+Bacterial meningitis,ICU,Acinetobacter baumannii,gram-negative,0.1576
+Febrile neutropenia,Ward,Escherichia coli,gram-negative,0.2297
+Febrile neutropenia,Ward,Klebsiella pneumoniae,gram-negative,0.2544
+Febrile neutropenia,Ward,Pseudomonas aeruginosa,gram-negative,0.1908
+Febrile neutropenia,Ward,Coagulase-negative Staph,gram-positive,0.1378
+Febrile neutropenia,Ward,Acinetobacter baumannii,gram-negative,0.1166
+Febrile neutropenia,Ward,Staphylococcus aureus,gram-positive,0.0707
+Febrile neutropenia,ICU,Escherichia coli,gram-negative,0.1598
+Febrile neutropenia,ICU,Klebsiella pneumoniae,gram-negative,0.2876
+Febrile neutropenia,ICU,Pseudomonas aeruginosa,gram-negative,0.2157
+Febrile neutropenia,ICU,Coagulase-negative Staph,gram-positive,0.1558
+Febrile neutropenia,ICU,Acinetobacter baumannii,gram-negative,0.1318
+Febrile neutropenia,ICU,Staphylococcus aureus,gram-positive,0.0492
+Enteric fever (typhoid),OPD,Salmonella Typhi,gram-negative,0.8
+Enteric fever (typhoid),OPD,Salmonella Paratyphi A,gram-negative,0.17
+Enteric fever (typhoid),OPD,Escherichia coli,gram-negative,0.03
+Enteric fever (typhoid),Ward,Salmonella Typhi,gram-negative,0.8
+Enteric fever (typhoid),Ward,Salmonella Paratyphi A,gram-negative,0.17
+Enteric fever (typhoid),Ward,Escherichia coli,gram-negative,0.03
+Enteric fever (typhoid),ICU,Salmonella Typhi,gram-negative,0.8
+Enteric fever (typhoid),ICU,Salmonella Paratyphi A,gram-negative,0.17
+Enteric fever (typhoid),ICU,Escherichia coli,gram-negative,0.03

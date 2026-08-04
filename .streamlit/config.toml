@@ -1,0 +1,15 @@
+# Parchi runs on paper, not on a dashboard. Forcing the base theme here means
+# the app looks the same whatever the viewer's Streamlit preference is.
+[theme]
+base = "light"
+primaryColor = "#B03A2E"
+backgroundColor = "#FBF8F1"
+secondaryBackgroundColor = "#F4EEE1"
+textColor = "#17150F"
+font = "sans serif"
+
+[server]
+runOnSave = true
+
+[browser]
+gatherUsageStats = false

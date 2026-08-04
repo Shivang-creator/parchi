@@ -1,0 +1,5 @@
+# Indicative figures compiled from published ICMR-AMRSN / WHO GLASS / CDSCO / NPPA / NCVBDC patterns. Reconstructed for demonstration. Not for clinical use.
+disease,opd_per_case,admission_rate,mean_stay_days,transfusion_rate,units_per_transfusion
+Dengue,8.0,0.1,4.5,0.32,4.0
+Malaria,5.0,0.07,3.5,0.04,1.5
+Chikungunya,6.0,0.03,3.0,0.02,1.0

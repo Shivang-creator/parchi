@@ -1,0 +1,13 @@
+# Indicative figures compiled from published ICMR-AMRSN / WHO GLASS / CDSCO / NPPA / NCVBDC patterns. Reconstructed for demonstration. Not for clinical use.
+site,min_days,max_days,typical_days,guidance
+Urinary tract infection,3,7,5,"Uncomplicated cystitis in women: 3 days of most agents, 5 for nitrofurantoin. Pyelonephritis 7. Anything longer adds resistance, not cure."
+Bloodstream infection / sepsis,7,14,7,"7 days is non-inferior to 14 for uncomplicated gram-negative bacteraemia. S. aureus bacteraemia is the exception — 14 days minimum, longer if endocarditis or a deep focus."
+Pneumonia — community acquired,3,7,5,"5 days, provided the patient is afebrile and clinically stable for 48 hours. Long courses are the commonest overuse in respiratory medicine."
+Pneumonia — hospital / ventilator,7,8,7,"7 days, including for non-fermenting gram-negatives. Longer courses have not shown benefit and select for resistance."
+Skin / soft tissue,5,10,6,5-6 days for uncomplicated cellulitis with a good response. Extend only if the response is genuinely slow.
+Intra-abdominal,4,7,4,"4 days after adequate source control. If the patient is still septic, the answer is a second look at the source, not a longer course."
+Diabetic foot infection,7,21,10,Soft-tissue infection 7-14 days. Osteomyelitis without resection needs 6 weeks — a different decision entirely.
+Surgical site infection,5,10,7,Drainage and debridement matter more than duration.
+Bacterial meningitis,10,21,14,"10-14 days for pneumococcus, 21 for gram-negative meningitis."
+Febrile neutropenia,7,14,7,Continue until neutrophil recovery and the patient has been afebrile 48 hours.
+Enteric fever (typhoid),7,14,10,"7 days for azithromycin, 10-14 for ceftriaxone. Relapse is common if cut short."

@@ -2,11 +2,17 @@
 drug_a,drug_b,status,reason
 Cefixime,Azithromycin,BANNED,Prohibited FDC. No evidence of added benefit; drives resistance in both classes.
 Cefixime,Ofloxacin,BANNED,Prohibited FDC. Two broad agents combined without rationale.
+Cefixime,Levofloxacin,BANNED,Prohibited FDC. Irrational dual cover.
 Cefpodoxime,Levofloxacin,BANNED,Prohibited FDC. Irrational dual gram-negative cover.
+Cefpodoxime,Ofloxacin,BANNED,Prohibited FDC.
+Ceftriaxone,Sulbactam,IRRATIONAL,Sulbactam adds nothing to ceftriaxone against ESBL producers; widely marketed in India regardless.
 Ciprofloxacin,Tinidazole,IRRATIONAL,Widely sold; fixed ratio prevents independent dosing and encourages overuse.
 Ofloxacin,Ornidazole,IRRATIONAL,"Very common in Indian OPD for diarrhoea; little evidence, high resistance cost."
 Levofloxacin,Ornidazole,IRRATIONAL,Same pattern as ofloxacin-ornidazole.
+Norfloxacin,Tinidazole,IRRATIONAL,Same irrational pairing.
 Amoxicillin,Bromhexine,BANNED,Prohibited FDC. Mucolytic adds nothing to the antibiotic.
+Amoxicillin,Dicloxacillin,IRRATIONAL,Sub-therapeutic dicloxacillin component; does not reliably cover MSSA.
 Nimesulide,Paracetamol,BANNED,Prohibited FDC. Duplicated hepatotoxicity risk.
 Diclofenac,Serratiopeptidase,IRRATIONAL,No robust evidence for the enzyme component.
 Pioglitazone,Metformin+Glimepiride,RESTRICTED,"Triple oral FDC; restricted use, high hypoglycaemia risk."
+Chlorpheniramine,Codeine,RESTRICTED,Restricted; dependence and paediatric respiratory depression risk.

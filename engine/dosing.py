@@ -162,6 +162,51 @@ class CostResult:
         return round(self.brand_total / self.best_total, 1)
 
 
+@dataclass
+class DurationAdvice:
+    site: str
+    prescribed: int
+    typical: int
+    minimum: int
+    maximum: int
+    guidance: str
+
+    @property
+    def verdict(self) -> str:
+        if self.prescribed > self.maximum:
+            return "TOO LONG"
+        if self.prescribed < self.minimum:
+            return "TOO SHORT"
+        if self.prescribed > self.typical:
+            return "LONGER THAN NEEDED"
+        return "APPROPRIATE"
+
+    @property
+    def excess_days(self) -> int:
+        return max(0, self.prescribed - self.typical)
+
+
+def duration_advice(site: str, prescribed_days: int) -> DurationAdvice | None:
+    """Is this course the right length?
+
+    Course length is the most overlooked lever in stewardship. A decade of
+    trials has consistently found shorter to be non-inferior, yet Indian
+    prescriptions routinely run to ten or fourteen days out of habit. Every
+    extra day is resistance pressure and cost with no added cure.
+    """
+    row = data.duration_for(site)
+    if row is None:
+        return None
+    return DurationAdvice(
+        site=site,
+        prescribed=int(prescribed_days),
+        typical=int(row["typical_days"]),
+        minimum=int(row["min_days"]),
+        maximum=int(row["max_days"]),
+        guidance=str(row["guidance"]),
+    )
+
+
 def course_cost(antibiotic: str, days: int, dose_fraction: float = 1.0) -> CostResult:
     meta = data.drug_row(antibiotic)
     doses = int(meta["doses_per_day"])
@@ -177,3 +222,23 @@ def course_cost(antibiotic: str, days: int, dose_fraction: float = 1.0) -> CostR
         janaushadhi_total=round(ja_price * units, 2),
         janaushadhi_available=ja_price > 0,
     )
+
+
+def regimen_cost(
+    items: list[tuple[str, int, float]],
+) -> tuple[float, float, float]:
+    """Total cost of a whole prescription, not one line of it.
+
+    Patients are handed a slip with several drugs on it and pay for all of
+    them at once. `items` is a list of (antibiotic, days, dose_fraction).
+    Returns (brand total, cheapest-available total, saving).
+    """
+    brand = cheapest = 0.0
+    for name, days, fraction in items:
+        try:
+            cost = course_cost(name, days, fraction)
+        except KeyError:
+            continue
+        brand += cost.brand_total
+        cheapest += cost.best_total
+    return round(brand, 2), round(cheapest, 2), round(brand - cheapest, 2)

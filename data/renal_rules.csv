@@ -2,6 +2,8 @@
 antibiotic,crcl_min,crcl_max,action,dose_fraction,guidance
 Nitrofurantoin,0,30,CONTRAINDICATED,0.0,Fails to reach therapeutic urinary concentration and accumulates. Do not use below CrCl 30.
 Nitrofurantoin,30,999,KEEP,1.0,Standard dose.
+Fosfomycin,0,20,CONTRAINDICATED,0.0,Inadequate urinary concentration.
+Fosfomycin,20,999,KEEP,1.0,Single 3 g sachet.
 Amikacin,0,20,CONTRAINDICATED,0.0,Avoid; use an alternative or dose by levels only.
 Amikacin,20,40,EXTEND,0.5,Extend interval to 48 h; monitor trough levels.
 Amikacin,40,60,EXTEND,0.75,Extend interval to 36 h; monitor levels.
@@ -14,6 +16,8 @@ Meropenem,0,10,REDUCE,0.25,500 mg every 24 h.
 Meropenem,10,26,REDUCE,0.33,500 mg every 12 h.
 Meropenem,26,51,REDUCE,0.5,1 g every 12 h.
 Meropenem,51,999,KEEP,1.0,1 g every 8 h.
+Ertapenem,0,30,REDUCE,0.5,500 mg every 24 h.
+Ertapenem,30,999,KEEP,1.0,1 g every 24 h.
 Imipenem-Cilastatin,0,15,CONTRAINDICATED,0.0,Seizure risk; avoid unless on dialysis.
 Imipenem-Cilastatin,15,30,REDUCE,0.5,Halve the daily dose.
 Imipenem-Cilastatin,30,60,REDUCE,0.75,Reduce to 500 mg every 8 h.
@@ -21,10 +25,21 @@ Imipenem-Cilastatin,60,999,KEEP,1.0,Standard dose.
 Piperacillin-Tazobactam,0,20,REDUCE,0.5,2.25 g every 8 h.
 Piperacillin-Tazobactam,20,40,REDUCE,0.67,2.25 g every 6 h.
 Piperacillin-Tazobactam,40,999,KEEP,1.0,4.5 g every 6 h.
+Cefoperazone-Sulbactam,0,30,REDUCE,0.5,Sulbactam is renally cleared; halve the dose.
+Cefoperazone-Sulbactam,30,999,KEEP,1.0,Standard dose.
 Cefepime,0,11,REDUCE,0.25,500 mg every 24 h.
 Cefepime,11,30,REDUCE,0.5,1 g every 24 h.
 Cefepime,30,60,REDUCE,0.67,1 g every 12 h.
 Cefepime,60,999,KEEP,1.0,Standard dose.
+Ceftazidime,0,15,REDUCE,0.25,500 mg every 24 h.
+Ceftazidime,15,30,REDUCE,0.5,1 g every 24 h.
+Ceftazidime,30,50,REDUCE,0.67,1 g every 12 h.
+Ceftazidime,50,999,KEEP,1.0,Standard dose.
+Cefuroxime,0,10,REDUCE,0.33,750 mg every 24 h.
+Cefuroxime,10,20,REDUCE,0.5,750 mg every 12 h.
+Cefuroxime,20,999,KEEP,1.0,Standard dose.
+Cefixime,0,20,REDUCE,0.5,Halve the dose.
+Cefixime,20,999,KEEP,1.0,Standard dose.
 Ciprofloxacin,0,30,REDUCE,0.5,Halve the dose or extend to every 24 h.
 Ciprofloxacin,30,999,KEEP,1.0,Standard dose.
 Levofloxacin,0,20,REDUCE,0.25,250 mg every 48 h.
@@ -36,11 +51,21 @@ Cotrimoxazole,30,999,KEEP,1.0,Standard dose.
 Vancomycin,0,20,EXTEND,0.25,Dose by level only; interval often 48-72 h.
 Vancomycin,20,50,EXTEND,0.5,Extend interval; target trough 15-20 mg/L.
 Vancomycin,50,999,KEEP,1.0,Standard dose; still confirm by trough.
+Teicoplanin,0,30,EXTEND,0.33,Every third day after loading.
+Teicoplanin,30,60,EXTEND,0.5,Alternate days after loading.
+Teicoplanin,60,999,KEEP,1.0,Standard dose.
 Colistin,0,30,REDUCE,0.5,Substantial reduction; nephrotoxicity is dose-related.
 Colistin,30,60,REDUCE,0.75,Reduce maintenance dose.
 Colistin,60,999,KEEP,1.0,Standard dose.
+Ceftazidime-Avibactam,0,15,REDUCE,0.25,0.94 g every 48 h.
+Ceftazidime-Avibactam,15,30,REDUCE,0.375,0.94 g every 24 h.
+Ceftazidime-Avibactam,30,50,REDUCE,0.5,1.25 g every 8 h.
+Ceftazidime-Avibactam,50,999,KEEP,1.0,2.5 g every 8 h.
 Amoxicillin-Clavulanate,0,10,REDUCE,0.33,625 mg every 24 h.
 Amoxicillin-Clavulanate,10,30,REDUCE,0.67,625 mg every 12 h.
 Amoxicillin-Clavulanate,30,999,KEEP,1.0,625 mg every 8 h.
+Amoxicillin,0,10,REDUCE,0.33,500 mg every 24 h.
+Amoxicillin,10,30,REDUCE,0.67,500 mg every 12 h.
+Amoxicillin,30,999,KEEP,1.0,500 mg every 8 h.
 Ampicillin,0,10,EXTEND,0.5,Extend interval to every 12 h.
 Ampicillin,10,999,KEEP,1.0,Standard dose.

@@ -5,15 +5,26 @@ Linezolid,Tramadol,MAJOR,Serotonin syndrome risk.
 Ciprofloxacin,Warfarin,MAJOR,INR rises sharply; bleeding risk.
 Levofloxacin,Warfarin,MAJOR,INR rises sharply; bleeding risk.
 Cotrimoxazole,Warfarin,MAJOR,Marked INR elevation.
+Metronidazole,Warfarin,MAJOR,Potentiates anticoagulation.
+Metronidazole,Alcohol,MODERATE,Disulfiram-like reaction.
 Cotrimoxazole,Methotrexate,MAJOR,Additive myelosuppression.
+Linezolid,Methotrexate,MODERATE,Additive myelosuppression.
 Cotrimoxazole,ACE inhibitor / ARB,MODERATE,"Hyperkalaemia, especially in CKD."
+Cotrimoxazole,Spironolactone,MAJOR,Severe hyperkalaemia in older patients.
 Azithromycin,Ondansetron,MODERATE,Additive QT prolongation.
 Levofloxacin,Ondansetron,MODERATE,Additive QT prolongation.
 Azithromycin,Amiodarone,MAJOR,"QT prolongation, torsades risk."
+Levofloxacin,Amiodarone,MAJOR,"QT prolongation, torsades risk."
 Amikacin,Vancomycin,MAJOR,Additive nephrotoxicity.
 Gentamicin,Vancomycin,MAJOR,Additive nephrotoxicity.
 Amikacin,Furosemide,MODERATE,Additive oto- and nephrotoxicity.
 Gentamicin,Furosemide,MODERATE,Additive oto- and nephrotoxicity.
 Colistin,Amikacin,MAJOR,Compounded nephrotoxicity; monitor creatinine daily.
+Colistin,Vancomycin,MAJOR,Compounded nephrotoxicity.
+Vancomycin,Piperacillin-Tazobactam,MODERATE,This specific pair carries a higher acute kidney injury rate than either alone.
 Ciprofloxacin,Antacid / calcium / iron,MODERATE,Chelation cuts absorption. Separate doses by 2 hours.
+Levofloxacin,Antacid / calcium / iron,MODERATE,Chelation cuts absorption. Separate doses by 2 hours.
+Doxycycline,Antacid / calcium / iron,MODERATE,Chelation cuts absorption.
 Ciprofloxacin,Theophylline,MAJOR,Theophylline toxicity.
+Clindamycin,Neuromuscular blocker,MODERATE,Prolonged blockade.
+Linezolid,Rifampicin,MODERATE,Reduced linezolid exposure.

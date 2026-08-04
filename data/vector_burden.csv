@@ -1,0 +1,3110 @@
+# Indicative figures compiled from published ICMR-AMRSN / WHO GLASS / CDSCO / NPPA / NCVBDC patterns. Reconstructed for demonstration. Not for clinical use.
+disease,state,year,month,cases
+Dengue,Kerala,2018,1,50
+Dengue,Kerala,2018,2,42
+Dengue,Kerala,2018,3,41
+Dengue,Kerala,2018,4,54
+Dengue,Kerala,2018,5,91
+Dengue,Kerala,2018,6,153
+Dengue,Kerala,2018,7,290
+Dengue,Kerala,2018,8,424
+Dengue,Kerala,2018,9,803
+Dengue,Kerala,2018,10,875
+Dengue,Kerala,2018,11,783
+Dengue,Kerala,2018,12,421
+Dengue,Kerala,2019,1,60
+Dengue,Kerala,2019,2,52
+Dengue,Kerala,2019,3,56
+Dengue,Kerala,2019,4,64
+Dengue,Kerala,2019,5,109
+Dengue,Kerala,2019,6,184
+Dengue,Kerala,2019,7,331
+Dengue,Kerala,2019,8,551
+Dengue,Kerala,2019,9,961
+Dengue,Kerala,2019,10,1178
+Dengue,Kerala,2019,11,860
+Dengue,Kerala,2019,12,471
+Dengue,Kerala,2020,1,35
+Dengue,Kerala,2020,2,31
+Dengue,Kerala,2020,3,35
+Dengue,Kerala,2020,4,41
+Dengue,Kerala,2020,5,65
+Dengue,Kerala,2020,6,111
+Dengue,Kerala,2020,7,201
+Dengue,Kerala,2020,8,278
+Dengue,Kerala,2020,9,686
+Dengue,Kerala,2020,10,690
+Dengue,Kerala,2020,11,485
+Dengue,Kerala,2020,12,304
+Dengue,Kerala,2021,1,43
+Dengue,Kerala,2021,2,32
+Dengue,Kerala,2021,3,35
+Dengue,Kerala,2021,4,42
+Dengue,Kerala,2021,5,68
+Dengue,Kerala,2021,6,106
+Dengue,Kerala,2021,7,242
+Dengue,Kerala,2021,8,383
+Dengue,Kerala,2021,9,663
+Dengue,Kerala,2021,10,756
+Dengue,Kerala,2021,11,505
+Dengue,Kerala,2021,12,306
+Dengue,Kerala,2022,1,55
+Dengue,Kerala,2022,2,37
+Dengue,Kerala,2022,3,53
+Dengue,Kerala,2022,4,65
+Dengue,Kerala,2022,5,91
+Dengue,Kerala,2022,6,147
+Dengue,Kerala,2022,7,318
+Dengue,Kerala,2022,8,527
+Dengue,Kerala,2022,9,811
+Dengue,Kerala,2022,10,1129
+Dengue,Kerala,2022,11,710
+Dengue,Kerala,2022,12,440
+Dengue,Kerala,2023,1,121
+Dengue,Kerala,2023,2,94
+Dengue,Kerala,2023,3,103
+Dengue,Kerala,2023,4,125
+Dengue,Kerala,2023,5,200
+Dengue,Kerala,2023,6,329
+Dengue,Kerala,2023,7,647
+Dengue,Kerala,2023,8,857
+Dengue,Kerala,2023,9,2005
+Dengue,Kerala,2023,10,2264
+Dengue,Kerala,2023,11,1749
+Dengue,Kerala,2023,12,868
+Dengue,Kerala,2024,1,68
+Dengue,Kerala,2024,2,66
+Dengue,Kerala,2024,3,78
+Dengue,Kerala,2024,4,105
+Dengue,Kerala,2024,5,131
+Dengue,Kerala,2024,6,246
+Dengue,Kerala,2024,7,437
+Dengue,Kerala,2024,8,767
+Dengue,Kerala,2024,9,1222
+Dengue,Kerala,2024,10,1542
+Dengue,Kerala,2024,11,1132
+Dengue,Kerala,2024,12,616
+Dengue,Karnataka,2018,1,66
+Dengue,Karnataka,2018,2,54
+Dengue,Karnataka,2018,3,46
+Dengue,Karnataka,2018,4,79
+Dengue,Karnataka,2018,5,110
+Dengue,Karnataka,2018,6,148
+Dengue,Karnataka,2018,7,343
+Dengue,Karnataka,2018,8,620
+Dengue,Karnataka,2018,9,1050
+Dengue,Karnataka,2018,10,1179
+Dengue,Karnataka,2018,11,1010
+Dengue,Karnataka,2018,12,518
+Dengue,Karnataka,2019,1,225
+Dengue,Karnataka,2019,2,153
+Dengue,Karnataka,2019,3,205
+Dengue,Karnataka,2019,4,215
+Dengue,Karnataka,2019,5,328
+Dengue,Karnataka,2019,6,600
+Dengue,Karnataka,2019,7,1012
+Dengue,Karnataka,2019,8,1958
+Dengue,Karnataka,2019,9,2991
+Dengue,Karnataka,2019,10,4156
+Dengue,Karnataka,2019,11,2855
+Dengue,Karnataka,2019,12,1449
+Dengue,Karnataka,2020,1,47
+Dengue,Karnataka,2020,2,37
+Dengue,Karnataka,2020,3,39
+Dengue,Karnataka,2020,4,42
+Dengue,Karnataka,2020,5,84
+Dengue,Karnataka,2020,6,136
+Dengue,Karnataka,2020,7,280
+Dengue,Karnataka,2020,8,523
+Dengue,Karnataka,2020,9,779
+Dengue,Karnataka,2020,10,789
+Dengue,Karnataka,2020,11,743
+Dengue,Karnataka,2020,12,417
+Dengue,Karnataka,2021,1,88
+Dengue,Karnataka,2021,2,67
+Dengue,Karnataka,2021,3,78
+Dengue,Karnataka,2021,4,96
+Dengue,Karnataka,2021,5,135
+Dengue,Karnataka,2021,6,241
+Dengue,Karnataka,2021,7,483
+Dengue,Karnataka,2021,8,968
+Dengue,Karnataka,2021,9,1527
+Dengue,Karnataka,2021,10,1683
+Dengue,Karnataka,2021,11,1216
+Dengue,Karnataka,2021,12,737
+Dengue,Karnataka,2022,1,127
+Dengue,Karnataka,2022,2,93
+Dengue,Karnataka,2022,3,101
+Dengue,Karnataka,2022,4,131
+Dengue,Karnataka,2022,5,178
+Dengue,Karnataka,2022,6,337
+Dengue,Karnataka,2022,7,716
+Dengue,Karnataka,2022,8,1185
+Dengue,Karnataka,2022,9,1816
+Dengue,Karnataka,2022,10,2189
+Dengue,Karnataka,2022,11,1724
+Dengue,Karnataka,2022,12,1057
+Dengue,Karnataka,2023,1,227
+Dengue,Karnataka,2023,2,187
+Dengue,Karnataka,2023,3,228
+Dengue,Karnataka,2023,4,222
+Dengue,Karnataka,2023,5,393
+Dengue,Karnataka,2023,6,647
+Dengue,Karnataka,2023,7,1473
+Dengue,Karnataka,2023,8,2025
+Dengue,Karnataka,2023,9,4011
+Dengue,Karnataka,2023,10,3695
+Dengue,Karnataka,2023,11,3287
+Dengue,Karnataka,2023,12,2132
+Dengue,Karnataka,2024,1,149
+Dengue,Karnataka,2024,2,114
+Dengue,Karnataka,2024,3,130
+Dengue,Karnataka,2024,4,181
+Dengue,Karnataka,2024,5,294
+Dengue,Karnataka,2024,6,459
+Dengue,Karnataka,2024,7,777
+Dengue,Karnataka,2024,8,1338
+Dengue,Karnataka,2024,9,2219
+Dengue,Karnataka,2024,10,2320
+Dengue,Karnataka,2024,11,2510
+Dengue,Karnataka,2024,12,1217
+Dengue,Maharashtra,2018,1,97
+Dengue,Maharashtra,2018,2,85
+Dengue,Maharashtra,2018,3,83
+Dengue,Maharashtra,2018,4,106
+Dengue,Maharashtra,2018,5,170
+Dengue,Maharashtra,2018,6,295
+Dengue,Maharashtra,2018,7,505
+Dengue,Maharashtra,2018,8,1074
+Dengue,Maharashtra,2018,9,1642
+Dengue,Maharashtra,2018,10,1923
+Dengue,Maharashtra,2018,11,1392
+Dengue,Maharashtra,2018,12,827
+Dengue,Maharashtra,2019,1,136
+Dengue,Maharashtra,2019,2,162
+Dengue,Maharashtra,2019,3,162
+Dengue,Maharashtra,2019,4,191
+Dengue,Maharashtra,2019,5,276
+Dengue,Maharashtra,2019,6,493
+Dengue,Maharashtra,2019,7,805
+Dengue,Maharashtra,2019,8,1630
+Dengue,Maharashtra,2019,9,2579
+Dengue,Maharashtra,2019,10,3739
+Dengue,Maharashtra,2019,11,2867
+Dengue,Maharashtra,2019,12,1652
+Dengue,Maharashtra,2020,1,36
+Dengue,Maharashtra,2020,2,27
+Dengue,Maharashtra,2020,3,40
+Dengue,Maharashtra,2020,4,50
+Dengue,Maharashtra,2020,5,72
+Dengue,Maharashtra,2020,6,122
+Dengue,Maharashtra,2020,7,198
+Dengue,Maharashtra,2020,8,403
+Dengue,Maharashtra,2020,9,763
+Dengue,Maharashtra,2020,10,813
+Dengue,Maharashtra,2020,11,578
+Dengue,Maharashtra,2020,12,339
+Dengue,Maharashtra,2021,1,164
+Dengue,Maharashtra,2021,2,133
+Dengue,Maharashtra,2021,3,145
+Dengue,Maharashtra,2021,4,218
+Dengue,Maharashtra,2021,5,269
+Dengue,Maharashtra,2021,6,397
+Dengue,Maharashtra,2021,7,835
+Dengue,Maharashtra,2021,8,1477
+Dengue,Maharashtra,2021,9,2725
+Dengue,Maharashtra,2021,10,3211
+Dengue,Maharashtra,2021,11,2256
+Dengue,Maharashtra,2021,12,1522
+Dengue,Maharashtra,2022,1,104
+Dengue,Maharashtra,2022,2,79
+Dengue,Maharashtra,2022,3,96
+Dengue,Maharashtra,2022,4,108
+Dengue,Maharashtra,2022,5,175
+Dengue,Maharashtra,2022,6,312
+Dengue,Maharashtra,2022,7,548
+Dengue,Maharashtra,2022,8,1115
+Dengue,Maharashtra,2022,9,1721
+Dengue,Maharashtra,2022,10,2152
+Dengue,Maharashtra,2022,11,1376
+Dengue,Maharashtra,2022,12,1104
+Dengue,Maharashtra,2023,1,162
+Dengue,Maharashtra,2023,2,145
+Dengue,Maharashtra,2023,3,152
+Dengue,Maharashtra,2023,4,212
+Dengue,Maharashtra,2023,5,326
+Dengue,Maharashtra,2023,6,598
+Dengue,Maharashtra,2023,7,919
+Dengue,Maharashtra,2023,8,2030
+Dengue,Maharashtra,2023,9,2982
+Dengue,Maharashtra,2023,10,3410
+Dengue,Maharashtra,2023,11,2846
+Dengue,Maharashtra,2023,12,1644
+Dengue,Maharashtra,2024,1,147
+Dengue,Maharashtra,2024,2,129
+Dengue,Maharashtra,2024,3,128
+Dengue,Maharashtra,2024,4,163
+Dengue,Maharashtra,2024,5,244
+Dengue,Maharashtra,2024,6,410
+Dengue,Maharashtra,2024,7,775
+Dengue,Maharashtra,2024,8,1481
+Dengue,Maharashtra,2024,9,2174
+Dengue,Maharashtra,2024,10,2540
+Dengue,Maharashtra,2024,11,1899
+Dengue,Maharashtra,2024,12,1113
+Dengue,Tamil Nadu,2018,1,44
+Dengue,Tamil Nadu,2018,2,40
+Dengue,Tamil Nadu,2018,3,49
+Dengue,Tamil Nadu,2018,4,58
+Dengue,Tamil Nadu,2018,5,103
+Dengue,Tamil Nadu,2018,6,137
+Dengue,Tamil Nadu,2018,7,256
+Dengue,Tamil Nadu,2018,8,479
+Dengue,Tamil Nadu,2018,9,814
+Dengue,Tamil Nadu,2018,10,1126
+Dengue,Tamil Nadu,2018,11,828
+Dengue,Tamil Nadu,2018,12,497
+Dengue,Tamil Nadu,2019,1,110
+Dengue,Tamil Nadu,2019,2,84
+Dengue,Tamil Nadu,2019,3,95
+Dengue,Tamil Nadu,2019,4,127
+Dengue,Tamil Nadu,2019,5,183
+Dengue,Tamil Nadu,2019,6,289
+Dengue,Tamil Nadu,2019,7,619
+Dengue,Tamil Nadu,2019,8,1021
+Dengue,Tamil Nadu,2019,9,1747
+Dengue,Tamil Nadu,2019,10,1944
+Dengue,Tamil Nadu,2019,11,1486
+Dengue,Tamil Nadu,2019,12,928
+Dengue,Tamil Nadu,2020,1,28
+Dengue,Tamil Nadu,2020,2,26
+Dengue,Tamil Nadu,2020,3,25
+Dengue,Tamil Nadu,2020,4,31
+Dengue,Tamil Nadu,2020,5,45
+Dengue,Tamil Nadu,2020,6,82
+Dengue,Tamil Nadu,2020,7,161
+Dengue,Tamil Nadu,2020,8,341
+Dengue,Tamil Nadu,2020,9,519
+Dengue,Tamil Nadu,2020,10,580
+Dengue,Tamil Nadu,2020,11,465
+Dengue,Tamil Nadu,2020,12,281
+Dengue,Tamil Nadu,2021,1,63
+Dengue,Tamil Nadu,2021,2,63
+Dengue,Tamil Nadu,2021,3,61
+Dengue,Tamil Nadu,2021,4,83
+Dengue,Tamil Nadu,2021,5,132
+Dengue,Tamil Nadu,2021,6,213
+Dengue,Tamil Nadu,2021,7,431
+Dengue,Tamil Nadu,2021,8,664
+Dengue,Tamil Nadu,2021,9,1062
+Dengue,Tamil Nadu,2021,10,1601
+Dengue,Tamil Nadu,2021,11,1326
+Dengue,Tamil Nadu,2021,12,567
+Dengue,Tamil Nadu,2022,1,75
+Dengue,Tamil Nadu,2022,2,50
+Dengue,Tamil Nadu,2022,3,62
+Dengue,Tamil Nadu,2022,4,87
+Dengue,Tamil Nadu,2022,5,153
+Dengue,Tamil Nadu,2022,6,202
+Dengue,Tamil Nadu,2022,7,377
+Dengue,Tamil Nadu,2022,8,755
+Dengue,Tamil Nadu,2022,9,1310
+Dengue,Tamil Nadu,2022,10,1622
+Dengue,Tamil Nadu,2022,11,1111
+Dengue,Tamil Nadu,2022,12,563
+Dengue,Tamil Nadu,2023,1,124
+Dengue,Tamil Nadu,2023,2,98
+Dengue,Tamil Nadu,2023,3,108
+Dengue,Tamil Nadu,2023,4,126
+Dengue,Tamil Nadu,2023,5,215
+Dengue,Tamil Nadu,2023,6,343
+Dengue,Tamil Nadu,2023,7,535
+Dengue,Tamil Nadu,2023,8,1012
+Dengue,Tamil Nadu,2023,9,1925
+Dengue,Tamil Nadu,2023,10,1914
+Dengue,Tamil Nadu,2023,11,1439
+Dengue,Tamil Nadu,2023,12,980
+Dengue,Tamil Nadu,2024,1,81
+Dengue,Tamil Nadu,2024,2,84
+Dengue,Tamil Nadu,2024,3,91
+Dengue,Tamil Nadu,2024,4,96
+Dengue,Tamil Nadu,2024,5,161
+Dengue,Tamil Nadu,2024,6,253
+Dengue,Tamil Nadu,2024,7,469
+Dengue,Tamil Nadu,2024,8,840
+Dengue,Tamil Nadu,2024,9,1492
+Dengue,Tamil Nadu,2024,10,1286
+Dengue,Tamil Nadu,2024,11,1338
+Dengue,Tamil Nadu,2024,12,790
+Dengue,Delhi,2018,1,37
+Dengue,Delhi,2018,2,30
+Dengue,Delhi,2018,3,30
+Dengue,Delhi,2018,4,43
+Dengue,Delhi,2018,5,53
+Dengue,Delhi,2018,6,111
+Dengue,Delhi,2018,7,198
+Dengue,Delhi,2018,8,343
+Dengue,Delhi,2018,9,528
+Dengue,Delhi,2018,10,600
+Dengue,Delhi,2018,11,491
+Dengue,Delhi,2018,12,269
+Dengue,Delhi,2019,1,26
+Dengue,Delhi,2019,2,20
+Dengue,Delhi,2019,3,20
+Dengue,Delhi,2019,4,30
+Dengue,Delhi,2019,5,44
+Dengue,Delhi,2019,6,70
+Dengue,Delhi,2019,7,142
+Dengue,Delhi,2019,8,253
+Dengue,Delhi,2019,9,445
+Dengue,Delhi,2019,10,454
+Dengue,Delhi,2019,11,358
+Dengue,Delhi,2019,12,228
+Dengue,Delhi,2020,1,13
+Dengue,Delhi,2020,2,12
+Dengue,Delhi,2020,3,12
+Dengue,Delhi,2020,4,16
+Dengue,Delhi,2020,5,20
+Dengue,Delhi,2020,6,41
+Dengue,Delhi,2020,7,75
+Dengue,Delhi,2020,8,141
+Dengue,Delhi,2020,9,205
+Dengue,Delhi,2020,10,239
+Dengue,Delhi,2020,11,201
+Dengue,Delhi,2020,12,107
+Dengue,Delhi,2021,1,117
+Dengue,Delhi,2021,2,98
+Dengue,Delhi,2021,3,109
+Dengue,Delhi,2021,4,150
+Dengue,Delhi,2021,5,217
+Dengue,Delhi,2021,6,308
+Dengue,Delhi,2021,7,680
+Dengue,Delhi,2021,8,1121
+Dengue,Delhi,2021,9,1653
+Dengue,Delhi,2021,10,2182
+Dengue,Delhi,2021,11,2017
+Dengue,Delhi,2021,12,965
+Dengue,Delhi,2022,1,54
+Dengue,Delhi,2022,2,36
+Dengue,Delhi,2022,3,53
+Dengue,Delhi,2022,4,54
+Dengue,Delhi,2022,5,88
+Dengue,Delhi,2022,6,150
+Dengue,Delhi,2022,7,308
+Dengue,Delhi,2022,8,496
+Dengue,Delhi,2022,9,910
+Dengue,Delhi,2022,10,1155
+Dengue,Delhi,2022,11,772
+Dengue,Delhi,2022,12,515
+Dengue,Delhi,2023,1,126
+Dengue,Delhi,2023,2,86
+Dengue,Delhi,2023,3,110
+Dengue,Delhi,2023,4,116
+Dengue,Delhi,2023,5,206
+Dengue,Delhi,2023,6,334
+Dengue,Delhi,2023,7,593
+Dengue,Delhi,2023,8,1087
+Dengue,Delhi,2023,9,1708
+Dengue,Delhi,2023,10,2139
+Dengue,Delhi,2023,11,1675
+Dengue,Delhi,2023,12,996
+Dengue,Delhi,2024,1,72
+Dengue,Delhi,2024,2,55
+Dengue,Delhi,2024,3,51
+Dengue,Delhi,2024,4,81
+Dengue,Delhi,2024,5,110
+Dengue,Delhi,2024,6,208
+Dengue,Delhi,2024,7,342
+Dengue,Delhi,2024,8,626
+Dengue,Delhi,2024,9,933
+Dengue,Delhi,2024,10,1313
+Dengue,Delhi,2024,11,1015
+Dengue,Delhi,2024,12,534
+Dengue,Uttar Pradesh,2018,1,38
+Dengue,Uttar Pradesh,2018,2,26
+Dengue,Uttar Pradesh,2018,3,39
+Dengue,Uttar Pradesh,2018,4,47
+Dengue,Uttar Pradesh,2018,5,68
+Dengue,Uttar Pradesh,2018,6,110
+Dengue,Uttar Pradesh,2018,7,228
+Dengue,Uttar Pradesh,2018,8,434
+Dengue,Uttar Pradesh,2018,9,607
+Dengue,Uttar Pradesh,2018,10,742
+Dengue,Uttar Pradesh,2018,11,677
+Dengue,Uttar Pradesh,2018,12,285
+Dengue,Uttar Pradesh,2019,1,130
+Dengue,Uttar Pradesh,2019,2,102
+Dengue,Uttar Pradesh,2019,3,120
+Dengue,Uttar Pradesh,2019,4,141
+Dengue,Uttar Pradesh,2019,5,238
+Dengue,Uttar Pradesh,2019,6,376
+Dengue,Uttar Pradesh,2019,7,792
+Dengue,Uttar Pradesh,2019,8,1251
+Dengue,Uttar Pradesh,2019,9,1954
+Dengue,Uttar Pradesh,2019,10,2335
+Dengue,Uttar Pradesh,2019,11,1782
+Dengue,Uttar Pradesh,2019,12,1153
+Dengue,Uttar Pradesh,2020,1,44
+Dengue,Uttar Pradesh,2020,2,36
+Dengue,Uttar Pradesh,2020,3,37
+Dengue,Uttar Pradesh,2020,4,45
+Dengue,Uttar Pradesh,2020,5,87
+Dengue,Uttar Pradesh,2020,6,126
+Dengue,Uttar Pradesh,2020,7,249
+Dengue,Uttar Pradesh,2020,8,466
+Dengue,Uttar Pradesh,2020,9,773
+Dengue,Uttar Pradesh,2020,10,826
+Dengue,Uttar Pradesh,2020,11,673
+Dengue,Uttar Pradesh,2020,12,333
+Dengue,Uttar Pradesh,2021,1,375
+Dengue,Uttar Pradesh,2021,2,320
+Dengue,Uttar Pradesh,2021,3,390
+Dengue,Uttar Pradesh,2021,4,403
+Dengue,Uttar Pradesh,2021,5,521
+Dengue,Uttar Pradesh,2021,6,1034
+Dengue,Uttar Pradesh,2021,7,2120
+Dengue,Uttar Pradesh,2021,8,3808
+Dengue,Uttar Pradesh,2021,9,6160
+Dengue,Uttar Pradesh,2021,10,6821
+Dengue,Uttar Pradesh,2021,11,5782
+Dengue,Uttar Pradesh,2021,12,2987
+Dengue,Uttar Pradesh,2022,1,223
+Dengue,Uttar Pradesh,2022,2,188
+Dengue,Uttar Pradesh,2022,3,252
+Dengue,Uttar Pradesh,2022,4,254
+Dengue,Uttar Pradesh,2022,5,368
+Dengue,Uttar Pradesh,2022,6,631
+Dengue,Uttar Pradesh,2022,7,1270
+Dengue,Uttar Pradesh,2022,8,2594
+Dengue,Uttar Pradesh,2022,9,3448
+Dengue,Uttar Pradesh,2022,10,3976
+Dengue,Uttar Pradesh,2022,11,4094
+Dengue,Uttar Pradesh,2022,12,1882
+Dengue,Uttar Pradesh,2023,1,145
+Dengue,Uttar Pradesh,2023,2,117
+Dengue,Uttar Pradesh,2023,3,137
+Dengue,Uttar Pradesh,2023,4,171
+Dengue,Uttar Pradesh,2023,5,272
+Dengue,Uttar Pradesh,2023,6,424
+Dengue,Uttar Pradesh,2023,7,767
+Dengue,Uttar Pradesh,2023,8,1482
+Dengue,Uttar Pradesh,2023,9,2360
+Dengue,Uttar Pradesh,2023,10,2574
+Dengue,Uttar Pradesh,2023,11,2077
+Dengue,Uttar Pradesh,2023,12,1276
+Dengue,Uttar Pradesh,2024,1,126
+Dengue,Uttar Pradesh,2024,2,92
+Dengue,Uttar Pradesh,2024,3,112
+Dengue,Uttar Pradesh,2024,4,143
+Dengue,Uttar Pradesh,2024,5,178
+Dengue,Uttar Pradesh,2024,6,324
+Dengue,Uttar Pradesh,2024,7,655
+Dengue,Uttar Pradesh,2024,8,1298
+Dengue,Uttar Pradesh,2024,9,1946
+Dengue,Uttar Pradesh,2024,10,2160
+Dengue,Uttar Pradesh,2024,11,1884
+Dengue,Uttar Pradesh,2024,12,981
+Dengue,West Bengal,2018,1,49
+Dengue,West Bengal,2018,2,41
+Dengue,West Bengal,2018,3,47
+Dengue,West Bengal,2018,4,59
+Dengue,West Bengal,2018,5,101
+Dengue,West Bengal,2018,6,153
+Dengue,West Bengal,2018,7,248
+Dengue,West Bengal,2018,8,473
+Dengue,West Bengal,2018,9,707
+Dengue,West Bengal,2018,10,1109
+Dengue,West Bengal,2018,11,683
+Dengue,West Bengal,2018,12,434
+Dengue,West Bengal,2019,1,88
+Dengue,West Bengal,2019,2,71
+Dengue,West Bengal,2019,3,80
+Dengue,West Bengal,2019,4,97
+Dengue,West Bengal,2019,5,138
+Dengue,West Bengal,2019,6,258
+Dengue,West Bengal,2019,7,477
+Dengue,West Bengal,2019,8,888
+Dengue,West Bengal,2019,9,1065
+Dengue,West Bengal,2019,10,1733
+Dengue,West Bengal,2019,11,1099
+Dengue,West Bengal,2019,12,688
+Dengue,West Bengal,2020,1,18
+Dengue,West Bengal,2020,2,17
+Dengue,West Bengal,2020,3,17
+Dengue,West Bengal,2020,4,18
+Dengue,West Bengal,2020,5,31
+Dengue,West Bengal,2020,6,53
+Dengue,West Bengal,2020,7,95
+Dengue,West Bengal,2020,8,159
+Dengue,West Bengal,2020,9,283
+Dengue,West Bengal,2020,10,390
+Dengue,West Bengal,2020,11,282
+Dengue,West Bengal,2020,12,143
+Dengue,West Bengal,2021,1,101
+Dengue,West Bengal,2021,2,79
+Dengue,West Bengal,2021,3,84
+Dengue,West Bengal,2021,4,114
+Dengue,West Bengal,2021,5,181
+Dengue,West Bengal,2021,6,287
+Dengue,West Bengal,2021,7,515
+Dengue,West Bengal,2021,8,905
+Dengue,West Bengal,2021,9,1750
+Dengue,West Bengal,2021,10,1924
+Dengue,West Bengal,2021,11,1305
+Dengue,West Bengal,2021,12,990
+Dengue,West Bengal,2022,1,282
+Dengue,West Bengal,2022,2,225
+Dengue,West Bengal,2022,3,234
+Dengue,West Bengal,2022,4,357
+Dengue,West Bengal,2022,5,514
+Dengue,West Bengal,2022,6,898
+Dengue,West Bengal,2022,7,1848
+Dengue,West Bengal,2022,8,3053
+Dengue,West Bengal,2022,9,4672
+Dengue,West Bengal,2022,10,5054
+Dengue,West Bengal,2022,11,4090
+Dengue,West Bengal,2022,12,2181
+Dengue,West Bengal,2023,1,135
+Dengue,West Bengal,2023,2,94
+Dengue,West Bengal,2023,3,125
+Dengue,West Bengal,2023,4,148
+Dengue,West Bengal,2023,5,268
+Dengue,West Bengal,2023,6,406
+Dengue,West Bengal,2023,7,765
+Dengue,West Bengal,2023,8,1163
+Dengue,West Bengal,2023,9,2254
+Dengue,West Bengal,2023,10,2801
+Dengue,West Bengal,2023,11,1700
+Dengue,West Bengal,2023,12,1175
+Dengue,West Bengal,2024,1,112
+Dengue,West Bengal,2024,2,80
+Dengue,West Bengal,2024,3,104
+Dengue,West Bengal,2024,4,132
+Dengue,West Bengal,2024,5,178
+Dengue,West Bengal,2024,6,340
+Dengue,West Bengal,2024,7,515
+Dengue,West Bengal,2024,8,1096
+Dengue,West Bengal,2024,9,1828
+Dengue,West Bengal,2024,10,2148
+Dengue,West Bengal,2024,11,1700
+Dengue,West Bengal,2024,12,843
+Dengue,Rajasthan,2018,1,114
+Dengue,Rajasthan,2018,2,111
+Dengue,Rajasthan,2018,3,88
+Dengue,Rajasthan,2018,4,136
+Dengue,Rajasthan,2018,5,217
+Dengue,Rajasthan,2018,6,369
+Dengue,Rajasthan,2018,7,715
+Dengue,Rajasthan,2018,8,1116
+Dengue,Rajasthan,2018,9,1810
+Dengue,Rajasthan,2018,10,2058
+Dengue,Rajasthan,2018,11,1812
+Dengue,Rajasthan,2018,12,859
+Dengue,Rajasthan,2019,1,170
+Dengue,Rajasthan,2019,2,144
+Dengue,Rajasthan,2019,3,143
+Dengue,Rajasthan,2019,4,220
+Dengue,Rajasthan,2019,5,252
+Dengue,Rajasthan,2019,6,552
+Dengue,Rajasthan,2019,7,935
+Dengue,Rajasthan,2019,8,1689
+Dengue,Rajasthan,2019,9,2804
+Dengue,Rajasthan,2019,10,2977
+Dengue,Rajasthan,2019,11,2898
+Dengue,Rajasthan,2019,12,1358
+Dengue,Rajasthan,2020,1,26
+Dengue,Rajasthan,2020,2,21
+Dengue,Rajasthan,2020,3,24
+Dengue,Rajasthan,2020,4,29
+Dengue,Rajasthan,2020,5,42
+Dengue,Rajasthan,2020,6,72
+Dengue,Rajasthan,2020,7,139
+Dengue,Rajasthan,2020,8,240
+Dengue,Rajasthan,2020,9,380
+Dengue,Rajasthan,2020,10,431
+Dengue,Rajasthan,2020,11,435
+Dengue,Rajasthan,2020,12,240
+Dengue,Rajasthan,2021,1,150
+Dengue,Rajasthan,2021,2,111
+Dengue,Rajasthan,2021,3,110
+Dengue,Rajasthan,2021,4,158
+Dengue,Rajasthan,2021,5,290
+Dengue,Rajasthan,2021,6,476
+Dengue,Rajasthan,2021,7,884
+Dengue,Rajasthan,2021,8,1304
+Dengue,Rajasthan,2021,9,2437
+Dengue,Rajasthan,2021,10,2722
+Dengue,Rajasthan,2021,11,2208
+Dengue,Rajasthan,2021,12,1166
+Dengue,Rajasthan,2022,1,140
+Dengue,Rajasthan,2022,2,100
+Dengue,Rajasthan,2022,3,143
+Dengue,Rajasthan,2022,4,148
+Dengue,Rajasthan,2022,5,243
+Dengue,Rajasthan,2022,6,454
+Dengue,Rajasthan,2022,7,616
+Dengue,Rajasthan,2022,8,1008
+Dengue,Rajasthan,2022,9,2318
+Dengue,Rajasthan,2022,10,2363
+Dengue,Rajasthan,2022,11,2376
+Dengue,Rajasthan,2022,12,1334
+Dengue,Rajasthan,2023,1,110
+Dengue,Rajasthan,2023,2,85
+Dengue,Rajasthan,2023,3,106
+Dengue,Rajasthan,2023,4,151
+Dengue,Rajasthan,2023,5,228
+Dengue,Rajasthan,2023,6,312
+Dengue,Rajasthan,2023,7,607
+Dengue,Rajasthan,2023,8,1066
+Dengue,Rajasthan,2023,9,1823
+Dengue,Rajasthan,2023,10,2422
+Dengue,Rajasthan,2023,11,1712
+Dengue,Rajasthan,2023,12,1040
+Dengue,Rajasthan,2024,1,82
+Dengue,Rajasthan,2024,2,78
+Dengue,Rajasthan,2024,3,79
+Dengue,Rajasthan,2024,4,109
+Dengue,Rajasthan,2024,5,144
+Dengue,Rajasthan,2024,6,221
+Dengue,Rajasthan,2024,7,464
+Dengue,Rajasthan,2024,8,834
+Dengue,Rajasthan,2024,9,1614
+Dengue,Rajasthan,2024,10,1646
+Dengue,Rajasthan,2024,11,1293
+Dengue,Rajasthan,2024,12,698
+Dengue,Gujarat,2018,1,44
+Dengue,Gujarat,2018,2,42
+Dengue,Gujarat,2018,3,47
+Dengue,Gujarat,2018,4,59
+Dengue,Gujarat,2018,5,88
+Dengue,Gujarat,2018,6,133
+Dengue,Gujarat,2018,7,305
+Dengue,Gujarat,2018,8,573
+Dengue,Gujarat,2018,9,909
+Dengue,Gujarat,2018,10,953
+Dengue,Gujarat,2018,11,794
+Dengue,Gujarat,2018,12,475
+Dengue,Gujarat,2019,1,200
+Dengue,Gujarat,2019,2,194
+Dengue,Gujarat,2019,3,215
+Dengue,Gujarat,2019,4,263
+Dengue,Gujarat,2019,5,394
+Dengue,Gujarat,2019,6,611
+Dengue,Gujarat,2019,7,1416
+Dengue,Gujarat,2019,8,2311
+Dengue,Gujarat,2019,9,3772
+Dengue,Gujarat,2019,10,4840
+Dengue,Gujarat,2019,11,2928
+Dengue,Gujarat,2019,12,2122
+Dengue,Gujarat,2020,1,18
+Dengue,Gujarat,2020,2,18
+Dengue,Gujarat,2020,3,16
+Dengue,Gujarat,2020,4,23
+Dengue,Gujarat,2020,5,34
+Dengue,Gujarat,2020,6,47
+Dengue,Gujarat,2020,7,112
+Dengue,Gujarat,2020,8,166
+Dengue,Gujarat,2020,9,313
+Dengue,Gujarat,2020,10,351
+Dengue,Gujarat,2020,11,325
+Dengue,Gujarat,2020,12,173
+Dengue,Gujarat,2021,1,76
+Dengue,Gujarat,2021,2,70
+Dengue,Gujarat,2021,3,76
+Dengue,Gujarat,2021,4,82
+Dengue,Gujarat,2021,5,120
+Dengue,Gujarat,2021,6,219
+Dengue,Gujarat,2021,7,465
+Dengue,Gujarat,2021,8,733
+Dengue,Gujarat,2021,9,1381
+Dengue,Gujarat,2021,10,1395
+Dengue,Gujarat,2021,11,1101
+Dengue,Gujarat,2021,12,720
+Dengue,Gujarat,2022,1,61
+Dengue,Gujarat,2022,2,41
+Dengue,Gujarat,2022,3,59
+Dengue,Gujarat,2022,4,65
+Dengue,Gujarat,2022,5,100
+Dengue,Gujarat,2022,6,156
+Dengue,Gujarat,2022,7,346
+Dengue,Gujarat,2022,8,492
+Dengue,Gujarat,2022,9,878
+Dengue,Gujarat,2022,10,1043
+Dengue,Gujarat,2022,11,849
+Dengue,Gujarat,2022,12,509
+Dengue,Gujarat,2023,1,69
+Dengue,Gujarat,2023,2,69
+Dengue,Gujarat,2023,3,66
+Dengue,Gujarat,2023,4,92
+Dengue,Gujarat,2023,5,131
+Dengue,Gujarat,2023,6,199
+Dengue,Gujarat,2023,7,370
+Dengue,Gujarat,2023,8,708
+Dengue,Gujarat,2023,9,1257
+Dengue,Gujarat,2023,10,1642
+Dengue,Gujarat,2023,11,1221
+Dengue,Gujarat,2023,12,585
+Dengue,Gujarat,2024,1,52
+Dengue,Gujarat,2024,2,46
+Dengue,Gujarat,2024,3,48
+Dengue,Gujarat,2024,4,62
+Dengue,Gujarat,2024,5,100
+Dengue,Gujarat,2024,6,141
+Dengue,Gujarat,2024,7,343
+Dengue,Gujarat,2024,8,533
+Dengue,Gujarat,2024,9,996
+Dengue,Gujarat,2024,10,1085
+Dengue,Gujarat,2024,11,926
+Dengue,Gujarat,2024,12,496
+Dengue,Madhya Pradesh,2018,1,40
+Dengue,Madhya Pradesh,2018,2,34
+Dengue,Madhya Pradesh,2018,3,41
+Dengue,Madhya Pradesh,2018,4,51
+Dengue,Madhya Pradesh,2018,5,75
+Dengue,Madhya Pradesh,2018,6,128
+Dengue,Madhya Pradesh,2018,7,235
+Dengue,Madhya Pradesh,2018,8,477
+Dengue,Madhya Pradesh,2018,9,692
+Dengue,Madhya Pradesh,2018,10,1046
+Dengue,Madhya Pradesh,2018,11,661
+Dengue,Madhya Pradesh,2018,12,366
+Dengue,Madhya Pradesh,2019,1,49
+Dengue,Madhya Pradesh,2019,2,38
+Dengue,Madhya Pradesh,2019,3,42
+Dengue,Madhya Pradesh,2019,4,49
+Dengue,Madhya Pradesh,2019,5,71
+Dengue,Madhya Pradesh,2019,6,148
+Dengue,Madhya Pradesh,2019,7,271
+Dengue,Madhya Pradesh,2019,8,450
+Dengue,Madhya Pradesh,2019,9,823
+Dengue,Madhya Pradesh,2019,10,915
+Dengue,Madhya Pradesh,2019,11,650
+Dengue,Madhya Pradesh,2019,12,407
+Dengue,Madhya Pradesh,2020,1,14
+Dengue,Madhya Pradesh,2020,2,11
+Dengue,Madhya Pradesh,2020,3,11
+Dengue,Madhya Pradesh,2020,4,18
+Dengue,Madhya Pradesh,2020,5,24
+Dengue,Madhya Pradesh,2020,6,39
+Dengue,Madhya Pradesh,2020,7,71
+Dengue,Madhya Pradesh,2020,8,112
+Dengue,Madhya Pradesh,2020,9,243
+Dengue,Madhya Pradesh,2020,10,291
+Dengue,Madhya Pradesh,2020,11,210
+Dengue,Madhya Pradesh,2020,12,130
+Dengue,Madhya Pradesh,2021,1,165
+Dengue,Madhya Pradesh,2021,2,115
+Dengue,Madhya Pradesh,2021,3,149
+Dengue,Madhya Pradesh,2021,4,153
+Dengue,Madhya Pradesh,2021,5,280
+Dengue,Madhya Pradesh,2021,6,399
+Dengue,Madhya Pradesh,2021,7,845
+Dengue,Madhya Pradesh,2021,8,1333
+Dengue,Madhya Pradesh,2021,9,2122
+Dengue,Madhya Pradesh,2021,10,2692
+Dengue,Madhya Pradesh,2021,11,2272
+Dengue,Madhya Pradesh,2021,12,1325
+Dengue,Madhya Pradesh,2022,1,57
+Dengue,Madhya Pradesh,2022,2,53
+Dengue,Madhya Pradesh,2022,3,54
+Dengue,Madhya Pradesh,2022,4,76
+Dengue,Madhya Pradesh,2022,5,90
+Dengue,Madhya Pradesh,2022,6,172
+Dengue,Madhya Pradesh,2022,7,272
+Dengue,Madhya Pradesh,2022,8,574
+Dengue,Madhya Pradesh,2022,9,929
+Dengue,Madhya Pradesh,2022,10,1074
+Dengue,Madhya Pradesh,2022,11,892
+Dengue,Madhya Pradesh,2022,12,527
+Dengue,Madhya Pradesh,2023,1,49
+Dengue,Madhya Pradesh,2023,2,34
+Dengue,Madhya Pradesh,2023,3,44
+Dengue,Madhya Pradesh,2023,4,61
+Dengue,Madhya Pradesh,2023,5,77
+Dengue,Madhya Pradesh,2023,6,124
+Dengue,Madhya Pradesh,2023,7,320
+Dengue,Madhya Pradesh,2023,8,467
+Dengue,Madhya Pradesh,2023,9,786
+Dengue,Madhya Pradesh,2023,10,1102
+Dengue,Madhya Pradesh,2023,11,730
+Dengue,Madhya Pradesh,2023,12,489
+Dengue,Madhya Pradesh,2024,1,39
+Dengue,Madhya Pradesh,2024,2,35
+Dengue,Madhya Pradesh,2024,3,39
+Dengue,Madhya Pradesh,2024,4,53
+Dengue,Madhya Pradesh,2024,5,62
+Dengue,Madhya Pradesh,2024,6,109
+Dengue,Madhya Pradesh,2024,7,205
+Dengue,Madhya Pradesh,2024,8,440
+Dengue,Madhya Pradesh,2024,9,654
+Dengue,Madhya Pradesh,2024,10,960
+Dengue,Madhya Pradesh,2024,11,545
+Dengue,Madhya Pradesh,2024,12,359
+Dengue,Punjab,2018,1,182
+Dengue,Punjab,2018,2,138
+Dengue,Punjab,2018,3,184
+Dengue,Punjab,2018,4,212
+Dengue,Punjab,2018,5,314
+Dengue,Punjab,2018,6,496
+Dengue,Punjab,2018,7,1066
+Dengue,Punjab,2018,8,1904
+Dengue,Punjab,2018,9,2951
+Dengue,Punjab,2018,10,2875
+Dengue,Punjab,2018,11,3118
+Dengue,Punjab,2018,12,1440
+Dengue,Punjab,2019,1,127
+Dengue,Punjab,2019,2,107
+Dengue,Punjab,2019,3,148
+Dengue,Punjab,2019,4,146
+Dengue,Punjab,2019,5,206
+Dengue,Punjab,2019,6,380
+Dengue,Punjab,2019,7,638
+Dengue,Punjab,2019,8,1197
+Dengue,Punjab,2019,9,1840
+Dengue,Punjab,2019,10,2602
+Dengue,Punjab,2019,11,2169
+Dengue,Punjab,2019,12,920
+Dengue,Punjab,2020,1,104
+Dengue,Punjab,2020,2,90
+Dengue,Punjab,2020,3,90
+Dengue,Punjab,2020,4,131
+Dengue,Punjab,2020,5,181
+Dengue,Punjab,2020,6,292
+Dengue,Punjab,2020,7,662
+Dengue,Punjab,2020,8,814
+Dengue,Punjab,2020,9,1969
+Dengue,Punjab,2020,10,2085
+Dengue,Punjab,2020,11,1321
+Dengue,Punjab,2020,12,753
+Dengue,Punjab,2021,1,291
+Dengue,Punjab,2021,2,242
+Dengue,Punjab,2021,3,297
+Dengue,Punjab,2021,4,338
+Dengue,Punjab,2021,5,563
+Dengue,Punjab,2021,6,770
+Dengue,Punjab,2021,7,1667
+Dengue,Punjab,2021,8,2700
+Dengue,Punjab,2021,9,4926
+Dengue,Punjab,2021,10,5452
+Dengue,Punjab,2021,11,3955
+Dengue,Punjab,2021,12,2353
+Dengue,Punjab,2022,1,118
+Dengue,Punjab,2022,2,114
+Dengue,Punjab,2022,3,108
+Dengue,Punjab,2022,4,137
+Dengue,Punjab,2022,5,230
+Dengue,Punjab,2022,6,337
+Dengue,Punjab,2022,7,736
+Dengue,Punjab,2022,8,1260
+Dengue,Punjab,2022,9,2026
+Dengue,Punjab,2022,10,2331
+Dengue,Punjab,2022,11,2007
+Dengue,Punjab,2022,12,949
+Dengue,Punjab,2023,1,98
+Dengue,Punjab,2023,2,80
+Dengue,Punjab,2023,3,93
+Dengue,Punjab,2023,4,107
+Dengue,Punjab,2023,5,129
+Dengue,Punjab,2023,6,292
+Dengue,Punjab,2023,7,448
+Dengue,Punjab,2023,8,926
+Dengue,Punjab,2023,9,1717
+Dengue,Punjab,2023,10,1763
+Dengue,Punjab,2023,11,1670
+Dengue,Punjab,2023,12,825
+Dengue,Punjab,2024,1,78
+Dengue,Punjab,2024,2,61
+Dengue,Punjab,2024,3,69
+Dengue,Punjab,2024,4,72
+Dengue,Punjab,2024,5,113
+Dengue,Punjab,2024,6,210
+Dengue,Punjab,2024,7,437
+Dengue,Punjab,2024,8,760
+Dengue,Punjab,2024,9,1420
+Dengue,Punjab,2024,10,1505
+Dengue,Punjab,2024,11,1061
+Dengue,Punjab,2024,12,586
+Dengue,Haryana,2018,1,22
+Dengue,Haryana,2018,2,18
+Dengue,Haryana,2018,3,20
+Dengue,Haryana,2018,4,25
+Dengue,Haryana,2018,5,36
+Dengue,Haryana,2018,6,70
+Dengue,Haryana,2018,7,115
+Dengue,Haryana,2018,8,242
+Dengue,Haryana,2018,9,378
+Dengue,Haryana,2018,10,411
+Dengue,Haryana,2018,11,331
+Dengue,Haryana,2018,12,190
+Dengue,Haryana,2019,1,13
+Dengue,Haryana,2019,2,13
+Dengue,Haryana,2019,3,12
+Dengue,Haryana,2019,4,18
+Dengue,Haryana,2019,5,25
+Dengue,Haryana,2019,6,45
+Dengue,Haryana,2019,7,82
+Dengue,Haryana,2019,8,154
+Dengue,Haryana,2019,9,269
+Dengue,Haryana,2019,10,258
+Dengue,Haryana,2019,11,197
+Dengue,Haryana,2019,12,129
+Dengue,Haryana,2020,1,18
+Dengue,Haryana,2020,2,13
+Dengue,Haryana,2020,3,15
+Dengue,Haryana,2020,4,21
+Dengue,Haryana,2020,5,30
+Dengue,Haryana,2020,6,53
+Dengue,Haryana,2020,7,94
+Dengue,Haryana,2020,8,158
+Dengue,Haryana,2020,9,287
+Dengue,Haryana,2020,10,324
+Dengue,Haryana,2020,11,244
+Dengue,Haryana,2020,12,129
+Dengue,Haryana,2021,1,124
+Dengue,Haryana,2021,2,116
+Dengue,Haryana,2021,3,119
+Dengue,Haryana,2021,4,180
+Dengue,Haryana,2021,5,248
+Dengue,Haryana,2021,6,478
+Dengue,Haryana,2021,7,789
+Dengue,Haryana,2021,8,1267
+Dengue,Haryana,2021,9,2240
+Dengue,Haryana,2021,10,2947
+Dengue,Haryana,2021,11,2236
+Dengue,Haryana,2021,12,1185
+Dengue,Haryana,2022,1,49
+Dengue,Haryana,2022,2,42
+Dengue,Haryana,2022,3,45
+Dengue,Haryana,2022,4,62
+Dengue,Haryana,2022,5,85
+Dengue,Haryana,2022,6,160
+Dengue,Haryana,2022,7,273
+Dengue,Haryana,2022,8,424
+Dengue,Haryana,2022,9,762
+Dengue,Haryana,2022,10,1040
+Dengue,Haryana,2022,11,813
+Dengue,Haryana,2022,12,458
+Dengue,Haryana,2023,1,42
+Dengue,Haryana,2023,2,40
+Dengue,Haryana,2023,3,45
+Dengue,Haryana,2023,4,44
+Dengue,Haryana,2023,5,89
+Dengue,Haryana,2023,6,109
+Dengue,Haryana,2023,7,276
+Dengue,Haryana,2023,8,418
+Dengue,Haryana,2023,9,744
+Dengue,Haryana,2023,10,1047
+Dengue,Haryana,2023,11,720
+Dengue,Haryana,2023,12,438
+Dengue,Haryana,2024,1,37
+Dengue,Haryana,2024,2,35
+Dengue,Haryana,2024,3,31
+Dengue,Haryana,2024,4,35
+Dengue,Haryana,2024,5,57
+Dengue,Haryana,2024,6,121
+Dengue,Haryana,2024,7,201
+Dengue,Haryana,2024,8,328
+Dengue,Haryana,2024,9,653
+Dengue,Haryana,2024,10,705
+Dengue,Haryana,2024,11,548
+Dengue,Haryana,2024,12,330
+Dengue,Andhra Pradesh,2018,1,48
+Dengue,Andhra Pradesh,2018,2,42
+Dengue,Andhra Pradesh,2018,3,43
+Dengue,Andhra Pradesh,2018,4,66
+Dengue,Andhra Pradesh,2018,5,98
+Dengue,Andhra Pradesh,2018,6,142
+Dengue,Andhra Pradesh,2018,7,283
+Dengue,Andhra Pradesh,2018,8,555
+Dengue,Andhra Pradesh,2018,9,1023
+Dengue,Andhra Pradesh,2018,10,1157
+Dengue,Andhra Pradesh,2018,11,762
+Dengue,Andhra Pradesh,2018,12,392
+Dengue,Andhra Pradesh,2019,1,63
+Dengue,Andhra Pradesh,2019,2,57
+Dengue,Andhra Pradesh,2019,3,63
+Dengue,Andhra Pradesh,2019,4,90
+Dengue,Andhra Pradesh,2019,5,114
+Dengue,Andhra Pradesh,2019,6,195
+Dengue,Andhra Pradesh,2019,7,398
+Dengue,Andhra Pradesh,2019,8,588
+Dengue,Andhra Pradesh,2019,9,1050
+Dengue,Andhra Pradesh,2019,10,1294
+Dengue,Andhra Pradesh,2019,11,965
+Dengue,Andhra Pradesh,2019,12,496
+Dengue,Andhra Pradesh,2020,1,15
+Dengue,Andhra Pradesh,2020,2,15
+Dengue,Andhra Pradesh,2020,3,14
+Dengue,Andhra Pradesh,2020,4,19
+Dengue,Andhra Pradesh,2020,5,25
+Dengue,Andhra Pradesh,2020,6,42
+Dengue,Andhra Pradesh,2020,7,100
+Dengue,Andhra Pradesh,2020,8,150
+Dengue,Andhra Pradesh,2020,9,281
+Dengue,Andhra Pradesh,2020,10,302
+Dengue,Andhra Pradesh,2020,11,229
+Dengue,Andhra Pradesh,2020,12,153
+Dengue,Andhra Pradesh,2021,1,60
+Dengue,Andhra Pradesh,2021,2,51
+Dengue,Andhra Pradesh,2021,3,57
+Dengue,Andhra Pradesh,2021,4,64
+Dengue,Andhra Pradesh,2021,5,97
+Dengue,Andhra Pradesh,2021,6,171
+Dengue,Andhra Pradesh,2021,7,384
+Dengue,Andhra Pradesh,2021,8,571
+Dengue,Andhra Pradesh,2021,9,1089
+Dengue,Andhra Pradesh,2021,10,1271
+Dengue,Andhra Pradesh,2021,11,928
+Dengue,Andhra Pradesh,2021,12,567
+Dengue,Andhra Pradesh,2022,1,73
+Dengue,Andhra Pradesh,2022,2,60
+Dengue,Andhra Pradesh,2022,3,66
+Dengue,Andhra Pradesh,2022,4,88
+Dengue,Andhra Pradesh,2022,5,139
+Dengue,Andhra Pradesh,2022,6,214
+Dengue,Andhra Pradesh,2022,7,485
+Dengue,Andhra Pradesh,2022,8,741
+Dengue,Andhra Pradesh,2022,9,1353
+Dengue,Andhra Pradesh,2022,10,1402
+Dengue,Andhra Pradesh,2022,11,1279
+Dengue,Andhra Pradesh,2022,12,635
+Dengue,Andhra Pradesh,2023,1,94
+Dengue,Andhra Pradesh,2023,2,68
+Dengue,Andhra Pradesh,2023,3,70
+Dengue,Andhra Pradesh,2023,4,90
+Dengue,Andhra Pradesh,2023,5,153
+Dengue,Andhra Pradesh,2023,6,262
+Dengue,Andhra Pradesh,2023,7,439
+Dengue,Andhra Pradesh,2023,8,813
+Dengue,Andhra Pradesh,2023,9,1369
+Dengue,Andhra Pradesh,2023,10,1567
+Dengue,Andhra Pradesh,2023,11,1339
+Dengue,Andhra Pradesh,2023,12,635
+Dengue,Andhra Pradesh,2024,1,67
+Dengue,Andhra Pradesh,2024,2,53
+Dengue,Andhra Pradesh,2024,3,56
+Dengue,Andhra Pradesh,2024,4,69
+Dengue,Andhra Pradesh,2024,5,106
+Dengue,Andhra Pradesh,2024,6,217
+Dengue,Andhra Pradesh,2024,7,335
+Dengue,Andhra Pradesh,2024,8,644
+Dengue,Andhra Pradesh,2024,9,1138
+Dengue,Andhra Pradesh,2024,10,1192
+Dengue,Andhra Pradesh,2024,11,955
+Dengue,Andhra Pradesh,2024,12,515
+Dengue,Telangana,2018,1,56
+Dengue,Telangana,2018,2,42
+Dengue,Telangana,2018,3,49
+Dengue,Telangana,2018,4,59
+Dengue,Telangana,2018,5,106
+Dengue,Telangana,2018,6,142
+Dengue,Telangana,2018,7,320
+Dengue,Telangana,2018,8,545
+Dengue,Telangana,2018,9,879
+Dengue,Telangana,2018,10,1136
+Dengue,Telangana,2018,11,785
+Dengue,Telangana,2018,12,534
+Dengue,Telangana,2019,1,164
+Dengue,Telangana,2019,2,115
+Dengue,Telangana,2019,3,128
+Dengue,Telangana,2019,4,160
+Dengue,Telangana,2019,5,239
+Dengue,Telangana,2019,6,408
+Dengue,Telangana,2019,7,915
+Dengue,Telangana,2019,8,1404
+Dengue,Telangana,2019,9,2469
+Dengue,Telangana,2019,10,3247
+Dengue,Telangana,2019,11,2519
+Dengue,Telangana,2019,12,1251
+Dengue,Telangana,2020,1,28
+Dengue,Telangana,2020,2,18
+Dengue,Telangana,2020,3,24
+Dengue,Telangana,2020,4,32
+Dengue,Telangana,2020,5,51
+Dengue,Telangana,2020,6,76
+Dengue,Telangana,2020,7,130
+Dengue,Telangana,2020,8,258
+Dengue,Telangana,2020,9,428
+Dengue,Telangana,2020,10,574
+Dengue,Telangana,2020,11,398
+Dengue,Telangana,2020,12,191
+Dengue,Telangana,2021,1,88
+Dengue,Telangana,2021,2,67
+Dengue,Telangana,2021,3,78
+Dengue,Telangana,2021,4,95
+Dengue,Telangana,2021,5,176
+Dengue,Telangana,2021,6,265
+Dengue,Telangana,2021,7,510
+Dengue,Telangana,2021,8,926
+Dengue,Telangana,2021,9,1280
+Dengue,Telangana,2021,10,1706
+Dengue,Telangana,2021,11,1517
+Dengue,Telangana,2021,12,570
+Dengue,Telangana,2022,1,102
+Dengue,Telangana,2022,2,83
+Dengue,Telangana,2022,3,100
+Dengue,Telangana,2022,4,157
+Dengue,Telangana,2022,5,232
+Dengue,Telangana,2022,6,332
+Dengue,Telangana,2022,7,627
+Dengue,Telangana,2022,8,1172
+Dengue,Telangana,2022,9,2022
+Dengue,Telangana,2022,10,1965
+Dengue,Telangana,2022,11,1868
+Dengue,Telangana,2022,12,896
+Dengue,Telangana,2023,1,112
+Dengue,Telangana,2023,2,87
+Dengue,Telangana,2023,3,85
+Dengue,Telangana,2023,4,108
+Dengue,Telangana,2023,5,158
+Dengue,Telangana,2023,6,289
+Dengue,Telangana,2023,7,510
+Dengue,Telangana,2023,8,998
+Dengue,Telangana,2023,9,1512
+Dengue,Telangana,2023,10,1722
+Dengue,Telangana,2023,11,1632
+Dengue,Telangana,2023,12,786
+Dengue,Telangana,2024,1,68
+Dengue,Telangana,2024,2,65
+Dengue,Telangana,2024,3,63
+Dengue,Telangana,2024,4,99
+Dengue,Telangana,2024,5,124
+Dengue,Telangana,2024,6,212
+Dengue,Telangana,2024,7,401
+Dengue,Telangana,2024,8,759
+Dengue,Telangana,2024,9,1239
+Dengue,Telangana,2024,10,1349
+Dengue,Telangana,2024,11,1070
+Dengue,Telangana,2024,12,695
+Dengue,Odisha,2018,1,63
+Dengue,Odisha,2018,2,52
+Dengue,Odisha,2018,3,60
+Dengue,Odisha,2018,4,67
+Dengue,Odisha,2018,5,112
+Dengue,Odisha,2018,6,190
+Dengue,Odisha,2018,7,253
+Dengue,Odisha,2018,8,582
+Dengue,Odisha,2018,9,1160
+Dengue,Odisha,2018,10,1326
+Dengue,Odisha,2018,11,975
+Dengue,Odisha,2018,12,581
+Dengue,Odisha,2019,1,45
+Dengue,Odisha,2019,2,40
+Dengue,Odisha,2019,3,41
+Dengue,Odisha,2019,4,51
+Dengue,Odisha,2019,5,70
+Dengue,Odisha,2019,6,147
+Dengue,Odisha,2019,7,253
+Dengue,Odisha,2019,8,508
+Dengue,Odisha,2019,9,721
+Dengue,Odisha,2019,10,926
+Dengue,Odisha,2019,11,707
+Dengue,Odisha,2019,12,437
+Dengue,Odisha,2020,1,14
+Dengue,Odisha,2020,2,8
+Dengue,Odisha,2020,3,10
+Dengue,Odisha,2020,4,18
+Dengue,Odisha,2020,5,22
+Dengue,Odisha,2020,6,33
+Dengue,Odisha,2020,7,69
+Dengue,Odisha,2020,8,100
+Dengue,Odisha,2020,9,210
+Dengue,Odisha,2020,10,206
+Dengue,Odisha,2020,11,171
+Dengue,Odisha,2020,12,98
+Dengue,Odisha,2021,1,96
+Dengue,Odisha,2021,2,55
+Dengue,Odisha,2021,3,82
+Dengue,Odisha,2021,4,95
+Dengue,Odisha,2021,5,155
+Dengue,Odisha,2021,6,257
+Dengue,Odisha,2021,7,424
+Dengue,Odisha,2021,8,825
+Dengue,Odisha,2021,9,1482
+Dengue,Odisha,2021,10,1736
+Dengue,Odisha,2021,11,1090
+Dengue,Odisha,2021,12,899
+Dengue,Odisha,2022,1,65
+Dengue,Odisha,2022,2,52
+Dengue,Odisha,2022,3,49
+Dengue,Odisha,2022,4,71
+Dengue,Odisha,2022,5,121
+Dengue,Odisha,2022,6,167
+Dengue,Odisha,2022,7,364
+Dengue,Odisha,2022,8,587
+Dengue,Odisha,2022,9,977
+Dengue,Odisha,2022,10,1327
+Dengue,Odisha,2022,11,961
+Dengue,Odisha,2022,12,573
+Dengue,Odisha,2023,1,50
+Dengue,Odisha,2023,2,48
+Dengue,Odisha,2023,3,50
+Dengue,Odisha,2023,4,66
+Dengue,Odisha,2023,5,100
+Dengue,Odisha,2023,6,174
+Dengue,Odisha,2023,7,303
+Dengue,Odisha,2023,8,572
+Dengue,Odisha,2023,9,875
+Dengue,Odisha,2023,10,953
+Dengue,Odisha,2023,11,903
+Dengue,Odisha,2023,12,446
+Dengue,Odisha,2024,1,46
+Dengue,Odisha,2024,2,40
+Dengue,Odisha,2024,3,38
+Dengue,Odisha,2024,4,52
+Dengue,Odisha,2024,5,78
+Dengue,Odisha,2024,6,109
+Dengue,Odisha,2024,7,276
+Dengue,Odisha,2024,8,403
+Dengue,Odisha,2024,9,654
+Dengue,Odisha,2024,10,864
+Dengue,Odisha,2024,11,578
+Dengue,Odisha,2024,12,367
+Dengue,Bihar,2018,1,25
+Dengue,Bihar,2018,2,21
+Dengue,Bihar,2018,3,25
+Dengue,Bihar,2018,4,26
+Dengue,Bihar,2018,5,48
+Dengue,Bihar,2018,6,76
+Dengue,Bihar,2018,7,150
+Dengue,Bihar,2018,8,281
+Dengue,Bihar,2018,9,347
+Dengue,Bihar,2018,10,529
+Dengue,Bihar,2018,11,361
+Dengue,Bihar,2018,12,241
+Dengue,Bihar,2019,1,77
+Dengue,Bihar,2019,2,70
+Dengue,Bihar,2019,3,77
+Dengue,Bihar,2019,4,91
+Dengue,Bihar,2019,5,141
+Dengue,Bihar,2019,6,263
+Dengue,Bihar,2019,7,408
+Dengue,Bihar,2019,8,896
+Dengue,Bihar,2019,9,1476
+Dengue,Bihar,2019,10,1499
+Dengue,Bihar,2019,11,1187
+Dengue,Bihar,2019,12,700
+Dengue,Bihar,2020,1,6
+Dengue,Bihar,2020,2,5
+Dengue,Bihar,2020,3,5
+Dengue,Bihar,2020,4,8
+Dengue,Bihar,2020,5,9
+Dengue,Bihar,2020,6,18
+Dengue,Bihar,2020,7,28
+Dengue,Bihar,2020,8,55
+Dengue,Bihar,2020,9,107
+Dengue,Bihar,2020,10,111
+Dengue,Bihar,2020,11,103
+Dengue,Bihar,2020,12,50
+Dengue,Bihar,2021,1,6
+Dengue,Bihar,2021,2,6
+Dengue,Bihar,2021,3,7
+Dengue,Bihar,2021,4,8
+Dengue,Bihar,2021,5,13
+Dengue,Bihar,2021,6,20
+Dengue,Bihar,2021,7,44
+Dengue,Bihar,2021,8,84
+Dengue,Bihar,2021,9,138
+Dengue,Bihar,2021,10,147
+Dengue,Bihar,2021,11,114
+Dengue,Bihar,2021,12,62
+Dengue,Bihar,2022,1,180
+Dengue,Bihar,2022,2,157
+Dengue,Bihar,2022,3,152
+Dengue,Bihar,2022,4,193
+Dengue,Bihar,2022,5,304
+Dengue,Bihar,2022,6,497
+Dengue,Bihar,2022,7,890
+Dengue,Bihar,2022,8,1462
+Dengue,Bihar,2022,9,3102
+Dengue,Bihar,2022,10,3049
+Dengue,Bihar,2022,11,2560
+Dengue,Bihar,2022,12,1575
+Dengue,Bihar,2023,1,87
+Dengue,Bihar,2023,2,67
+Dengue,Bihar,2023,3,83
+Dengue,Bihar,2023,4,92
+Dengue,Bihar,2023,5,146
+Dengue,Bihar,2023,6,243
+Dengue,Bihar,2023,7,363
+Dengue,Bihar,2023,8,882
+Dengue,Bihar,2023,9,1423
+Dengue,Bihar,2023,10,1524
+Dengue,Bihar,2023,11,1253
+Dengue,Bihar,2023,12,743
+Dengue,Bihar,2024,1,57
+Dengue,Bihar,2024,2,56
+Dengue,Bihar,2024,3,58
+Dengue,Bihar,2024,4,75
+Dengue,Bihar,2024,5,109
+Dengue,Bihar,2024,6,159
+Dengue,Bihar,2024,7,398
+Dengue,Bihar,2024,8,632
+Dengue,Bihar,2024,9,846
+Dengue,Bihar,2024,10,1158
+Dengue,Bihar,2024,11,907
+Dengue,Bihar,2024,12,511
+Dengue,Assam,2018,1,13
+Dengue,Assam,2018,2,12
+Dengue,Assam,2018,3,12
+Dengue,Assam,2018,4,16
+Dengue,Assam,2018,5,22
+Dengue,Assam,2018,6,37
+Dengue,Assam,2018,7,82
+Dengue,Assam,2018,8,129
+Dengue,Assam,2018,9,249
+Dengue,Assam,2018,10,269
+Dengue,Assam,2018,11,194
+Dengue,Assam,2018,12,108
+Dengue,Assam,2019,1,16
+Dengue,Assam,2019,2,14
+Dengue,Assam,2019,3,17
+Dengue,Assam,2019,4,16
+Dengue,Assam,2019,5,29
+Dengue,Assam,2019,6,46
+Dengue,Assam,2019,7,87
+Dengue,Assam,2019,8,153
+Dengue,Assam,2019,9,273
+Dengue,Assam,2019,10,296
+Dengue,Assam,2019,11,212
+Dengue,Assam,2019,12,151
+Dengue,Assam,2020,1,3
+Dengue,Assam,2020,2,3
+Dengue,Assam,2020,3,3
+Dengue,Assam,2020,4,3
+Dengue,Assam,2020,5,5
+Dengue,Assam,2020,6,8
+Dengue,Assam,2020,7,16
+Dengue,Assam,2020,8,27
+Dengue,Assam,2020,9,52
+Dengue,Assam,2020,10,47
+Dengue,Assam,2020,11,33
+Dengue,Assam,2020,12,26
+Dengue,Assam,2021,1,14
+Dengue,Assam,2021,2,11
+Dengue,Assam,2021,3,15
+Dengue,Assam,2021,4,20
+Dengue,Assam,2021,5,26
+Dengue,Assam,2021,6,44
+Dengue,Assam,2021,7,96
+Dengue,Assam,2021,8,150
+Dengue,Assam,2021,9,261
+Dengue,Assam,2021,10,250
+Dengue,Assam,2021,11,229
+Dengue,Assam,2021,12,143
+Dengue,Assam,2022,1,27
+Dengue,Assam,2022,2,24
+Dengue,Assam,2022,3,28
+Dengue,Assam,2022,4,34
+Dengue,Assam,2022,5,55
+Dengue,Assam,2022,6,91
+Dengue,Assam,2022,7,130
+Dengue,Assam,2022,8,253
+Dengue,Assam,2022,9,401
+Dengue,Assam,2022,10,521
+Dengue,Assam,2022,11,508
+Dengue,Assam,2022,12,238
+Dengue,Assam,2023,1,24
+Dengue,Assam,2023,2,18
+Dengue,Assam,2023,3,21
+Dengue,Assam,2023,4,24
+Dengue,Assam,2023,5,42
+Dengue,Assam,2023,6,64
+Dengue,Assam,2023,7,114
+Dengue,Assam,2023,8,188
+Dengue,Assam,2023,9,379
+Dengue,Assam,2023,10,427
+Dengue,Assam,2023,11,319
+Dengue,Assam,2023,12,200
+Dengue,Assam,2024,1,20
+Dengue,Assam,2024,2,13
+Dengue,Assam,2024,3,20
+Dengue,Assam,2024,4,24
+Dengue,Assam,2024,5,36
+Dengue,Assam,2024,6,49
+Dengue,Assam,2024,7,105
+Dengue,Assam,2024,8,180
+Dengue,Assam,2024,9,277
+Dengue,Assam,2024,10,325
+Dengue,Assam,2024,11,267
+Dengue,Assam,2024,12,160
+Dengue,Jharkhand,2018,1,7
+Dengue,Jharkhand,2018,2,5
+Dengue,Jharkhand,2018,3,5
+Dengue,Jharkhand,2018,4,7
+Dengue,Jharkhand,2018,5,9
+Dengue,Jharkhand,2018,6,15
+Dengue,Jharkhand,2018,7,35
+Dengue,Jharkhand,2018,8,55
+Dengue,Jharkhand,2018,9,75
+Dengue,Jharkhand,2018,10,101
+Dengue,Jharkhand,2018,11,69
+Dengue,Jharkhand,2018,12,48
+Dengue,Jharkhand,2019,1,9
+Dengue,Jharkhand,2019,2,10
+Dengue,Jharkhand,2019,3,8
+Dengue,Jharkhand,2019,4,11
+Dengue,Jharkhand,2019,5,21
+Dengue,Jharkhand,2019,6,34
+Dengue,Jharkhand,2019,7,58
+Dengue,Jharkhand,2019,8,94
+Dengue,Jharkhand,2019,9,147
+Dengue,Jharkhand,2019,10,199
+Dengue,Jharkhand,2019,11,141
+Dengue,Jharkhand,2019,12,77
+Dengue,Jharkhand,2020,1,2
+Dengue,Jharkhand,2020,2,1
+Dengue,Jharkhand,2020,3,1
+Dengue,Jharkhand,2020,4,2
+Dengue,Jharkhand,2020,5,2
+Dengue,Jharkhand,2020,6,5
+Dengue,Jharkhand,2020,7,10
+Dengue,Jharkhand,2020,8,13
+Dengue,Jharkhand,2020,9,29
+Dengue,Jharkhand,2020,10,32
+Dengue,Jharkhand,2020,11,23
+Dengue,Jharkhand,2020,12,13
+Dengue,Jharkhand,2021,1,15
+Dengue,Jharkhand,2021,2,12
+Dengue,Jharkhand,2021,3,11
+Dengue,Jharkhand,2021,4,16
+Dengue,Jharkhand,2021,5,23
+Dengue,Jharkhand,2021,6,37
+Dengue,Jharkhand,2021,7,91
+Dengue,Jharkhand,2021,8,116
+Dengue,Jharkhand,2021,9,219
+Dengue,Jharkhand,2021,10,246
+Dengue,Jharkhand,2021,11,206
+Dengue,Jharkhand,2021,12,141
+Dengue,Jharkhand,2022,1,19
+Dengue,Jharkhand,2022,2,16
+Dengue,Jharkhand,2022,3,18
+Dengue,Jharkhand,2022,4,23
+Dengue,Jharkhand,2022,5,30
+Dengue,Jharkhand,2022,6,54
+Dengue,Jharkhand,2022,7,89
+Dengue,Jharkhand,2022,8,179
+Dengue,Jharkhand,2022,9,340
+Dengue,Jharkhand,2022,10,329
+Dengue,Jharkhand,2022,11,298
+Dengue,Jharkhand,2022,12,164
+Dengue,Jharkhand,2023,1,16
+Dengue,Jharkhand,2023,2,15
+Dengue,Jharkhand,2023,3,15
+Dengue,Jharkhand,2023,4,18
+Dengue,Jharkhand,2023,5,28
+Dengue,Jharkhand,2023,6,51
+Dengue,Jharkhand,2023,7,101
+Dengue,Jharkhand,2023,8,176
+Dengue,Jharkhand,2023,9,281
+Dengue,Jharkhand,2023,10,331
+Dengue,Jharkhand,2023,11,238
+Dengue,Jharkhand,2023,12,155
+Dengue,Jharkhand,2024,1,14
+Dengue,Jharkhand,2024,2,10
+Dengue,Jharkhand,2024,3,14
+Dengue,Jharkhand,2024,4,16
+Dengue,Jharkhand,2024,5,26
+Dengue,Jharkhand,2024,6,34
+Dengue,Jharkhand,2024,7,66
+Dengue,Jharkhand,2024,8,143
+Dengue,Jharkhand,2024,9,207
+Dengue,Jharkhand,2024,10,256
+Dengue,Jharkhand,2024,11,189
+Dengue,Jharkhand,2024,12,115
+Dengue,Chhattisgarh,2018,1,23
+Dengue,Chhattisgarh,2018,2,22
+Dengue,Chhattisgarh,2018,3,25
+Dengue,Chhattisgarh,2018,4,28
+Dengue,Chhattisgarh,2018,5,39
+Dengue,Chhattisgarh,2018,6,73
+Dengue,Chhattisgarh,2018,7,138
+Dengue,Chhattisgarh,2018,8,246
+Dengue,Chhattisgarh,2018,9,411
+Dengue,Chhattisgarh,2018,10,484
+Dengue,Chhattisgarh,2018,11,394
+Dengue,Chhattisgarh,2018,12,223
+Dengue,Chhattisgarh,2019,1,19
+Dengue,Chhattisgarh,2019,2,17
+Dengue,Chhattisgarh,2019,3,18
+Dengue,Chhattisgarh,2019,4,20
+Dengue,Chhattisgarh,2019,5,30
+Dengue,Chhattisgarh,2019,6,49
+Dengue,Chhattisgarh,2019,7,84
+Dengue,Chhattisgarh,2019,8,167
+Dengue,Chhattisgarh,2019,9,271
+Dengue,Chhattisgarh,2019,10,366
+Dengue,Chhattisgarh,2019,11,223
+Dengue,Chhattisgarh,2019,12,148
+Dengue,Chhattisgarh,2020,1,4
+Dengue,Chhattisgarh,2020,2,4
+Dengue,Chhattisgarh,2020,3,4
+Dengue,Chhattisgarh,2020,4,5
+Dengue,Chhattisgarh,2020,5,8
+Dengue,Chhattisgarh,2020,6,14
+Dengue,Chhattisgarh,2020,7,22
+Dengue,Chhattisgarh,2020,8,44
+Dengue,Chhattisgarh,2020,9,71
+Dengue,Chhattisgarh,2020,10,94
+Dengue,Chhattisgarh,2020,11,55
+Dengue,Chhattisgarh,2020,12,32
+Dengue,Chhattisgarh,2021,1,33
+Dengue,Chhattisgarh,2021,2,33
+Dengue,Chhattisgarh,2021,3,28
+Dengue,Chhattisgarh,2021,4,46
+Dengue,Chhattisgarh,2021,5,63
+Dengue,Chhattisgarh,2021,6,104
+Dengue,Chhattisgarh,2021,7,214
+Dengue,Chhattisgarh,2021,8,290
+Dengue,Chhattisgarh,2021,9,592
+Dengue,Chhattisgarh,2021,10,604
+Dengue,Chhattisgarh,2021,11,569
+Dengue,Chhattisgarh,2021,12,278
+Dengue,Chhattisgarh,2022,1,20
+Dengue,Chhattisgarh,2022,2,17
+Dengue,Chhattisgarh,2022,3,21
+Dengue,Chhattisgarh,2022,4,28
+Dengue,Chhattisgarh,2022,5,38
+Dengue,Chhattisgarh,2022,6,72
+Dengue,Chhattisgarh,2022,7,114
+Dengue,Chhattisgarh,2022,8,235
+Dengue,Chhattisgarh,2022,9,315
+Dengue,Chhattisgarh,2022,10,359
+Dengue,Chhattisgarh,2022,11,308
+Dengue,Chhattisgarh,2022,12,196
+Dengue,Chhattisgarh,2023,1,16
+Dengue,Chhattisgarh,2023,2,15
+Dengue,Chhattisgarh,2023,3,19
+Dengue,Chhattisgarh,2023,4,22
+Dengue,Chhattisgarh,2023,5,31
+Dengue,Chhattisgarh,2023,6,59
+Dengue,Chhattisgarh,2023,7,107
+Dengue,Chhattisgarh,2023,8,182
+Dengue,Chhattisgarh,2023,9,301
+Dengue,Chhattisgarh,2023,10,317
+Dengue,Chhattisgarh,2023,11,282
+Dengue,Chhattisgarh,2023,12,161
+Dengue,Chhattisgarh,2024,1,14
+Dengue,Chhattisgarh,2024,2,14
+Dengue,Chhattisgarh,2024,3,15
+Dengue,Chhattisgarh,2024,4,20
+Dengue,Chhattisgarh,2024,5,27
+Dengue,Chhattisgarh,2024,6,47
+Dengue,Chhattisgarh,2024,7,97
+Dengue,Chhattisgarh,2024,8,153
+Dengue,Chhattisgarh,2024,9,283
+Dengue,Chhattisgarh,2024,10,310
+Dengue,Chhattisgarh,2024,11,230
+Dengue,Chhattisgarh,2024,12,143
+Dengue,Karnataka Rural,2018,1,14
+Dengue,Karnataka Rural,2018,2,14
+Dengue,Karnataka Rural,2018,3,15
+Dengue,Karnataka Rural,2018,4,17
+Dengue,Karnataka Rural,2018,5,26
+Dengue,Karnataka Rural,2018,6,47
+Dengue,Karnataka Rural,2018,7,80
+Dengue,Karnataka Rural,2018,8,132
+Dengue,Karnataka Rural,2018,9,253
+Dengue,Karnataka Rural,2018,10,272
+Dengue,Karnataka Rural,2018,11,196
+Dengue,Karnataka Rural,2018,12,138
+Dengue,Karnataka Rural,2019,1,40
+Dengue,Karnataka Rural,2019,2,28
+Dengue,Karnataka Rural,2019,3,34
+Dengue,Karnataka Rural,2019,4,47
+Dengue,Karnataka Rural,2019,5,61
+Dengue,Karnataka Rural,2019,6,97
+Dengue,Karnataka Rural,2019,7,222
+Dengue,Karnataka Rural,2019,8,326
+Dengue,Karnataka Rural,2019,9,512
+Dengue,Karnataka Rural,2019,10,718
+Dengue,Karnataka Rural,2019,11,517
+Dengue,Karnataka Rural,2019,12,331
+Dengue,Karnataka Rural,2020,1,8
+Dengue,Karnataka Rural,2020,2,10
+Dengue,Karnataka Rural,2020,3,10
+Dengue,Karnataka Rural,2020,4,12
+Dengue,Karnataka Rural,2020,5,18
+Dengue,Karnataka Rural,2020,6,35
+Dengue,Karnataka Rural,2020,7,65
+Dengue,Karnataka Rural,2020,8,115
+Dengue,Karnataka Rural,2020,9,178
+Dengue,Karnataka Rural,2020,10,203
+Dengue,Karnataka Rural,2020,11,161
+Dengue,Karnataka Rural,2020,12,85
+Dengue,Karnataka Rural,2021,1,18
+Dengue,Karnataka Rural,2021,2,20
+Dengue,Karnataka Rural,2021,3,17
+Dengue,Karnataka Rural,2021,4,23
+Dengue,Karnataka Rural,2021,5,36
+Dengue,Karnataka Rural,2021,6,64
+Dengue,Karnataka Rural,2021,7,111
+Dengue,Karnataka Rural,2021,8,182
+Dengue,Karnataka Rural,2021,9,340
+Dengue,Karnataka Rural,2021,10,342
+Dengue,Karnataka Rural,2021,11,314
+Dengue,Karnataka Rural,2021,12,162
+Dengue,Karnataka Rural,2022,1,23
+Dengue,Karnataka Rural,2022,2,19
+Dengue,Karnataka Rural,2022,3,23
+Dengue,Karnataka Rural,2022,4,32
+Dengue,Karnataka Rural,2022,5,47
+Dengue,Karnataka Rural,2022,6,79
+Dengue,Karnataka Rural,2022,7,146
+Dengue,Karnataka Rural,2022,8,244
+Dengue,Karnataka Rural,2022,9,419
+Dengue,Karnataka Rural,2022,10,430
+Dengue,Karnataka Rural,2022,11,300
+Dengue,Karnataka Rural,2022,12,229
+Dengue,Karnataka Rural,2023,1,45
+Dengue,Karnataka Rural,2023,2,41
+Dengue,Karnataka Rural,2023,3,39
+Dengue,Karnataka Rural,2023,4,43
+Dengue,Karnataka Rural,2023,5,77
+Dengue,Karnataka Rural,2023,6,148
+Dengue,Karnataka Rural,2023,7,280
+Dengue,Karnataka Rural,2023,8,430
+Dengue,Karnataka Rural,2023,9,746
+Dengue,Karnataka Rural,2023,10,767
+Dengue,Karnataka Rural,2023,11,622
+Dengue,Karnataka Rural,2023,12,362
+Dengue,Karnataka Rural,2024,1,36
+Dengue,Karnataka Rural,2024,2,25
+Dengue,Karnataka Rural,2024,3,27
+Dengue,Karnataka Rural,2024,4,37
+Dengue,Karnataka Rural,2024,5,50
+Dengue,Karnataka Rural,2024,6,90
+Dengue,Karnataka Rural,2024,7,171
+Dengue,Karnataka Rural,2024,8,315
+Dengue,Karnataka Rural,2024,9,544
+Dengue,Karnataka Rural,2024,10,525
+Dengue,Karnataka Rural,2024,11,467
+Dengue,Karnataka Rural,2024,12,312
+Malaria,Odisha,2018,1,2026
+Malaria,Odisha,2018,2,1525
+Malaria,Odisha,2018,3,1721
+Malaria,Odisha,2018,4,1963
+Malaria,Odisha,2018,5,3288
+Malaria,Odisha,2018,6,7094
+Malaria,Odisha,2018,7,8327
+Malaria,Odisha,2018,8,11482
+Malaria,Odisha,2018,9,8414
+Malaria,Odisha,2018,10,6870
+Malaria,Odisha,2018,11,5605
+Malaria,Odisha,2018,12,5225
+Malaria,Odisha,2019,1,1047
+Malaria,Odisha,2019,2,923
+Malaria,Odisha,2019,3,1034
+Malaria,Odisha,2019,4,1453
+Malaria,Odisha,2019,5,2042
+Malaria,Odisha,2019,6,3009
+Malaria,Odisha,2019,7,4392
+Malaria,Odisha,2019,8,7009
+Malaria,Odisha,2019,9,6298
+Malaria,Odisha,2019,10,4874
+Malaria,Odisha,2019,11,4033
+Malaria,Odisha,2019,12,2808
+Malaria,Odisha,2020,1,537
+Malaria,Odisha,2020,2,482
+Malaria,Odisha,2020,3,538
+Malaria,Odisha,2020,4,828
+Malaria,Odisha,2020,5,892
+Malaria,Odisha,2020,6,1708
+Malaria,Odisha,2020,7,2930
+Malaria,Odisha,2020,8,3066
+Malaria,Odisha,2020,9,2719
+Malaria,Odisha,2020,10,2543
+Malaria,Odisha,2020,11,1854
+Malaria,Odisha,2020,12,1197
+Malaria,Odisha,2021,1,358
+Malaria,Odisha,2021,2,247
+Malaria,Odisha,2021,3,337
+Malaria,Odisha,2021,4,402
+Malaria,Odisha,2021,5,685
+Malaria,Odisha,2021,6,1019
+Malaria,Odisha,2021,7,1428
+Malaria,Odisha,2021,8,1715
+Malaria,Odisha,2021,9,1948
+Malaria,Odisha,2021,10,1326
+Malaria,Odisha,2021,11,1063
+Malaria,Odisha,2021,12,953
+Malaria,Odisha,2022,1,270
+Malaria,Odisha,2022,2,230
+Malaria,Odisha,2022,3,261
+Malaria,Odisha,2022,4,423
+Malaria,Odisha,2022,5,641
+Malaria,Odisha,2022,6,750
+Malaria,Odisha,2022,7,1321
+Malaria,Odisha,2022,8,1649
+Malaria,Odisha,2022,9,1340
+Malaria,Odisha,2022,10,1056
+Malaria,Odisha,2022,11,1001
+Malaria,Odisha,2022,12,647
+Malaria,Odisha,2023,1,294
+Malaria,Odisha,2023,2,217
+Malaria,Odisha,2023,3,206
+Malaria,Odisha,2023,4,297
+Malaria,Odisha,2023,5,402
+Malaria,Odisha,2023,6,783
+Malaria,Odisha,2023,7,1119
+Malaria,Odisha,2023,8,1524
+Malaria,Odisha,2023,9,1262
+Malaria,Odisha,2023,10,957
+Malaria,Odisha,2023,11,853
+Malaria,Odisha,2023,12,613
+Malaria,Odisha,2024,1,206
+Malaria,Odisha,2024,2,153
+Malaria,Odisha,2024,3,173
+Malaria,Odisha,2024,4,275
+Malaria,Odisha,2024,5,421
+Malaria,Odisha,2024,6,614
+Malaria,Odisha,2024,7,1003
+Malaria,Odisha,2024,8,1272
+Malaria,Odisha,2024,9,1105
+Malaria,Odisha,2024,10,699
+Malaria,Odisha,2024,11,738
+Malaria,Odisha,2024,12,502
+Malaria,Chhattisgarh,2018,1,2092
+Malaria,Chhattisgarh,2018,2,1841
+Malaria,Chhattisgarh,2018,3,1954
+Malaria,Chhattisgarh,2018,4,2373
+Malaria,Chhattisgarh,2018,5,3859
+Malaria,Chhattisgarh,2018,6,6073
+Malaria,Chhattisgarh,2018,7,11845
+Malaria,Chhattisgarh,2018,8,11518
+Malaria,Chhattisgarh,2018,9,13027
+Malaria,Chhattisgarh,2018,10,8497
+Malaria,Chhattisgarh,2018,11,7243
+Malaria,Chhattisgarh,2018,12,4983
+Malaria,Chhattisgarh,2019,1,1197
+Malaria,Chhattisgarh,2019,2,1194
+Malaria,Chhattisgarh,2019,3,1269
+Malaria,Chhattisgarh,2019,4,1889
+Malaria,Chhattisgarh,2019,5,2313
+Malaria,Chhattisgarh,2019,6,3913
+Malaria,Chhattisgarh,2019,7,5698
+Malaria,Chhattisgarh,2019,8,7691
+Malaria,Chhattisgarh,2019,9,7191
+Malaria,Chhattisgarh,2019,10,5736
+Malaria,Chhattisgarh,2019,11,4167
+Malaria,Chhattisgarh,2019,12,3538
+Malaria,Chhattisgarh,2020,1,645
+Malaria,Chhattisgarh,2020,2,654
+Malaria,Chhattisgarh,2020,3,688
+Malaria,Chhattisgarh,2020,4,874
+Malaria,Chhattisgarh,2020,5,1241
+Malaria,Chhattisgarh,2020,6,1668
+Malaria,Chhattisgarh,2020,7,2505
+Malaria,Chhattisgarh,2020,8,3157
+Malaria,Chhattisgarh,2020,9,3593
+Malaria,Chhattisgarh,2020,10,2878
+Malaria,Chhattisgarh,2020,11,2481
+Malaria,Chhattisgarh,2020,12,1512
+Malaria,Chhattisgarh,2021,1,540
+Malaria,Chhattisgarh,2021,2,491
+Malaria,Chhattisgarh,2021,3,377
+Malaria,Chhattisgarh,2021,4,694
+Malaria,Chhattisgarh,2021,5,1003
+Malaria,Chhattisgarh,2021,6,1389
+Malaria,Chhattisgarh,2021,7,2461
+Malaria,Chhattisgarh,2021,8,2671
+Malaria,Chhattisgarh,2021,9,3082
+Malaria,Chhattisgarh,2021,10,2058
+Malaria,Chhattisgarh,2021,11,1824
+Malaria,Chhattisgarh,2021,12,1518
+Malaria,Chhattisgarh,2022,1,466
+Malaria,Chhattisgarh,2022,2,375
+Malaria,Chhattisgarh,2022,3,420
+Malaria,Chhattisgarh,2022,4,586
+Malaria,Chhattisgarh,2022,5,807
+Malaria,Chhattisgarh,2022,6,1365
+Malaria,Chhattisgarh,2022,7,2356
+Malaria,Chhattisgarh,2022,8,1982
+Malaria,Chhattisgarh,2022,9,2625
+Malaria,Chhattisgarh,2022,10,1739
+Malaria,Chhattisgarh,2022,11,1396
+Malaria,Chhattisgarh,2022,12,1098
+Malaria,Chhattisgarh,2023,1,347
+Malaria,Chhattisgarh,2023,2,289
+Malaria,Chhattisgarh,2023,3,338
+Malaria,Chhattisgarh,2023,4,489
+Malaria,Chhattisgarh,2023,5,820
+Malaria,Chhattisgarh,2023,6,1283
+Malaria,Chhattisgarh,2023,7,1789
+Malaria,Chhattisgarh,2023,8,2012
+Malaria,Chhattisgarh,2023,9,1730
+Malaria,Chhattisgarh,2023,10,1575
+Malaria,Chhattisgarh,2023,11,1288
+Malaria,Chhattisgarh,2023,12,866
+Malaria,Chhattisgarh,2024,1,363
+Malaria,Chhattisgarh,2024,2,296
+Malaria,Chhattisgarh,2024,3,305
+Malaria,Chhattisgarh,2024,4,477
+Malaria,Chhattisgarh,2024,5,527
+Malaria,Chhattisgarh,2024,6,1081
+Malaria,Chhattisgarh,2024,7,1382
+Malaria,Chhattisgarh,2024,8,1675
+Malaria,Chhattisgarh,2024,9,1479
+Malaria,Chhattisgarh,2024,10,1229
+Malaria,Chhattisgarh,2024,11,966
+Malaria,Chhattisgarh,2024,12,783
+Malaria,Jharkhand,2018,1,1413
+Malaria,Jharkhand,2018,2,1199
+Malaria,Jharkhand,2018,3,1391
+Malaria,Jharkhand,2018,4,1615
+Malaria,Jharkhand,2018,5,2552
+Malaria,Jharkhand,2018,6,3961
+Malaria,Jharkhand,2018,7,5741
+Malaria,Jharkhand,2018,8,7078
+Malaria,Jharkhand,2018,9,6223
+Malaria,Jharkhand,2018,10,5109
+Malaria,Jharkhand,2018,11,4437
+Malaria,Jharkhand,2018,12,3015
+Malaria,Jharkhand,2019,1,921
+Malaria,Jharkhand,2019,2,788
+Malaria,Jharkhand,2019,3,828
+Malaria,Jharkhand,2019,4,1200
+Malaria,Jharkhand,2019,5,1951
+Malaria,Jharkhand,2019,6,3172
+Malaria,Jharkhand,2019,7,4500
+Malaria,Jharkhand,2019,8,4638
+Malaria,Jharkhand,2019,9,4546
+Malaria,Jharkhand,2019,10,3663
+Malaria,Jharkhand,2019,11,2937
+Malaria,Jharkhand,2019,12,2002
+Malaria,Jharkhand,2020,1,591
+Malaria,Jharkhand,2020,2,393
+Malaria,Jharkhand,2020,3,509
+Malaria,Jharkhand,2020,4,567
+Malaria,Jharkhand,2020,5,927
+Malaria,Jharkhand,2020,6,1431
+Malaria,Jharkhand,2020,7,2353
+Malaria,Jharkhand,2020,8,2156
+Malaria,Jharkhand,2020,9,2076
+Malaria,Jharkhand,2020,10,1917
+Malaria,Jharkhand,2020,11,1564
+Malaria,Jharkhand,2020,12,1201
+Malaria,Jharkhand,2021,1,352
+Malaria,Jharkhand,2021,2,266
+Malaria,Jharkhand,2021,3,318
+Malaria,Jharkhand,2021,4,419
+Malaria,Jharkhand,2021,5,636
+Malaria,Jharkhand,2021,6,1061
+Malaria,Jharkhand,2021,7,1812
+Malaria,Jharkhand,2021,8,1685
+Malaria,Jharkhand,2021,9,1768
+Malaria,Jharkhand,2021,10,1523
+Malaria,Jharkhand,2021,11,1177
+Malaria,Jharkhand,2021,12,769
+Malaria,Jharkhand,2022,1,270
+Malaria,Jharkhand,2022,2,222
+Malaria,Jharkhand,2022,3,242
+Malaria,Jharkhand,2022,4,371
+Malaria,Jharkhand,2022,5,514
+Malaria,Jharkhand,2022,6,881
+Malaria,Jharkhand,2022,7,1264
+Malaria,Jharkhand,2022,8,1369
+Malaria,Jharkhand,2022,9,1356
+Malaria,Jharkhand,2022,10,1127
+Malaria,Jharkhand,2022,11,911
+Malaria,Jharkhand,2022,12,647
+Malaria,Jharkhand,2023,1,231
+Malaria,Jharkhand,2023,2,200
+Malaria,Jharkhand,2023,3,250
+Malaria,Jharkhand,2023,4,312
+Malaria,Jharkhand,2023,5,469
+Malaria,Jharkhand,2023,6,789
+Malaria,Jharkhand,2023,7,1100
+Malaria,Jharkhand,2023,8,1104
+Malaria,Jharkhand,2023,9,853
+Malaria,Jharkhand,2023,10,964
+Malaria,Jharkhand,2023,11,811
+Malaria,Jharkhand,2023,12,461
+Malaria,Jharkhand,2024,1,172
+Malaria,Jharkhand,2024,2,170
+Malaria,Jharkhand,2024,3,221
+Malaria,Jharkhand,2024,4,258
+Malaria,Jharkhand,2024,5,346
+Malaria,Jharkhand,2024,6,497
+Malaria,Jharkhand,2024,7,973
+Malaria,Jharkhand,2024,8,1013
+Malaria,Jharkhand,2024,9,934
+Malaria,Jharkhand,2024,10,785
+Malaria,Jharkhand,2024,11,606
+Malaria,Jharkhand,2024,12,478
+Malaria,Maharashtra,2018,1,354
+Malaria,Maharashtra,2018,2,358
+Malaria,Maharashtra,2018,3,328
+Malaria,Maharashtra,2018,4,445
+Malaria,Maharashtra,2018,5,671
+Malaria,Maharashtra,2018,6,1204
+Malaria,Maharashtra,2018,7,1599
+Malaria,Maharashtra,2018,8,1940
+Malaria,Maharashtra,2018,9,1867
+Malaria,Maharashtra,2018,10,1478
+Malaria,Maharashtra,2018,11,1156
+Malaria,Maharashtra,2018,12,1011
+Malaria,Maharashtra,2019,1,302
+Malaria,Maharashtra,2019,2,281
+Malaria,Maharashtra,2019,3,283
+Malaria,Maharashtra,2019,4,372
+Malaria,Maharashtra,2019,5,630
+Malaria,Maharashtra,2019,6,972
+Malaria,Maharashtra,2019,7,1434
+Malaria,Maharashtra,2019,8,1473
+Malaria,Maharashtra,2019,9,1679
+Malaria,Maharashtra,2019,10,1345
+Malaria,Maharashtra,2019,11,972
+Malaria,Maharashtra,2019,12,669
+Malaria,Maharashtra,2020,1,219
+Malaria,Maharashtra,2020,2,173
+Malaria,Maharashtra,2020,3,174
+Malaria,Maharashtra,2020,4,267
+Malaria,Maharashtra,2020,5,371
+Malaria,Maharashtra,2020,6,642
+Malaria,Maharashtra,2020,7,929
+Malaria,Maharashtra,2020,8,1162
+Malaria,Maharashtra,2020,9,872
+Malaria,Maharashtra,2020,10,864
+Malaria,Maharashtra,2020,11,762
+Malaria,Maharashtra,2020,12,413
+Malaria,Maharashtra,2021,1,217
+Malaria,Maharashtra,2021,2,181
+Malaria,Maharashtra,2021,3,223
+Malaria,Maharashtra,2021,4,364
+Malaria,Maharashtra,2021,5,428
+Malaria,Maharashtra,2021,6,694
+Malaria,Maharashtra,2021,7,1258
+Malaria,Maharashtra,2021,8,1295
+Malaria,Maharashtra,2021,9,1268
+Malaria,Maharashtra,2021,10,1059
+Malaria,Maharashtra,2021,11,893
+Malaria,Maharashtra,2021,12,561
+Malaria,Maharashtra,2022,1,233
+Malaria,Maharashtra,2022,2,160
+Malaria,Maharashtra,2022,3,198
+Malaria,Maharashtra,2022,4,236
+Malaria,Maharashtra,2022,5,410
+Malaria,Maharashtra,2022,6,715
+Malaria,Maharashtra,2022,7,1023
+Malaria,Maharashtra,2022,8,1229
+Malaria,Maharashtra,2022,9,1065
+Malaria,Maharashtra,2022,10,874
+Malaria,Maharashtra,2022,11,731
+Malaria,Maharashtra,2022,12,529
+Malaria,Maharashtra,2023,1,239
+Malaria,Maharashtra,2023,2,167
+Malaria,Maharashtra,2023,3,235
+Malaria,Maharashtra,2023,4,250
+Malaria,Maharashtra,2023,5,398
+Malaria,Maharashtra,2023,6,706
+Malaria,Maharashtra,2023,7,912
+Malaria,Maharashtra,2023,8,1182
+Malaria,Maharashtra,2023,9,938
+Malaria,Maharashtra,2023,10,766
+Malaria,Maharashtra,2023,11,702
+Malaria,Maharashtra,2023,12,552
+Malaria,Maharashtra,2024,1,194
+Malaria,Maharashtra,2024,2,167
+Malaria,Maharashtra,2024,3,179
+Malaria,Maharashtra,2024,4,214
+Malaria,Maharashtra,2024,5,325
+Malaria,Maharashtra,2024,6,549
+Malaria,Maharashtra,2024,7,805
+Malaria,Maharashtra,2024,8,1020
+Malaria,Maharashtra,2024,9,879
+Malaria,Maharashtra,2024,10,857
+Malaria,Maharashtra,2024,11,607
+Malaria,Maharashtra,2024,12,447
+Malaria,West Bengal,2018,1,410
+Malaria,West Bengal,2018,2,432
+Malaria,West Bengal,2018,3,445
+Malaria,West Bengal,2018,4,677
+Malaria,West Bengal,2018,5,981
+Malaria,West Bengal,2018,6,1615
+Malaria,West Bengal,2018,7,2045
+Malaria,West Bengal,2018,8,2679
+Malaria,West Bengal,2018,9,2570
+Malaria,West Bengal,2018,10,2010
+Malaria,West Bengal,2018,11,1580
+Malaria,West Bengal,2018,12,1134
+Malaria,West Bengal,2019,1,365
+Malaria,West Bengal,2019,2,336
+Malaria,West Bengal,2019,3,364
+Malaria,West Bengal,2019,4,525
+Malaria,West Bengal,2019,5,735
+Malaria,West Bengal,2019,6,1016
+Malaria,West Bengal,2019,7,1677
+Malaria,West Bengal,2019,8,1897
+Malaria,West Bengal,2019,9,1755
+Malaria,West Bengal,2019,10,1456
+Malaria,West Bengal,2019,11,1118
+Malaria,West Bengal,2019,12,779
+Malaria,West Bengal,2020,1,164
+Malaria,West Bengal,2020,2,149
+Malaria,West Bengal,2020,3,171
+Malaria,West Bengal,2020,4,222
+Malaria,West Bengal,2020,5,345
+Malaria,West Bengal,2020,6,574
+Malaria,West Bengal,2020,7,758
+Malaria,West Bengal,2020,8,825
+Malaria,West Bengal,2020,9,810
+Malaria,West Bengal,2020,10,760
+Malaria,West Bengal,2020,11,555
+Malaria,West Bengal,2020,12,416
+Malaria,West Bengal,2021,1,228
+Malaria,West Bengal,2021,2,183
+Malaria,West Bengal,2021,3,200
+Malaria,West Bengal,2021,4,282
+Malaria,West Bengal,2021,5,358
+Malaria,West Bengal,2021,6,668
+Malaria,West Bengal,2021,7,963
+Malaria,West Bengal,2021,8,923
+Malaria,West Bengal,2021,9,1175
+Malaria,West Bengal,2021,10,818
+Malaria,West Bengal,2021,11,651
+Malaria,West Bengal,2021,12,506
+Malaria,West Bengal,2022,1,184
+Malaria,West Bengal,2022,2,163
+Malaria,West Bengal,2022,3,166
+Malaria,West Bengal,2022,4,274
+Malaria,West Bengal,2022,5,311
+Malaria,West Bengal,2022,6,496
+Malaria,West Bengal,2022,7,894
+Malaria,West Bengal,2022,8,844
+Malaria,West Bengal,2022,9,846
+Malaria,West Bengal,2022,10,651
+Malaria,West Bengal,2022,11,557
+Malaria,West Bengal,2022,12,437
+Malaria,West Bengal,2023,1,181
+Malaria,West Bengal,2023,2,106
+Malaria,West Bengal,2023,3,176
+Malaria,West Bengal,2023,4,209
+Malaria,West Bengal,2023,5,299
+Malaria,West Bengal,2023,6,561
+Malaria,West Bengal,2023,7,780
+Malaria,West Bengal,2023,8,690
+Malaria,West Bengal,2023,9,763
+Malaria,West Bengal,2023,10,729
+Malaria,West Bengal,2023,11,500
+Malaria,West Bengal,2023,12,317
+Malaria,West Bengal,2024,1,148
+Malaria,West Bengal,2024,2,124
+Malaria,West Bengal,2024,3,158
+Malaria,West Bengal,2024,4,175
+Malaria,West Bengal,2024,5,253
+Malaria,West Bengal,2024,6,538
+Malaria,West Bengal,2024,7,807
+Malaria,West Bengal,2024,8,768
+Malaria,West Bengal,2024,9,747
+Malaria,West Bengal,2024,10,559
+Malaria,West Bengal,2024,11,504
+Malaria,West Bengal,2024,12,300
+Malaria,Uttar Pradesh,2018,1,264
+Malaria,Uttar Pradesh,2018,2,224
+Malaria,Uttar Pradesh,2018,3,255
+Malaria,Uttar Pradesh,2018,4,348
+Malaria,Uttar Pradesh,2018,5,520
+Malaria,Uttar Pradesh,2018,6,851
+Malaria,Uttar Pradesh,2018,7,951
+Malaria,Uttar Pradesh,2018,8,1209
+Malaria,Uttar Pradesh,2018,9,1315
+Malaria,Uttar Pradesh,2018,10,1187
+Malaria,Uttar Pradesh,2018,11,668
+Malaria,Uttar Pradesh,2018,12,692
+Malaria,Uttar Pradesh,2019,1,228
+Malaria,Uttar Pradesh,2019,2,184
+Malaria,Uttar Pradesh,2019,3,199
+Malaria,Uttar Pradesh,2019,4,288
+Malaria,Uttar Pradesh,2019,5,424
+Malaria,Uttar Pradesh,2019,6,659
+Malaria,Uttar Pradesh,2019,7,1021
+Malaria,Uttar Pradesh,2019,8,1211
+Malaria,Uttar Pradesh,2019,9,1122
+Malaria,Uttar Pradesh,2019,10,896
+Malaria,Uttar Pradesh,2019,11,673
+Malaria,Uttar Pradesh,2019,12,448
+Malaria,Uttar Pradesh,2020,1,100
+Malaria,Uttar Pradesh,2020,2,72
+Malaria,Uttar Pradesh,2020,3,92
+Malaria,Uttar Pradesh,2020,4,146
+Malaria,Uttar Pradesh,2020,5,176
+Malaria,Uttar Pradesh,2020,6,336
+Malaria,Uttar Pradesh,2020,7,442
+Malaria,Uttar Pradesh,2020,8,540
+Malaria,Uttar Pradesh,2020,9,497
+Malaria,Uttar Pradesh,2020,10,410
+Malaria,Uttar Pradesh,2020,11,340
+Malaria,Uttar Pradesh,2020,12,193
+Malaria,Uttar Pradesh,2021,1,120
+Malaria,Uttar Pradesh,2021,2,105
+Malaria,Uttar Pradesh,2021,3,119
+Malaria,Uttar Pradesh,2021,4,149
+Malaria,Uttar Pradesh,2021,5,203
+Malaria,Uttar Pradesh,2021,6,390
+Malaria,Uttar Pradesh,2021,7,528
+Malaria,Uttar Pradesh,2021,8,688
+Malaria,Uttar Pradesh,2021,9,733
+Malaria,Uttar Pradesh,2021,10,428
+Malaria,Uttar Pradesh,2021,11,410
+Malaria,Uttar Pradesh,2021,12,288
+Malaria,Uttar Pradesh,2022,1,123
+Malaria,Uttar Pradesh,2022,2,85
+Malaria,Uttar Pradesh,2022,3,108
+Malaria,Uttar Pradesh,2022,4,152
+Malaria,Uttar Pradesh,2022,5,208
+Malaria,Uttar Pradesh,2022,6,363
+Malaria,Uttar Pradesh,2022,7,607
+Malaria,Uttar Pradesh,2022,8,598
+Malaria,Uttar Pradesh,2022,9,627
+Malaria,Uttar Pradesh,2022,10,439
+Malaria,Uttar Pradesh,2022,11,374
+Malaria,Uttar Pradesh,2022,12,213
+Malaria,Uttar Pradesh,2023,1,109
+Malaria,Uttar Pradesh,2023,2,81
+Malaria,Uttar Pradesh,2023,3,106
+Malaria,Uttar Pradesh,2023,4,141
+Malaria,Uttar Pradesh,2023,5,204
+Malaria,Uttar Pradesh,2023,6,328
+Malaria,Uttar Pradesh,2023,7,433
+Malaria,Uttar Pradesh,2023,8,547
+Malaria,Uttar Pradesh,2023,9,515
+Malaria,Uttar Pradesh,2023,10,411
+Malaria,Uttar Pradesh,2023,11,366
+Malaria,Uttar Pradesh,2023,12,249
+Malaria,Uttar Pradesh,2024,1,91
+Malaria,Uttar Pradesh,2024,2,68
+Malaria,Uttar Pradesh,2024,3,91
+Malaria,Uttar Pradesh,2024,4,113
+Malaria,Uttar Pradesh,2024,5,205
+Malaria,Uttar Pradesh,2024,6,320
+Malaria,Uttar Pradesh,2024,7,377
+Malaria,Uttar Pradesh,2024,8,569
+Malaria,Uttar Pradesh,2024,9,534
+Malaria,Uttar Pradesh,2024,10,343
+Malaria,Uttar Pradesh,2024,11,348
+Malaria,Uttar Pradesh,2024,12,217
+Malaria,Madhya Pradesh,2018,1,289
+Malaria,Madhya Pradesh,2018,2,273
+Malaria,Madhya Pradesh,2018,3,292
+Malaria,Madhya Pradesh,2018,4,338
+Malaria,Madhya Pradesh,2018,5,517
+Malaria,Madhya Pradesh,2018,6,1008
+Malaria,Madhya Pradesh,2018,7,1487
+Malaria,Madhya Pradesh,2018,8,1489
+Malaria,Madhya Pradesh,2018,9,1364
+Malaria,Madhya Pradesh,2018,10,1256
+Malaria,Madhya Pradesh,2018,11,1053
+Malaria,Madhya Pradesh,2018,12,744
+Malaria,Madhya Pradesh,2019,1,229
+Malaria,Madhya Pradesh,2019,2,198
+Malaria,Madhya Pradesh,2019,3,166
+Malaria,Madhya Pradesh,2019,4,317
+Malaria,Madhya Pradesh,2019,5,429
+Malaria,Madhya Pradesh,2019,6,756
+Malaria,Madhya Pradesh,2019,7,1208
+Malaria,Madhya Pradesh,2019,8,1436
+Malaria,Madhya Pradesh,2019,9,1129
+Malaria,Madhya Pradesh,2019,10,894
+Malaria,Madhya Pradesh,2019,11,807
+Malaria,Madhya Pradesh,2019,12,544
+Malaria,Madhya Pradesh,2020,1,128
+Malaria,Madhya Pradesh,2020,2,83
+Malaria,Madhya Pradesh,2020,3,101
+Malaria,Madhya Pradesh,2020,4,152
+Malaria,Madhya Pradesh,2020,5,200
+Malaria,Madhya Pradesh,2020,6,391
+Malaria,Madhya Pradesh,2020,7,461
+Malaria,Madhya Pradesh,2020,8,609
+Malaria,Madhya Pradesh,2020,9,615
+Malaria,Madhya Pradesh,2020,10,417
+Malaria,Madhya Pradesh,2020,11,416
+Malaria,Madhya Pradesh,2020,12,243
+Malaria,Madhya Pradesh,2021,1,162
+Malaria,Madhya Pradesh,2021,2,126
+Malaria,Madhya Pradesh,2021,3,134
+Malaria,Madhya Pradesh,2021,4,164
+Malaria,Madhya Pradesh,2021,5,294
+Malaria,Madhya Pradesh,2021,6,459
+Malaria,Madhya Pradesh,2021,7,690
+Malaria,Madhya Pradesh,2021,8,754
+Malaria,Madhya Pradesh,2021,9,740
+Malaria,Madhya Pradesh,2021,10,538
+Malaria,Madhya Pradesh,2021,11,455
+Malaria,Madhya Pradesh,2021,12,312
+Malaria,Madhya Pradesh,2022,1,127
+Malaria,Madhya Pradesh,2022,2,112
+Malaria,Madhya Pradesh,2022,3,116
+Malaria,Madhya Pradesh,2022,4,114
+Malaria,Madhya Pradesh,2022,5,188
+Malaria,Madhya Pradesh,2022,6,410
+Malaria,Madhya Pradesh,2022,7,629
+Malaria,Madhya Pradesh,2022,8,645
+Malaria,Madhya Pradesh,2022,9,666
+Malaria,Madhya Pradesh,2022,10,492
+Malaria,Madhya Pradesh,2022,11,480
+Malaria,Madhya Pradesh,2022,12,327
+Malaria,Madhya Pradesh,2023,1,126
+Malaria,Madhya Pradesh,2023,2,97
+Malaria,Madhya Pradesh,2023,3,103
+Malaria,Madhya Pradesh,2023,4,107
+Malaria,Madhya Pradesh,2023,5,202
+Malaria,Madhya Pradesh,2023,6,330
+Malaria,Madhya Pradesh,2023,7,549
+Malaria,Madhya Pradesh,2023,8,719
+Malaria,Madhya Pradesh,2023,9,629
+Malaria,Madhya Pradesh,2023,10,446
+Malaria,Madhya Pradesh,2023,11,371
+Malaria,Madhya Pradesh,2023,12,294
+Malaria,Madhya Pradesh,2024,1,125
+Malaria,Madhya Pradesh,2024,2,84
+Malaria,Madhya Pradesh,2024,3,107
+Malaria,Madhya Pradesh,2024,4,139
+Malaria,Madhya Pradesh,2024,5,194
+Malaria,Madhya Pradesh,2024,6,340
+Malaria,Madhya Pradesh,2024,7,547
+Malaria,Madhya Pradesh,2024,8,530
+Malaria,Madhya Pradesh,2024,9,490
+Malaria,Madhya Pradesh,2024,10,449
+Malaria,Madhya Pradesh,2024,11,372
+Malaria,Madhya Pradesh,2024,12,261
+Malaria,Assam,2018,1,258
+Malaria,Assam,2018,2,203
+Malaria,Assam,2018,3,234
+Malaria,Assam,2018,4,309
+Malaria,Assam,2018,5,485
+Malaria,Assam,2018,6,684
+Malaria,Assam,2018,7,1296
+Malaria,Assam,2018,8,1279
+Malaria,Assam,2018,9,1482
+Malaria,Assam,2018,10,923
+Malaria,Assam,2018,11,786
+Malaria,Assam,2018,12,661
+Malaria,Assam,2019,1,99
+Malaria,Assam,2019,2,109
+Malaria,Assam,2019,3,115
+Malaria,Assam,2019,4,158
+Malaria,Assam,2019,5,204
+Malaria,Assam,2019,6,389
+Malaria,Assam,2019,7,579
+Malaria,Assam,2019,8,654
+Malaria,Assam,2019,9,507
+Malaria,Assam,2019,10,541
+Malaria,Assam,2019,11,477
+Malaria,Assam,2019,12,269
+Malaria,Assam,2020,1,45
+Malaria,Assam,2020,2,45
+Malaria,Assam,2020,3,46
+Malaria,Assam,2020,4,63
+Malaria,Assam,2020,5,90
+Malaria,Assam,2020,6,160
+Malaria,Assam,2020,7,240
+Malaria,Assam,2020,8,271
+Malaria,Assam,2020,9,260
+Malaria,Assam,2020,10,174
+Malaria,Assam,2020,11,173
+Malaria,Assam,2020,12,117
+Malaria,Assam,2021,1,51
+Malaria,Assam,2021,2,44
+Malaria,Assam,2021,3,57
+Malaria,Assam,2021,4,72
+Malaria,Assam,2021,5,92
+Malaria,Assam,2021,6,169
+Malaria,Assam,2021,7,283
+Malaria,Assam,2021,8,298
+Malaria,Assam,2021,9,272
+Malaria,Assam,2021,10,204
+Malaria,Assam,2021,11,207
+Malaria,Assam,2021,12,153
+Malaria,Assam,2022,1,53
+Malaria,Assam,2022,2,41
+Malaria,Assam,2022,3,56
+Malaria,Assam,2022,4,61
+Malaria,Assam,2022,5,89
+Malaria,Assam,2022,6,161
+Malaria,Assam,2022,7,250
+Malaria,Assam,2022,8,297
+Malaria,Assam,2022,9,213
+Malaria,Assam,2022,10,216
+Malaria,Assam,2022,11,175
+Malaria,Assam,2022,12,112
+Malaria,Assam,2023,1,40
+Malaria,Assam,2023,2,32
+Malaria,Assam,2023,3,40
+Malaria,Assam,2023,4,58
+Malaria,Assam,2023,5,71
+Malaria,Assam,2023,6,125
+Malaria,Assam,2023,7,238
+Malaria,Assam,2023,8,197
+Malaria,Assam,2023,9,185
+Malaria,Assam,2023,10,186
+Malaria,Assam,2023,11,161
+Malaria,Assam,2023,12,113
+Malaria,Assam,2024,1,42
+Malaria,Assam,2024,2,30
+Malaria,Assam,2024,3,36
+Malaria,Assam,2024,4,54
+Malaria,Assam,2024,5,71
+Malaria,Assam,2024,6,118
+Malaria,Assam,2024,7,233
+Malaria,Assam,2024,8,192
+Malaria,Assam,2024,9,172
+Malaria,Assam,2024,10,145
+Malaria,Assam,2024,11,122
+Malaria,Assam,2024,12,92
+Malaria,Gujarat,2018,1,196
+Malaria,Gujarat,2018,2,164
+Malaria,Gujarat,2018,3,167
+Malaria,Gujarat,2018,4,231
+Malaria,Gujarat,2018,5,310
+Malaria,Gujarat,2018,6,579
+Malaria,Gujarat,2018,7,836
+Malaria,Gujarat,2018,8,1006
+Malaria,Gujarat,2018,9,790
+Malaria,Gujarat,2018,10,785
+Malaria,Gujarat,2018,11,445
+Malaria,Gujarat,2018,12,453
+Malaria,Gujarat,2019,1,153
+Malaria,Gujarat,2019,2,132
+Malaria,Gujarat,2019,3,124
+Malaria,Gujarat,2019,4,185
+Malaria,Gujarat,2019,5,285
+Malaria,Gujarat,2019,6,467
+Malaria,Gujarat,2019,7,646
+Malaria,Gujarat,2019,8,741
+Malaria,Gujarat,2019,9,765
+Malaria,Gujarat,2019,10,532
+Malaria,Gujarat,2019,11,458
+Malaria,Gujarat,2019,12,325
+Malaria,Gujarat,2020,1,48
+Malaria,Gujarat,2020,2,54
+Malaria,Gujarat,2020,3,68
+Malaria,Gujarat,2020,4,74
+Malaria,Gujarat,2020,5,115
+Malaria,Gujarat,2020,6,193
+Malaria,Gujarat,2020,7,323
+Malaria,Gujarat,2020,8,340
+Malaria,Gujarat,2020,9,300
+Malaria,Gujarat,2020,10,284
+Malaria,Gujarat,2020,11,182
+Malaria,Gujarat,2020,12,158
+Malaria,Gujarat,2021,1,74
+Malaria,Gujarat,2021,2,69
+Malaria,Gujarat,2021,3,65
+Malaria,Gujarat,2021,4,109
+Malaria,Gujarat,2021,5,148
+Malaria,Gujarat,2021,6,251
+Malaria,Gujarat,2021,7,425
+Malaria,Gujarat,2021,8,465
+Malaria,Gujarat,2021,9,404
+Malaria,Gujarat,2021,10,324
+Malaria,Gujarat,2021,11,262
+Malaria,Gujarat,2021,12,189
+Malaria,Gujarat,2022,1,54
+Malaria,Gujarat,2022,2,63
+Malaria,Gujarat,2022,3,69
+Malaria,Gujarat,2022,4,78
+Malaria,Gujarat,2022,5,137
+Malaria,Gujarat,2022,6,217
+Malaria,Gujarat,2022,7,368
+Malaria,Gujarat,2022,8,382
+Malaria,Gujarat,2022,9,405
+Malaria,Gujarat,2022,10,324
+Malaria,Gujarat,2022,11,208
+Malaria,Gujarat,2022,12,160
+Malaria,Gujarat,2023,1,69
+Malaria,Gujarat,2023,2,56
+Malaria,Gujarat,2023,3,54
+Malaria,Gujarat,2023,4,88
+Malaria,Gujarat,2023,5,126
+Malaria,Gujarat,2023,6,219
+Malaria,Gujarat,2023,7,309
+Malaria,Gujarat,2023,8,394
+Malaria,Gujarat,2023,9,267
+Malaria,Gujarat,2023,10,258
+Malaria,Gujarat,2023,11,208
+Malaria,Gujarat,2023,12,150
+Malaria,Gujarat,2024,1,56
+Malaria,Gujarat,2024,2,54
+Malaria,Gujarat,2024,3,55
+Malaria,Gujarat,2024,4,83
+Malaria,Gujarat,2024,5,112
+Malaria,Gujarat,2024,6,168
+Malaria,Gujarat,2024,7,288
+Malaria,Gujarat,2024,8,320
+Malaria,Gujarat,2024,9,319
+Malaria,Gujarat,2024,10,235
+Malaria,Gujarat,2024,11,226
+Malaria,Gujarat,2024,12,137
+Malaria,Rajasthan,2018,1,158
+Malaria,Rajasthan,2018,2,108
+Malaria,Rajasthan,2018,3,141
+Malaria,Rajasthan,2018,4,184
+Malaria,Rajasthan,2018,5,271
+Malaria,Rajasthan,2018,6,467
+Malaria,Rajasthan,2018,7,786
+Malaria,Rajasthan,2018,8,722
+Malaria,Rajasthan,2018,9,724
+Malaria,Rajasthan,2018,10,569
+Malaria,Rajasthan,2018,11,369
+Malaria,Rajasthan,2018,12,348
+Malaria,Rajasthan,2019,1,109
+Malaria,Rajasthan,2019,2,100
+Malaria,Rajasthan,2019,3,114
+Malaria,Rajasthan,2019,4,145
+Malaria,Rajasthan,2019,5,184
+Malaria,Rajasthan,2019,6,362
+Malaria,Rajasthan,2019,7,554
+Malaria,Rajasthan,2019,8,589
+Malaria,Rajasthan,2019,9,526
+Malaria,Rajasthan,2019,10,484
+Malaria,Rajasthan,2019,11,390
+Malaria,Rajasthan,2019,12,301
+Malaria,Rajasthan,2020,1,45
+Malaria,Rajasthan,2020,2,39
+Malaria,Rajasthan,2020,3,48
+Malaria,Rajasthan,2020,4,75
+Malaria,Rajasthan,2020,5,90
+Malaria,Rajasthan,2020,6,153
+Malaria,Rajasthan,2020,7,238
+Malaria,Rajasthan,2020,8,294
+Malaria,Rajasthan,2020,9,225
+Malaria,Rajasthan,2020,10,211
+Malaria,Rajasthan,2020,11,157
+Malaria,Rajasthan,2020,12,133
+Malaria,Rajasthan,2021,1,62
+Malaria,Rajasthan,2021,2,49
+Malaria,Rajasthan,2021,3,48
+Malaria,Rajasthan,2021,4,69
+Malaria,Rajasthan,2021,5,106
+Malaria,Rajasthan,2021,6,180
+Malaria,Rajasthan,2021,7,279
+Malaria,Rajasthan,2021,8,332
+Malaria,Rajasthan,2021,9,289
+Malaria,Rajasthan,2021,10,267
+Malaria,Rajasthan,2021,11,184
+Malaria,Rajasthan,2021,12,153
+Malaria,Rajasthan,2022,1,58
+Malaria,Rajasthan,2022,2,49
+Malaria,Rajasthan,2022,3,57
+Malaria,Rajasthan,2022,4,78
+Malaria,Rajasthan,2022,5,113
+Malaria,Rajasthan,2022,6,150
+Malaria,Rajasthan,2022,7,229
+Malaria,Rajasthan,2022,8,325
+Malaria,Rajasthan,2022,9,263
+Malaria,Rajasthan,2022,10,221
+Malaria,Rajasthan,2022,11,220
+Malaria,Rajasthan,2022,12,155
+Malaria,Rajasthan,2023,1,53
+Malaria,Rajasthan,2023,2,43
+Malaria,Rajasthan,2023,3,51
+Malaria,Rajasthan,2023,4,81
+Malaria,Rajasthan,2023,5,94
+Malaria,Rajasthan,2023,6,179
+Malaria,Rajasthan,2023,7,213
+Malaria,Rajasthan,2023,8,277
+Malaria,Rajasthan,2023,9,257
+Malaria,Rajasthan,2023,10,210
+Malaria,Rajasthan,2023,11,165
+Malaria,Rajasthan,2023,12,142
+Malaria,Rajasthan,2024,1,48
+Malaria,Rajasthan,2024,2,40
+Malaria,Rajasthan,2024,3,45
+Malaria,Rajasthan,2024,4,58
+Malaria,Rajasthan,2024,5,89
+Malaria,Rajasthan,2024,6,144
+Malaria,Rajasthan,2024,7,225
+Malaria,Rajasthan,2024,8,226
+Malaria,Rajasthan,2024,9,254
+Malaria,Rajasthan,2024,10,179
+Malaria,Rajasthan,2024,11,159
+Malaria,Rajasthan,2024,12,109
+Chikungunya,Karnataka,2018,1,264
+Chikungunya,Karnataka,2018,2,239
+Chikungunya,Karnataka,2018,3,276
+Chikungunya,Karnataka,2018,4,310
+Chikungunya,Karnataka,2018,5,618
+Chikungunya,Karnataka,2018,6,824
+Chikungunya,Karnataka,2018,7,1353
+Chikungunya,Karnataka,2018,8,1834
+Chikungunya,Karnataka,2018,9,2750
+Chikungunya,Karnataka,2018,10,3012
+Chikungunya,Karnataka,2018,11,2313
+Chikungunya,Karnataka,2018,12,1402
+Chikungunya,Karnataka,2019,1,254
+Chikungunya,Karnataka,2019,2,162
+Chikungunya,Karnataka,2019,3,212
+Chikungunya,Karnataka,2019,4,367
+Chikungunya,Karnataka,2019,5,516
+Chikungunya,Karnataka,2019,6,783
+Chikungunya,Karnataka,2019,7,1366
+Chikungunya,Karnataka,2019,8,1931
+Chikungunya,Karnataka,2019,9,2369
+Chikungunya,Karnataka,2019,10,2240
+Chikungunya,Karnataka,2019,11,1847
+Chikungunya,Karnataka,2019,12,1206
+Chikungunya,Karnataka,2020,1,85
+Chikungunya,Karnataka,2020,2,64
+Chikungunya,Karnataka,2020,3,70
+Chikungunya,Karnataka,2020,4,98
+Chikungunya,Karnataka,2020,5,135
+Chikungunya,Karnataka,2020,6,254
+Chikungunya,Karnataka,2020,7,412
+Chikungunya,Karnataka,2020,8,680
+Chikungunya,Karnataka,2020,9,773
+Chikungunya,Karnataka,2020,10,804
+Chikungunya,Karnataka,2020,11,602
+Chikungunya,Karnataka,2020,12,379
+Chikungunya,Karnataka,2021,1,115
+Chikungunya,Karnataka,2021,2,95
+Chikungunya,Karnataka,2021,3,95
+Chikungunya,Karnataka,2021,4,158
+Chikungunya,Karnataka,2021,5,216
+Chikungunya,Karnataka,2021,6,336
+Chikungunya,Karnataka,2021,7,517
+Chikungunya,Karnataka,2021,8,763
+Chikungunya,Karnataka,2021,9,971
+Chikungunya,Karnataka,2021,10,1082
+Chikungunya,Karnataka,2021,11,835
+Chikungunya,Karnataka,2021,12,528
+Chikungunya,Karnataka,2022,1,127
+Chikungunya,Karnataka,2022,2,101
+Chikungunya,Karnataka,2022,3,119
+Chikungunya,Karnataka,2022,4,200
+Chikungunya,Karnataka,2022,5,267
+Chikungunya,Karnataka,2022,6,447
+Chikungunya,Karnataka,2022,7,731
+Chikungunya,Karnataka,2022,8,970
+Chikungunya,Karnataka,2022,9,1212
+Chikungunya,Karnataka,2022,10,1518
+Chikungunya,Karnataka,2022,11,1086
+Chikungunya,Karnataka,2022,12,647
+Chikungunya,Karnataka,2023,1,172
+Chikungunya,Karnataka,2023,2,107
+Chikungunya,Karnataka,2023,3,138
+Chikungunya,Karnataka,2023,4,229
+Chikungunya,Karnataka,2023,5,319
+Chikungunya,Karnataka,2023,6,455
+Chikungunya,Karnataka,2023,7,863
+Chikungunya,Karnataka,2023,8,1269
+Chikungunya,Karnataka,2023,9,1431
+Chikungunya,Karnataka,2023,10,1838
+Chikungunya,Karnataka,2023,11,1060
+Chikungunya,Karnataka,2023,12,802
+Chikungunya,Karnataka,2024,1,104
+Chikungunya,Karnataka,2024,2,94
+Chikungunya,Karnataka,2024,3,112
+Chikungunya,Karnataka,2024,4,155
+Chikungunya,Karnataka,2024,5,238
+Chikungunya,Karnataka,2024,6,404
+Chikungunya,Karnataka,2024,7,651
+Chikungunya,Karnataka,2024,8,1036
+Chikungunya,Karnataka,2024,9,1539
+Chikungunya,Karnataka,2024,10,1273
+Chikungunya,Karnataka,2024,11,775
+Chikungunya,Karnataka,2024,12,582
+Chikungunya,Maharashtra,2018,1,162
+Chikungunya,Maharashtra,2018,2,116
+Chikungunya,Maharashtra,2018,3,157
+Chikungunya,Maharashtra,2018,4,213
+Chikungunya,Maharashtra,2018,5,285
+Chikungunya,Maharashtra,2018,6,529
+Chikungunya,Maharashtra,2018,7,640
+Chikungunya,Maharashtra,2018,8,1212
+Chikungunya,Maharashtra,2018,9,1802
+Chikungunya,Maharashtra,2018,10,1634
+Chikungunya,Maharashtra,2018,11,1109
+Chikungunya,Maharashtra,2018,12,864
+Chikungunya,Maharashtra,2019,1,141
+Chikungunya,Maharashtra,2019,2,102
+Chikungunya,Maharashtra,2019,3,96
+Chikungunya,Maharashtra,2019,4,171
+Chikungunya,Maharashtra,2019,5,282
+Chikungunya,Maharashtra,2019,6,402
+Chikungunya,Maharashtra,2019,7,733
+Chikungunya,Maharashtra,2019,8,1074
+Chikungunya,Maharashtra,2019,9,1338
+Chikungunya,Maharashtra,2019,10,1347
+Chikungunya,Maharashtra,2019,11,946
+Chikungunya,Maharashtra,2019,12,590
+Chikungunya,Maharashtra,2020,1,29
+Chikungunya,Maharashtra,2020,2,32
+Chikungunya,Maharashtra,2020,3,33
+Chikungunya,Maharashtra,2020,4,48
+Chikungunya,Maharashtra,2020,5,79
+Chikungunya,Maharashtra,2020,6,103
+Chikungunya,Maharashtra,2020,7,208
+Chikungunya,Maharashtra,2020,8,291
+Chikungunya,Maharashtra,2020,9,398
+Chikungunya,Maharashtra,2020,10,352
+Chikungunya,Maharashtra,2020,11,303
+Chikungunya,Maharashtra,2020,12,196
+Chikungunya,Maharashtra,2021,1,67
+Chikungunya,Maharashtra,2021,2,52
+Chikungunya,Maharashtra,2021,3,66
+Chikungunya,Maharashtra,2021,4,97
+Chikungunya,Maharashtra,2021,5,102
+Chikungunya,Maharashtra,2021,6,200
+Chikungunya,Maharashtra,2021,7,313
+Chikungunya,Maharashtra,2021,8,433
+Chikungunya,Maharashtra,2021,9,575
+Chikungunya,Maharashtra,2021,10,513
+Chikungunya,Maharashtra,2021,11,421
+Chikungunya,Maharashtra,2021,12,272
+Chikungunya,Maharashtra,2022,1,75
+Chikungunya,Maharashtra,2022,2,61
+Chikungunya,Maharashtra,2022,3,79
+Chikungunya,Maharashtra,2022,4,105
+Chikungunya,Maharashtra,2022,5,136
+Chikungunya,Maharashtra,2022,6,257
+Chikungunya,Maharashtra,2022,7,318
+Chikungunya,Maharashtra,2022,8,512
+Chikungunya,Maharashtra,2022,9,703
+Chikungunya,Maharashtra,2022,10,750
+Chikungunya,Maharashtra,2022,11,560
+Chikungunya,Maharashtra,2022,12,355
+Chikungunya,Maharashtra,2023,1,85
+Chikungunya,Maharashtra,2023,2,74
+Chikungunya,Maharashtra,2023,3,63
+Chikungunya,Maharashtra,2023,4,119
+Chikungunya,Maharashtra,2023,5,159
+Chikungunya,Maharashtra,2023,6,296
+Chikungunya,Maharashtra,2023,7,442
+Chikungunya,Maharashtra,2023,8,610
+Chikungunya,Maharashtra,2023,9,900
+Chikungunya,Maharashtra,2023,10,845
+Chikungunya,Maharashtra,2023,11,614
+Chikungunya,Maharashtra,2023,12,402
+Chikungunya,Maharashtra,2024,1,56
+Chikungunya,Maharashtra,2024,2,64
+Chikungunya,Maharashtra,2024,3,62
+Chikungunya,Maharashtra,2024,4,89
+Chikungunya,Maharashtra,2024,5,138
+Chikungunya,Maharashtra,2024,6,177
+Chikungunya,Maharashtra,2024,7,348
+Chikungunya,Maharashtra,2024,8,524
+Chikungunya,Maharashtra,2024,9,772
+Chikungunya,Maharashtra,2024,10,836
+Chikungunya,Maharashtra,2024,11,564
+Chikungunya,Maharashtra,2024,12,286
+Chikungunya,Delhi,2018,1,31
+Chikungunya,Delhi,2018,2,22
+Chikungunya,Delhi,2018,3,27
+Chikungunya,Delhi,2018,4,40
+Chikungunya,Delhi,2018,5,64
+Chikungunya,Delhi,2018,6,82
+Chikungunya,Delhi,2018,7,140
+Chikungunya,Delhi,2018,8,248
+Chikungunya,Delhi,2018,9,306
+Chikungunya,Delhi,2018,10,317
+Chikungunya,Delhi,2018,11,223
+Chikungunya,Delhi,2018,12,107
+Chikungunya,Delhi,2019,1,21
+Chikungunya,Delhi,2019,2,15
+Chikungunya,Delhi,2019,3,18
+Chikungunya,Delhi,2019,4,26
+Chikungunya,Delhi,2019,5,42
+Chikungunya,Delhi,2019,6,71
+Chikungunya,Delhi,2019,7,93
+Chikungunya,Delhi,2019,8,163
+Chikungunya,Delhi,2019,9,211
+Chikungunya,Delhi,2019,10,242
+Chikungunya,Delhi,2019,11,154
+Chikungunya,Delhi,2019,12,99
+Chikungunya,Delhi,2020,1,7
+Chikungunya,Delhi,2020,2,6
+Chikungunya,Delhi,2020,3,7
+Chikungunya,Delhi,2020,4,9
+Chikungunya,Delhi,2020,5,14
+Chikungunya,Delhi,2020,6,24
+Chikungunya,Delhi,2020,7,35
+Chikungunya,Delhi,2020,8,59
+Chikungunya,Delhi,2020,9,68
+Chikungunya,Delhi,2020,10,69
+Chikungunya,Delhi,2020,11,49
+Chikungunya,Delhi,2020,12,32
+Chikungunya,Delhi,2021,1,14
+Chikungunya,Delhi,2021,2,13
+Chikungunya,Delhi,2021,3,16
+Chikungunya,Delhi,2021,4,22
+Chikungunya,Delhi,2021,5,30
+Chikungunya,Delhi,2021,6,48
+Chikungunya,Delhi,2021,7,81
+Chikungunya,Delhi,2021,8,116
+Chikungunya,Delhi,2021,9,171
+Chikungunya,Delhi,2021,10,190
+Chikungunya,Delhi,2021,11,125
+Chikungunya,Delhi,2021,12,77
+Chikungunya,Delhi,2022,1,22
+Chikungunya,Delhi,2022,2,20
+Chikungunya,Delhi,2022,3,21
+Chikungunya,Delhi,2022,4,29
+Chikungunya,Delhi,2022,5,41
+Chikungunya,Delhi,2022,6,71
+Chikungunya,Delhi,2022,7,101
+Chikungunya,Delhi,2022,8,185
+Chikungunya,Delhi,2022,9,189
+Chikungunya,Delhi,2022,10,217
+Chikungunya,Delhi,2022,11,137
+Chikungunya,Delhi,2022,12,114
+Chikungunya,Delhi,2023,1,25
+Chikungunya,Delhi,2023,2,23
+Chikungunya,Delhi,2023,3,25
+Chikungunya,Delhi,2023,4,32
+Chikungunya,Delhi,2023,5,52
+Chikungunya,Delhi,2023,6,77
+Chikungunya,Delhi,2023,7,134
+Chikungunya,Delhi,2023,8,221
+Chikungunya,Delhi,2023,9,292
+Chikungunya,Delhi,2023,10,278
+Chikungunya,Delhi,2023,11,210
+Chikungunya,Delhi,2023,12,136
+Chikungunya,Delhi,2024,1,19
+Chikungunya,Delhi,2024,2,16
+Chikungunya,Delhi,2024,3,17
+Chikungunya,Delhi,2024,4,18
+Chikungunya,Delhi,2024,5,36
+Chikungunya,Delhi,2024,6,66
+Chikungunya,Delhi,2024,7,93
+Chikungunya,Delhi,2024,8,136
+Chikungunya,Delhi,2024,9,193
+Chikungunya,Delhi,2024,10,153
+Chikungunya,Delhi,2024,11,146
+Chikungunya,Delhi,2024,12,98
+Chikungunya,Gujarat,2018,1,74
+Chikungunya,Gujarat,2018,2,66
+Chikungunya,Gujarat,2018,3,77
+Chikungunya,Gujarat,2018,4,87
+Chikungunya,Gujarat,2018,5,127
+Chikungunya,Gujarat,2018,6,241
+Chikungunya,Gujarat,2018,7,393
+Chikungunya,Gujarat,2018,8,580
+Chikungunya,Gujarat,2018,9,790
+Chikungunya,Gujarat,2018,10,854
+Chikungunya,Gujarat,2018,11,607
+Chikungunya,Gujarat,2018,12,346
+Chikungunya,Gujarat,2019,1,57
+Chikungunya,Gujarat,2019,2,51
+Chikungunya,Gujarat,2019,3,59
+Chikungunya,Gujarat,2019,4,97
+Chikungunya,Gujarat,2019,5,130
+Chikungunya,Gujarat,2019,6,222
+Chikungunya,Gujarat,2019,7,303
+Chikungunya,Gujarat,2019,8,396
+Chikungunya,Gujarat,2019,9,550
+Chikungunya,Gujarat,2019,10,671
+Chikungunya,Gujarat,2019,11,363
+Chikungunya,Gujarat,2019,12,320
+Chikungunya,Gujarat,2020,1,19
+Chikungunya,Gujarat,2020,2,17
+Chikungunya,Gujarat,2020,3,19
+Chikungunya,Gujarat,2020,4,27
+Chikungunya,Gujarat,2020,5,34
+Chikungunya,Gujarat,2020,6,62
+Chikungunya,Gujarat,2020,7,94
+Chikungunya,Gujarat,2020,8,144
+Chikungunya,Gujarat,2020,9,176
+Chikungunya,Gujarat,2020,10,216
+Chikungunya,Gujarat,2020,11,139
+Chikungunya,Gujarat,2020,12,76
+Chikungunya,Gujarat,2021,1,32
+Chikungunya,Gujarat,2021,2,23
+Chikungunya,Gujarat,2021,3,26
+Chikungunya,Gujarat,2021,4,35
+Chikungunya,Gujarat,2021,5,58
+Chikungunya,Gujarat,2021,6,103
+Chikungunya,Gujarat,2021,7,167
+Chikungunya,Gujarat,2021,8,260
+Chikungunya,Gujarat,2021,9,273
+Chikungunya,Gujarat,2021,10,290
+Chikungunya,Gujarat,2021,11,242
+Chikungunya,Gujarat,2021,12,128
+Chikungunya,Gujarat,2022,1,33
+Chikungunya,Gujarat,2022,2,33
+Chikungunya,Gujarat,2022,3,34
+Chikungunya,Gujarat,2022,4,45
+Chikungunya,Gujarat,2022,5,75
+Chikungunya,Gujarat,2022,6,105
+Chikungunya,Gujarat,2022,7,185
+Chikungunya,Gujarat,2022,8,287
+Chikungunya,Gujarat,2022,9,392
+Chikungunya,Gujarat,2022,10,402
+Chikungunya,Gujarat,2022,11,266
+Chikungunya,Gujarat,2022,12,181
+Chikungunya,Gujarat,2023,1,47
+Chikungunya,Gujarat,2023,2,32
+Chikungunya,Gujarat,2023,3,42
+Chikungunya,Gujarat,2023,4,63
+Chikungunya,Gujarat,2023,5,89
+Chikungunya,Gujarat,2023,6,161
+Chikungunya,Gujarat,2023,7,230
+Chikungunya,Gujarat,2023,8,307
+Chikungunya,Gujarat,2023,9,413
+Chikungunya,Gujarat,2023,10,443
+Chikungunya,Gujarat,2023,11,298
+Chikungunya,Gujarat,2023,12,211
+Chikungunya,Gujarat,2024,1,35
+Chikungunya,Gujarat,2024,2,28
+Chikungunya,Gujarat,2024,3,34
+Chikungunya,Gujarat,2024,4,46
+Chikungunya,Gujarat,2024,5,70
+Chikungunya,Gujarat,2024,6,102
+Chikungunya,Gujarat,2024,7,163
+Chikungunya,Gujarat,2024,8,255
+Chikungunya,Gujarat,2024,9,338
+Chikungunya,Gujarat,2024,10,324
+Chikungunya,Gujarat,2024,11,190
+Chikungunya,Gujarat,2024,12,154
+Chikungunya,Tamil Nadu,2018,1,55
+Chikungunya,Tamil Nadu,2018,2,42
+Chikungunya,Tamil Nadu,2018,3,58
+Chikungunya,Tamil Nadu,2018,4,74
+Chikungunya,Tamil Nadu,2018,5,132
+Chikungunya,Tamil Nadu,2018,6,173
+Chikungunya,Tamil Nadu,2018,7,291
+Chikungunya,Tamil Nadu,2018,8,437
+Chikungunya,Tamil Nadu,2018,9,588
+Chikungunya,Tamil Nadu,2018,10,681
+Chikungunya,Tamil Nadu,2018,11,402
+Chikungunya,Tamil Nadu,2018,12,261
+Chikungunya,Tamil Nadu,2019,1,52
+Chikungunya,Tamil Nadu,2019,2,40
+Chikungunya,Tamil Nadu,2019,3,45
+Chikungunya,Tamil Nadu,2019,4,54
+Chikungunya,Tamil Nadu,2019,5,82
+Chikungunya,Tamil Nadu,2019,6,123
+Chikungunya,Tamil Nadu,2019,7,224
+Chikungunya,Tamil Nadu,2019,8,365
+Chikungunya,Tamil Nadu,2019,9,441
+Chikungunya,Tamil Nadu,2019,10,432
+Chikungunya,Tamil Nadu,2019,11,362
+Chikungunya,Tamil Nadu,2019,12,196
+Chikungunya,Tamil Nadu,2020,1,14
+Chikungunya,Tamil Nadu,2020,2,9
+Chikungunya,Tamil Nadu,2020,3,13
+Chikungunya,Tamil Nadu,2020,4,16
+Chikungunya,Tamil Nadu,2020,5,26
+Chikungunya,Tamil Nadu,2020,6,36
+Chikungunya,Tamil Nadu,2020,7,73
+Chikungunya,Tamil Nadu,2020,8,84
+Chikungunya,Tamil Nadu,2020,9,133
+Chikungunya,Tamil Nadu,2020,10,138
+Chikungunya,Tamil Nadu,2020,11,104
+Chikungunya,Tamil Nadu,2020,12,60
+Chikungunya,Tamil Nadu,2021,1,21
+Chikungunya,Tamil Nadu,2021,2,18
+Chikungunya,Tamil Nadu,2021,3,21
+Chikungunya,Tamil Nadu,2021,4,27
+Chikungunya,Tamil Nadu,2021,5,49
+Chikungunya,Tamil Nadu,2021,6,66
+Chikungunya,Tamil Nadu,2021,7,145
+Chikungunya,Tamil Nadu,2021,8,182
+Chikungunya,Tamil Nadu,2021,9,212
+Chikungunya,Tamil Nadu,2021,10,230
+Chikungunya,Tamil Nadu,2021,11,151
+Chikungunya,Tamil Nadu,2021,12,105
+Chikungunya,Tamil Nadu,2022,1,25
+Chikungunya,Tamil Nadu,2022,2,21
+Chikungunya,Tamil Nadu,2022,3,24
+Chikungunya,Tamil Nadu,2022,4,38
+Chikungunya,Tamil Nadu,2022,5,57
+Chikungunya,Tamil Nadu,2022,6,95
+Chikungunya,Tamil Nadu,2022,7,134
+Chikungunya,Tamil Nadu,2022,8,225
+Chikungunya,Tamil Nadu,2022,9,290
+Chikungunya,Tamil Nadu,2022,10,315
+Chikungunya,Tamil Nadu,2022,11,217
+Chikungunya,Tamil Nadu,2022,12,125
+Chikungunya,Tamil Nadu,2023,1,30
+Chikungunya,Tamil Nadu,2023,2,27
+Chikungunya,Tamil Nadu,2023,3,33
+Chikungunya,Tamil Nadu,2023,4,49
+Chikungunya,Tamil Nadu,2023,5,62
+Chikungunya,Tamil Nadu,2023,6,97
+Chikungunya,Tamil Nadu,2023,7,163
+Chikungunya,Tamil Nadu,2023,8,261
+Chikungunya,Tamil Nadu,2023,9,299
+Chikungunya,Tamil Nadu,2023,10,373
+Chikungunya,Tamil Nadu,2023,11,238
+Chikungunya,Tamil Nadu,2023,12,155
+Chikungunya,Tamil Nadu,2024,1,22
+Chikungunya,Tamil Nadu,2024,2,21
+Chikungunya,Tamil Nadu,2024,3,23
+Chikungunya,Tamil Nadu,2024,4,36
+Chikungunya,Tamil Nadu,2024,5,43
+Chikungunya,Tamil Nadu,2024,6,71
+Chikungunya,Tamil Nadu,2024,7,136
+Chikungunya,Tamil Nadu,2024,8,180
+Chikungunya,Tamil Nadu,2024,9,278
+Chikungunya,Tamil Nadu,2024,10,260
+Chikungunya,Tamil Nadu,2024,11,171
+Chikungunya,Tamil Nadu,2024,12,127
+Chikungunya,Andhra Pradesh,2018,1,39
+Chikungunya,Andhra Pradesh,2018,2,39
+Chikungunya,Andhra Pradesh,2018,3,45
+Chikungunya,Andhra Pradesh,2018,4,56
+Chikungunya,Andhra Pradesh,2018,5,89
+Chikungunya,Andhra Pradesh,2018,6,152
+Chikungunya,Andhra Pradesh,2018,7,234
+Chikungunya,Andhra Pradesh,2018,8,332
+Chikungunya,Andhra Pradesh,2018,9,443
+Chikungunya,Andhra Pradesh,2018,10,487
+Chikungunya,Andhra Pradesh,2018,11,345
+Chikungunya,Andhra Pradesh,2018,12,206
+Chikungunya,Andhra Pradesh,2019,1,31
+Chikungunya,Andhra Pradesh,2019,2,25
+Chikungunya,Andhra Pradesh,2019,3,31
+Chikungunya,Andhra Pradesh,2019,4,46
+Chikungunya,Andhra Pradesh,2019,5,65
+Chikungunya,Andhra Pradesh,2019,6,120
+Chikungunya,Andhra Pradesh,2019,7,171
+Chikungunya,Andhra Pradesh,2019,8,305
+Chikungunya,Andhra Pradesh,2019,9,310
+Chikungunya,Andhra Pradesh,2019,10,381
+Chikungunya,Andhra Pradesh,2019,11,277
+Chikungunya,Andhra Pradesh,2019,12,165
+Chikungunya,Andhra Pradesh,2020,1,9
+Chikungunya,Andhra Pradesh,2020,2,8
+Chikungunya,Andhra Pradesh,2020,3,11
+Chikungunya,Andhra Pradesh,2020,4,14
+Chikungunya,Andhra Pradesh,2020,5,20
+Chikungunya,Andhra Pradesh,2020,6,31
+Chikungunya,Andhra Pradesh,2020,7,51
+Chikungunya,Andhra Pradesh,2020,8,73
+Chikungunya,Andhra Pradesh,2020,9,107
+Chikungunya,Andhra Pradesh,2020,10,111
+Chikungunya,Andhra Pradesh,2020,11,82
+Chikungunya,Andhra Pradesh,2020,12,53
+Chikungunya,Andhra Pradesh,2021,1,16
+Chikungunya,Andhra Pradesh,2021,2,14
+Chikungunya,Andhra Pradesh,2021,3,15
+Chikungunya,Andhra Pradesh,2021,4,24
+Chikungunya,Andhra Pradesh,2021,5,28
+Chikungunya,Andhra Pradesh,2021,6,54
+Chikungunya,Andhra Pradesh,2021,7,97
+Chikungunya,Andhra Pradesh,2021,8,137
+Chikungunya,Andhra Pradesh,2021,9,201
+Chikungunya,Andhra Pradesh,2021,10,191
+Chikungunya,Andhra Pradesh,2021,11,121
+Chikungunya,Andhra Pradesh,2021,12,88
+Chikungunya,Andhra Pradesh,2022,1,18
+Chikungunya,Andhra Pradesh,2022,2,20
+Chikungunya,Andhra Pradesh,2022,3,16
+Chikungunya,Andhra Pradesh,2022,4,29
+Chikungunya,Andhra Pradesh,2022,5,39
+Chikungunya,Andhra Pradesh,2022,6,68
+Chikungunya,Andhra Pradesh,2022,7,110
+Chikungunya,Andhra Pradesh,2022,8,137
+Chikungunya,Andhra Pradesh,2022,9,182
+Chikungunya,Andhra Pradesh,2022,10,260
+Chikungunya,Andhra Pradesh,2022,11,166
+Chikungunya,Andhra Pradesh,2022,12,87
+Chikungunya,Andhra Pradesh,2023,1,23
+Chikungunya,Andhra Pradesh,2023,2,18
+Chikungunya,Andhra Pradesh,2023,3,19
+Chikungunya,Andhra Pradesh,2023,4,38
+Chikungunya,Andhra Pradesh,2023,5,59
+Chikungunya,Andhra Pradesh,2023,6,78
+Chikungunya,Andhra Pradesh,2023,7,137
+Chikungunya,Andhra Pradesh,2023,8,226
+Chikungunya,Andhra Pradesh,2023,9,254
+Chikungunya,Andhra Pradesh,2023,10,236
+Chikungunya,Andhra Pradesh,2023,11,173
+Chikungunya,Andhra Pradesh,2023,12,115
+Chikungunya,Andhra Pradesh,2024,1,22
+Chikungunya,Andhra Pradesh,2024,2,16
+Chikungunya,Andhra Pradesh,2024,3,15
+Chikungunya,Andhra Pradesh,2024,4,24
+Chikungunya,Andhra Pradesh,2024,5,40
+Chikungunya,Andhra Pradesh,2024,6,73
+Chikungunya,Andhra Pradesh,2024,7,103
+Chikungunya,Andhra Pradesh,2024,8,145
+Chikungunya,Andhra Pradesh,2024,9,209
+Chikungunya,Andhra Pradesh,2024,10,220
+Chikungunya,Andhra Pradesh,2024,11,148
+Chikungunya,Andhra Pradesh,2024,12,89
+Chikungunya,Telangana,2018,1,40
+Chikungunya,Telangana,2018,2,30
+Chikungunya,Telangana,2018,3,34
+Chikungunya,Telangana,2018,4,48
+Chikungunya,Telangana,2018,5,73
+Chikungunya,Telangana,2018,6,146
+Chikungunya,Telangana,2018,7,221
+Chikungunya,Telangana,2018,8,290
+Chikungunya,Telangana,2018,9,362
+Chikungunya,Telangana,2018,10,418
+Chikungunya,Telangana,2018,11,309
+Chikungunya,Telangana,2018,12,179
+Chikungunya,Telangana,2019,1,27
+Chikungunya,Telangana,2019,2,29
+Chikungunya,Telangana,2019,3,27
+Chikungunya,Telangana,2019,4,47
+Chikungunya,Telangana,2019,5,53
+Chikungunya,Telangana,2019,6,90
+Chikungunya,Telangana,2019,7,156
+Chikungunya,Telangana,2019,8,234
+Chikungunya,Telangana,2019,9,297
+Chikungunya,Telangana,2019,10,341
+Chikungunya,Telangana,2019,11,239
+Chikungunya,Telangana,2019,12,159
+Chikungunya,Telangana,2020,1,10
+Chikungunya,Telangana,2020,2,7
+Chikungunya,Telangana,2020,3,8
+Chikungunya,Telangana,2020,4,10
+Chikungunya,Telangana,2020,5,18
+Chikungunya,Telangana,2020,6,28
+Chikungunya,Telangana,2020,7,34
+Chikungunya,Telangana,2020,8,78
+Chikungunya,Telangana,2020,9,92
+Chikungunya,Telangana,2020,10,110
+Chikungunya,Telangana,2020,11,63
+Chikungunya,Telangana,2020,12,42
+Chikungunya,Telangana,2021,1,15
+Chikungunya,Telangana,2021,2,12
+Chikungunya,Telangana,2021,3,14
+Chikungunya,Telangana,2021,4,19
+Chikungunya,Telangana,2021,5,23
+Chikungunya,Telangana,2021,6,47
+Chikungunya,Telangana,2021,7,75
+Chikungunya,Telangana,2021,8,90
+Chikungunya,Telangana,2021,9,141
+Chikungunya,Telangana,2021,10,164
+Chikungunya,Telangana,2021,11,87
+Chikungunya,Telangana,2021,12,71
+Chikungunya,Telangana,2022,1,17
+Chikungunya,Telangana,2022,2,15
+Chikungunya,Telangana,2022,3,16
+Chikungunya,Telangana,2022,4,24
+Chikungunya,Telangana,2022,5,38
+Chikungunya,Telangana,2022,6,64
+Chikungunya,Telangana,2022,7,101
+Chikungunya,Telangana,2022,8,151
+Chikungunya,Telangana,2022,9,184
+Chikungunya,Telangana,2022,10,197
+Chikungunya,Telangana,2022,11,124
+Chikungunya,Telangana,2022,12,90
+Chikungunya,Telangana,2023,1,21
+Chikungunya,Telangana,2023,2,20
+Chikungunya,Telangana,2023,3,22
+Chikungunya,Telangana,2023,4,33
+Chikungunya,Telangana,2023,5,42
+Chikungunya,Telangana,2023,6,68
+Chikungunya,Telangana,2023,7,106
+Chikungunya,Telangana,2023,8,169
+Chikungunya,Telangana,2023,9,251
+Chikungunya,Telangana,2023,10,233
+Chikungunya,Telangana,2023,11,145
+Chikungunya,Telangana,2023,12,91
+Chikungunya,Telangana,2024,1,19
+Chikungunya,Telangana,2024,2,14
+Chikungunya,Telangana,2024,3,17
+Chikungunya,Telangana,2024,4,23
+Chikungunya,Telangana,2024,5,33
+Chikungunya,Telangana,2024,6,53
+Chikungunya,Telangana,2024,7,88
+Chikungunya,Telangana,2024,8,125
+Chikungunya,Telangana,2024,9,150
+Chikungunya,Telangana,2024,10,152
+Chikungunya,Telangana,2024,11,136
+Chikungunya,Telangana,2024,12,83

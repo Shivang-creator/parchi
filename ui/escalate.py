@@ -14,17 +14,18 @@ import streamlit as st
 
 from engine import geo
 
+from . import components as c
 from . import theme
 
 TIER_COLOR = {
-    "Medical College": theme.GOOD,
-    "District Hospital": theme.ACCENT,
+    "Medical College": theme.SAFE,
+    "District Hospital": theme.STAMP,
     "Private Multispeciality": theme.RESERVE,
-    "CHC": theme.WARN,
-    "PHC": theme.MUTED,
-    "Private Clinic / Nursing home": theme.LINE,
-    "Sub-centre": theme.LINE,
-    "Clinic": theme.LINE,
+    "CHC": theme.CAUTION,
+    "PHC": theme.INK_3,
+    "Private Clinic / Nursing home": theme.RULE,
+    "Sub-centre": theme.RULE,
+    "Clinic": theme.RULE,
 }
 
 
@@ -56,7 +57,7 @@ def render() -> None:
         exclude_name=origin["name"],
     )
 
-    st.caption(spec["note"])
+    st.markdown(c.caveat(spec["note"]), unsafe_allow_html=True)
 
     # ------------------------------------------------------------------
     # Verdict
@@ -80,43 +81,43 @@ def render() -> None:
         m4.metric("Nearest that can treat it", "none", "not in dataset")
 
     if result.reachable:
-        st.success(
-            f"**Reachable in time.** {result.nearest_capable['name']} "
-            f"({result.nearest_capable['tier']}) is about "
-            f"{result.minutes_to_capable:.0f} minutes away, inside the "
-            f"{spec['window_min']}-minute window. Send directly — do not route "
-            f"through a facility that cannot provide {spec['capability'].lower()}."
-        )
+        st.markdown(c.note(
+            "REACHABLE", f"{result.nearest_capable['name']} — "
+            f"{result.minutes_to_capable:.0f} minutes",
+            f"A {result.nearest_capable['tier'].lower()}, inside the "
+            f"{spec['window_min']}-minute window. Send <b>directly</b> — do not "
+            f"route through a facility that cannot provide "
+            f"{spec['capability'].lower()}.",
+            theme.SAFE), unsafe_allow_html=True)
     elif result.nearest_capable is not None:
         over = result.minutes_to_capable - spec["window_min"]
-        st.error(
-            f"**Outside the window.** The nearest facility able to provide "
-            f"{spec['capability'].lower()} is {result.nearest_capable['name']}, "
-            f"about {result.minutes_to_capable:.0f} minutes away — "
-            f"{over:.0f} minutes past the {spec['window_min']}-minute limit. "
-            f"For this emergency, at this location, geography is the clinical "
-            f"problem. Stabilise, call ahead, and start transfer immediately."
-        )
+        st.markdown(c.note(
+            "OUTSIDE THE WINDOW",
+            f"{over:.0f} minutes past the limit",
+            f"The nearest facility able to provide {spec['capability'].lower()} "
+            f"is <b>{result.nearest_capable['name']}</b>, about "
+            f"{result.minutes_to_capable:.0f} minutes away, against a "
+            f"{spec['window_min']}-minute window. For this emergency at this "
+            f"location, geography <i>is</i> the clinical problem. Stabilise, "
+            f"call ahead, and start the transfer now.",
+            theme.DANGER), unsafe_allow_html=True)
     else:
-        st.error(
-            f"No facility in this dataset provides {spec['capability'].lower()}."
-        )
+        st.markdown(c.note(
+            "NO CAPABILITY", f"Nothing in range provides {spec['capability'].lower()}",
+            "No facility in this extract carries that capability at any distance.",
+            theme.DANGER), unsafe_allow_html=True)
 
     if result.wasted_minutes > 0 and result.nearest_capable is not None:
-        st.markdown(
-            f'<div class="alert" style="--c:{theme.WARN}">'
-            f'<span class="pill" style="--c:{theme.WARN}">ROUTING</span>'
-            f'<span class="t">Do not stop at the nearest facility first</span>'
-            f'<div class="b">The closest facility is '
-            f"<b>{result.nearest_any['name']}</b> ({result.nearest_any['tier']}), "
-            f"{result.minutes_to_any:.0f} minutes away — and it cannot provide "
-            f"{spec['capability'].lower()}. Taking the patient there and "
-            f"re-referring costs roughly <b>{result.wasted_minutes:.0f} extra "
-            f"minutes</b> of the {spec['window_min']}-minute window. This is the "
-            f"commonest avoidable delay in Indian emergency referral."
-            f"</div></div>",
-            unsafe_allow_html=True,
-        )
+        st.markdown(c.note(
+            "ROUTING", "Do not stop at the nearest facility first",
+            f"The closest facility is <b>{result.nearest_any['name']}</b> "
+            f"({result.nearest_any['tier']}), {result.minutes_to_any:.0f} minutes "
+            f"away — and it cannot provide {spec['capability'].lower()}. Taking "
+            f"the patient there and re-referring costs roughly "
+            f"<b>{result.wasted_minutes:.0f} extra minutes</b> of a "
+            f"{spec['window_min']}-minute window. This is the commonest "
+            f"avoidable delay in Indian emergency referral.",
+            theme.CAUTION), unsafe_allow_html=True)
 
     # ------------------------------------------------------------------
     # Map
@@ -129,7 +130,7 @@ def render() -> None:
         fig.add_scattermap(
             lat=group["latitude"], lon=group["longitude"], mode="markers",
             name=tier,
-            marker=dict(size=9, color=TIER_COLOR.get(tier, theme.MUTED)),
+            marker=dict(size=9, color=TIER_COLOR.get(tier, theme.INK_3)),
             text=group["name"],
             customdata=group[["tier", "minutes"]],
             hovertemplate="<b>%{text}</b><br>%{customdata[0]}<br>"
@@ -138,7 +139,7 @@ def render() -> None:
     fig.add_scattermap(
         lat=[origin["latitude"]], lon=[origin["longitude"]], mode="markers",
         name="Referring from",
-        marker=dict(size=16, color=theme.BAD),
+        marker=dict(size=15, color=theme.RX),
         text=[origin["name"]], hovertemplate="<b>%{text}</b><extra></extra>",
     )
     if result.nearest_capable is not None:
@@ -146,20 +147,20 @@ def render() -> None:
             lat=[origin["latitude"], result.nearest_capable["latitude"]],
             lon=[origin["longitude"], result.nearest_capable["longitude"]],
             mode="lines", name="Referral route",
-            line=dict(width=3, color=theme.GOOD),
+            line=dict(width=2.5, color=theme.SAFE),
             hoverinfo="skip",
         )
 
     fig.update_layout(
         map=dict(
-            style="carto-darkmatter",
+            style="carto-positron",
             center=dict(lat=float(origin["latitude"]), lon=float(origin["longitude"])),
             zoom=8.2,
         ),
         height=460,
         margin=dict(l=0, r=0, t=0, b=0),
         paper_bgcolor="rgba(0,0,0,0)",
-        font=dict(color=theme.TEXT, size=12),
+        font=dict(color=theme.INK_2, size=11.5),
         legend=dict(orientation="h", y=-0.04, x=0, bgcolor="rgba(0,0,0,0)"),
     )
     st.plotly_chart(fig, width="stretch", config={"displayModeBar": False})
@@ -167,22 +168,21 @@ def render() -> None:
     # ------------------------------------------------------------------
     # Full profile of this location
     # ------------------------------------------------------------------
-    st.markdown(
-        '<div class="card-label">Every emergency, scored from this location</div>',
-        unsafe_allow_html=True,
-    )
+    st.markdown(c.rule(), unsafe_allow_html=True)
+    st.markdown(c.label("Every emergency, scored from this location"),
+                unsafe_allow_html=True)
     profile = geo.coverage_by_emergency(
         float(origin["latitude"]), float(origin["longitude"]), origin["name"]
     )
     st.dataframe(profile, width="stretch", hide_index=True)
 
     survivable = (profile["Survivable"] == "yes").sum()
-    st.caption(
-        f"**{survivable} of {len(profile)}** emergency types are reachable in time "
+    st.markdown(c.caveat(
+        f"<b>{survivable} of {len(profile)}</b> emergency types are reachable in time "
         f"from {origin['name']}. Travel time assumes {geo.ROAD_SPEED_KMH:.0f} km/h "
         f"average road speed and a {geo.ROUTE_FACTOR:.2f}× detour over straight-line "
         f"distance — deliberately conservative, and still optimistic about a rural "
         f"ambulance at night. Facility locations are a live OpenStreetMap extract; "
         f"capability is inferred from the facility's tier under Indian Public "
         f"Health Standards, not from a per-facility audit."
-    )
+    ), unsafe_allow_html=True)

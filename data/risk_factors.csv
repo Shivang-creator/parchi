@@ -8,3 +8,5 @@ Mechanical ventilation,0.8,Ventilator-associated pneumonia skews to Acinetobacte
 Immunosuppressed / on chemotherapy,0.88,"Broader organism range, lower reserve"
 Resident of a long-term care facility,0.85,Colonisation with resistant flora
 Known prior MDR isolate,0.62,Past colonisation strongly predicts recurrence
+Diabetes mellitus,0.93,Higher burden of polymicrobial and resistant infection
+Chronic kidney disease on dialysis,0.83,Repeated vascular access and frequent hospital contact
