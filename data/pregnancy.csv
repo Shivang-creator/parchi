@@ -1,0 +1,33 @@
+# Indicative figures compiled from published ICMR-AMRSN / WHO GLASS / CDSCO / NPPA / NCVBDC patterns. Reconstructed for demonstration. Not for clinical use.
+antibiotic,category,note
+Nitrofurantoin,Caution,Avoid at term (38+ weeks) and in G6PD deficiency.
+Fosfomycin,Safe,Widely used as a single dose in pregnancy.
+Cotrimoxazole,Avoid,Folate antagonist in the first trimester; kernicterus risk at term.
+Doxycycline,Avoid,Fetal teeth and bone. Contraindicated after week 15.
+Minocycline,Avoid,Same tetracycline class effects.
+Metronidazole,Caution,Generally acceptable after the first trimester.
+Amoxicillin,Safe,One of the best-characterised agents in pregnancy.
+Amoxicillin-Clavulanate,Safe,Widely used; watch neonatal NEC risk in PPROM.
+Ampicillin,Safe,"Long, reassuring record."
+Clindamycin,Safe,Acceptable in all trimesters.
+Azithromycin,Safe,Preferred macrolide in pregnancy.
+Cefuroxime,Safe,Cephalosporins are broadly acceptable.
+Cefixime,Safe,Acceptable.
+Ciprofloxacin,Avoid,Fluoroquinolone cartilage concerns; use only if no alternative exists.
+Levofloxacin,Avoid,Same class concern.
+Gentamicin,Caution,Fetal ototoxicity risk; use only when clearly indicated.
+Amikacin,Caution,Same aminoglycoside concern.
+Ceftriaxone,Safe,Widely used.
+Ceftazidime,Safe,Acceptable.
+Cefepime,Safe,Acceptable.
+Cefoperazone-Sulbactam,Caution,Limited data.
+Piperacillin-Tazobactam,Safe,Acceptable.
+Ertapenem,Caution,Limited human data.
+Meropenem,Caution,Used when the indication is compelling.
+Imipenem-Cilastatin,Caution,Limited data.
+Vancomycin,Caution,Used where indicated; monitor levels.
+Teicoplanin,Caution,Limited data.
+Linezolid,Caution,Limited human data.
+Tigecycline,Avoid,Tetracycline-class fetal effects.
+Colistin,Caution,Reserved for resistant organisms with no alternative.
+Ceftazidime-Avibactam,Caution,Very limited data.

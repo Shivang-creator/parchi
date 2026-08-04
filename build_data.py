@@ -894,6 +894,272 @@ def build_burden() -> None:
     ])
 
 
+
+
+# --------------------------------------------------------------------------
+# 11. NEWS2 — the reception desk's early warning score
+# --------------------------------------------------------------------------
+# The National Early Warning Score 2 is a real, validated, published
+# instrument. Six physiological parameters plus consciousness, each banded,
+# summed. It is what turns a registration desk from "first come, first served"
+# into triage — and it needs only what a desk can actually measure.
+#
+# parameter, low, high, points  (bands are inclusive on both ends)
+NEWS2_BANDS = [
+    ("Respiration rate",  0,   8, 3), ("Respiration rate",  9,  11, 1),
+    ("Respiration rate", 12,  20, 0), ("Respiration rate", 21,  24, 2),
+    ("Respiration rate", 25, 200, 3),
+
+    ("Oxygen saturation",  0,  91, 3), ("Oxygen saturation", 92,  93, 2),
+    ("Oxygen saturation", 94,  95, 1), ("Oxygen saturation", 96, 100, 0),
+
+    ("Systolic blood pressure",   0,  90, 3),
+    ("Systolic blood pressure",  91, 100, 2),
+    ("Systolic blood pressure", 101, 110, 1),
+    ("Systolic blood pressure", 111, 219, 0),
+    ("Systolic blood pressure", 220, 300, 3),
+
+    ("Pulse",   0,  40, 3), ("Pulse",  41,  50, 1), ("Pulse",  51,  90, 0),
+    ("Pulse",  91, 110, 1), ("Pulse", 111, 130, 2), ("Pulse", 131, 300, 3),
+
+    ("Temperature", 0,    35.0, 3), ("Temperature", 35.1, 36.0, 1),
+    ("Temperature", 36.1, 38.0, 0), ("Temperature", 38.1, 39.0, 1),
+    ("Temperature", 39.1, 45.0, 2),
+]
+
+# score_min, score_max, band, response, minutes_to_review
+NEWS2_RESPONSE = [
+    (0, 0, "Routine", "Minimum 12-hourly observations. Continue routine monitoring.", 720),
+    (1, 4, "Low", "Minimum 4-6 hourly observations. Nurse to decide whether "
+                  "escalation of care is needed.", 240),
+    (5, 6, "Medium", "Registered nurse to urgently inform the medical team. "
+                     "Hourly observations. Assess in a monitored environment.", 60),
+    (7, 30, "High", "Emergency response. Continuous monitoring. Immediate "
+                    "assessment by a clinician with critical-care competencies.", 0),
+]
+
+# Departments an Indian OPD actually routes to, with realistic throughput.
+DEPARTMENTS = [
+    # name, patients per doctor per hour, doctors on duty, share of arrivals
+    ("General Medicine",   9.0, 3, 0.34),
+    ("Paediatrics",        8.0, 2, 0.17),
+    ("Obstetrics & Gynae", 6.5, 2, 0.14),
+    ("Orthopaedics",       7.5, 1, 0.11),
+    ("Surgery",            6.0, 1, 0.09),
+    ("Dermatology",       10.0, 1, 0.07),
+    ("ENT",                9.5, 1, 0.05),
+    ("Ophthalmology",      9.0, 1, 0.03),
+]
+
+# Arrivals across an Indian OPD day. The 8-11am crush is the defining feature:
+# patients travel at dawn, arrive together, and wait for hours.
+OPD_ARRIVAL_PROFILE = [
+    ("07:00", 0.09), ("08:00", 0.21), ("09:00", 0.19), ("10:00", 0.14),
+    ("11:00", 0.10), ("12:00", 0.07), ("13:00", 0.04), ("14:00", 0.05),
+    ("15:00", 0.05), ("16:00", 0.04), ("17:00", 0.02),
+]
+
+
+# --------------------------------------------------------------------------
+# 12. The pharmacy counter
+# --------------------------------------------------------------------------
+# Counselling is the part of dispensing that is free, evidence-based, and
+# almost never done. Each line is what a pharmacist should actually say.
+COUNSELLING = [
+    ("Nitrofurantoin", "Take with food", "Harmless brown urine is expected. "
+     "Complete the full course even once burning stops."),
+    ("Fosfomycin", "Empty stomach, at bedtime", "Dissolve the sachet in half a "
+     "glass of water. One dose only — do not repeat unless told to."),
+    ("Cotrimoxazole", "With food, plenty of water", "Stop and return if a rash "
+     "appears. Avoid in the last weeks of pregnancy."),
+    ("Doxycycline", "With food, sitting upright", "Do not lie down for 30 "
+     "minutes. Avoid milk, antacids and iron within 2 hours. Use sun protection."),
+    ("Minocycline", "With food", "May cause dizziness. Avoid antacids within 2 hours."),
+    ("Metronidazole", "With or after food", "No alcohol during the course or for "
+     "48 hours after — the reaction is severe."),
+    ("Amoxicillin", "With or without food", "Complete the course. Return if a "
+     "rash or swelling appears."),
+    ("Amoxicillin-Clavulanate", "With the first bite of a meal", "Taking it with "
+     "food markedly reduces nausea and diarrhoea."),
+    ("Ampicillin", "Empty stomach", "One hour before or two hours after food."),
+    ("Clindamycin", "With a full glass of water", "Return urgently for severe or "
+     "watery diarrhoea — this drug carries a real C. difficile risk."),
+    ("Azithromycin", "With or without food", "Short course by design. Do not "
+     "double the dose if one is missed."),
+    ("Cefuroxime", "With food", "Absorption is much better with a meal."),
+    ("Cefixime", "With or without food", "Complete the course."),
+    ("Ciprofloxacin", "Empty stomach preferred", "Avoid milk, antacids, calcium "
+     "and iron within 2 hours. Stop and return for tendon or heel pain."),
+    ("Levofloxacin", "Empty stomach preferred", "Same 2-hour separation from "
+     "antacids and calcium. Avoid strong sun. Report tendon pain."),
+    ("Gentamicin", "Injection", "Blood levels and kidney function must be "
+     "monitored. Report any hearing change or ringing immediately."),
+    ("Amikacin", "Injection", "Levels and creatinine monitored. Report hearing "
+     "change, ringing or unsteadiness at once."),
+    ("Ceftriaxone", "Injection", "Do not mix with calcium-containing fluids."),
+    ("Ceftazidime", "Injection", "Course completed as prescribed."),
+    ("Cefepime", "Injection", "Report confusion or twitching, especially with "
+     "reduced kidney function."),
+    ("Cefoperazone-Sulbactam", "Injection", "Avoid alcohol during and shortly "
+     "after the course."),
+    ("Piperacillin-Tazobactam", "Injection", "Kidney function monitored, "
+     "particularly if vancomycin is also running."),
+    ("Ertapenem", "Injection", "Once daily. Complete the course."),
+    ("Meropenem", "Injection", "Reserve agent. De-escalate as soon as the "
+     "culture allows."),
+    ("Imipenem-Cilastatin", "Injection", "Report any twitching or seizure "
+     "activity, especially in kidney impairment."),
+    ("Vancomycin", "Slow infusion", "Infuse over at least an hour — rapid "
+     "infusion causes flushing. Trough levels and creatinine monitored."),
+    ("Teicoplanin", "Injection", "Loading doses matter; do not skip them."),
+    ("Linezolid", "With or without food", "Avoid aged cheese, tap beer and "
+     "fermented foods. Tell the doctor about any antidepressant. Blood counts "
+     "monitored beyond two weeks."),
+    ("Tigecycline", "Infusion", "Nausea is common and usually settles."),
+    ("Colistin", "Infusion", "Kidney function checked daily. Report reduced "
+     "urine output."),
+    ("Ceftazidime-Avibactam", "Infusion", "Last-line agent, reserved for "
+     "confirmed resistant organisms."),
+]
+
+# Pregnancy and lactation safety — a question the counter is asked constantly
+# and answers from memory.
+PREGNANCY = [
+    ("Nitrofurantoin", "Caution", "Avoid at term (38+ weeks) and in G6PD deficiency."),
+    ("Fosfomycin", "Safe", "Widely used as a single dose in pregnancy."),
+    ("Cotrimoxazole", "Avoid", "Folate antagonist in the first trimester; "
+     "kernicterus risk at term."),
+    ("Doxycycline", "Avoid", "Fetal teeth and bone. Contraindicated after week 15."),
+    ("Minocycline", "Avoid", "Same tetracycline class effects."),
+    ("Metronidazole", "Caution", "Generally acceptable after the first trimester."),
+    ("Amoxicillin", "Safe", "One of the best-characterised agents in pregnancy."),
+    ("Amoxicillin-Clavulanate", "Safe", "Widely used; watch neonatal NEC risk in PPROM."),
+    ("Ampicillin", "Safe", "Long, reassuring record."),
+    ("Clindamycin", "Safe", "Acceptable in all trimesters."),
+    ("Azithromycin", "Safe", "Preferred macrolide in pregnancy."),
+    ("Cefuroxime", "Safe", "Cephalosporins are broadly acceptable."),
+    ("Cefixime", "Safe", "Acceptable."),
+    ("Ciprofloxacin", "Avoid", "Fluoroquinolone cartilage concerns; use only if "
+     "no alternative exists."),
+    ("Levofloxacin", "Avoid", "Same class concern."),
+    ("Gentamicin", "Caution", "Fetal ototoxicity risk; use only when clearly indicated."),
+    ("Amikacin", "Caution", "Same aminoglycoside concern."),
+    ("Ceftriaxone", "Safe", "Widely used."),
+    ("Ceftazidime", "Safe", "Acceptable."),
+    ("Cefepime", "Safe", "Acceptable."),
+    ("Cefoperazone-Sulbactam", "Caution", "Limited data."),
+    ("Piperacillin-Tazobactam", "Safe", "Acceptable."),
+    ("Ertapenem", "Caution", "Limited human data."),
+    ("Meropenem", "Caution", "Used when the indication is compelling."),
+    ("Imipenem-Cilastatin", "Caution", "Limited data."),
+    ("Vancomycin", "Caution", "Used where indicated; monitor levels."),
+    ("Teicoplanin", "Caution", "Limited data."),
+    ("Linezolid", "Caution", "Limited human data."),
+    ("Tigecycline", "Avoid", "Tetracycline-class fetal effects."),
+    ("Colistin", "Caution", "Reserved for resistant organisms with no alternative."),
+    ("Ceftazidime-Avibactam", "Caution", "Very limited data."),
+]
+
+# What a district hospital pharmacy actually has on the shelf. Stock-outs of
+# the cheap narrow agents are the quiet reason broad-spectrum drugs get used.
+STOCK = [
+    # drug, units in stock, monthly consumption, jan_aushadhi_stocked
+    ("Nitrofurantoin", 840, 620, 1), ("Fosfomycin", 40, 95, 0),
+    ("Cotrimoxazole", 1900, 700, 1), ("Doxycycline", 1450, 880, 1),
+    ("Minocycline", 60, 40, 0), ("Metronidazole", 2400, 1500, 1),
+    ("Amoxicillin", 2100, 1600, 1), ("Amoxicillin-Clavulanate", 1250, 1400, 1),
+    ("Ampicillin", 600, 300, 1), ("Clindamycin", 220, 180, 0),
+    ("Azithromycin", 1600, 1250, 1), ("Cefuroxime", 480, 400, 1),
+    ("Cefixime", 1350, 1100, 1), ("Ciprofloxacin", 1750, 900, 1),
+    ("Levofloxacin", 1100, 950, 1), ("Gentamicin", 400, 260, 1),
+    ("Amikacin", 520, 430, 1), ("Ceftriaxone", 1650, 1500, 1),
+    ("Ceftazidime", 260, 220, 0), ("Cefepime", 180, 210, 0),
+    ("Cefoperazone-Sulbactam", 240, 300, 0),
+    ("Piperacillin-Tazobactam", 310, 380, 0), ("Ertapenem", 45, 30, 0),
+    ("Meropenem", 290, 260, 0), ("Imipenem-Cilastatin", 90, 70, 0),
+    ("Vancomycin", 160, 140, 0), ("Teicoplanin", 55, 45, 0),
+    ("Linezolid", 380, 300, 1), ("Tigecycline", 25, 20, 0),
+    ("Colistin", 120, 110, 0), ("Ceftazidime-Avibactam", 8, 6, 0),
+]
+
+# Affordability reference points. Out-of-pocket spending is the mechanism by
+# which illness becomes poverty in India, and medicines are its largest single
+# component — so a rupee figure means nothing until it is set against a wage.
+AFFORDABILITY = [
+    ("MGNREGA rural daily wage", 261, "Statutory rural employment guarantee wage"),
+    ("Rural informal daily wage", 350, "Typical agricultural / casual labour"),
+    ("Urban informal daily wage", 480, "Construction, domestic and gig work"),
+    ("Salaried urban (median)", 1150, "Formal-sector median daily equivalent"),
+]
+
+# Above this share of household daily income, a course is routinely abandoned
+# part-way — which is worse than never starting it, because partial courses
+# select for resistance.
+ABANDONMENT_THRESHOLDS = [
+    (0.0, 0.5, "Low", "Affordable within a day's earnings."),
+    (0.5, 1.5, "Moderate", "Costs up to a day and a half of income. Counsel "
+                           "explicitly on completing the course."),
+    (1.5, 4.0, "High", "Several days of income. Substitute to the cheapest "
+                       "equivalent and confirm the patient can actually buy it."),
+    (4.0, 999.0, "Catastrophic", "Beyond a week of income. This prescription "
+                                 "will very likely be abandoned part-way, which "
+                                 "is worse than not starting it."),
+]
+
+
+def build_triage() -> None:
+    _write("news2_bands.csv", [
+        {"parameter": p, "low": lo, "high": hi, "points": pts}
+        for p, lo, hi, pts in NEWS2_BANDS
+    ])
+    _write("news2_response.csv", [
+        {"score_min": lo, "score_max": hi, "band": band,
+         "response": resp, "minutes_to_review": mins}
+        for lo, hi, band, resp, mins in NEWS2_RESPONSE
+    ])
+    total_share = sum(d[3] for d in DEPARTMENTS)
+    assert abs(total_share - 1.0) < 1e-9, f"department shares sum to {total_share}"
+    _write("departments.csv", [
+        {"department": n, "per_doctor_per_hour": tp, "doctors": docs,
+         "arrival_share": share}
+        for n, tp, docs, share in DEPARTMENTS
+    ])
+    profile_total = sum(p[1] for p in OPD_ARRIVAL_PROFILE)
+    assert abs(profile_total - 1.0) < 1e-9, f"arrival profile sums to {profile_total}"
+    _write("opd_arrivals.csv", [
+        {"hour": h, "share": s} for h, s in OPD_ARRIVAL_PROFILE
+    ])
+
+
+def build_pharmacy() -> None:
+    formulary = {d[0] for d in DRUGS}
+    for table, name in [(COUNSELLING, "counselling"), (PREGNANCY, "pregnancy"),
+                        (STOCK, "stock")]:
+        unknown = {row[0] for row in table} - formulary
+        assert not unknown, f"{name} references unknown drugs: {unknown}"
+
+    _write("counselling.csv", [
+        {"antibiotic": d, "timing": t, "advice": a} for d, t, a in COUNSELLING
+    ])
+    _write("pregnancy.csv", [
+        {"antibiotic": d, "category": c, "note": n} for d, c, n in PREGNANCY
+    ])
+    _write("stock.csv", [
+        {"antibiotic": d, "units_in_stock": u, "monthly_consumption": m,
+         "janaushadhi_stocked": ja}
+        for d, u, m, ja in STOCK
+    ])
+    _write("affordability.csv", [
+        {"reference": r, "daily_income_inr": w, "note": n}
+        for r, w, n in AFFORDABILITY
+    ])
+    _write("abandonment_risk.csv", [
+        {"days_of_income_min": lo, "days_of_income_max": hi,
+         "risk": risk, "guidance": note}
+        for lo, hi, risk, note in ABANDONMENT_THRESHOLDS
+    ])
+
+
 if __name__ == "__main__":
     print("Building Parchi data layer ->", DATA)
     build_priors()
@@ -905,4 +1171,6 @@ if __name__ == "__main__":
     build_interactions()
     build_renal()
     build_burden()
+    build_triage()
+    build_pharmacy()
     print("Done.")

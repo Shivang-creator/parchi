@@ -96,7 +96,7 @@ def verdict(value: float, caption: str, colour: str, target: float | None = None
 
 
 def checks(items: list[tuple[str, str, str, str]]) -> str:
-    """items: (question, answer, note, colour) — always four, always in a row."""
+    """items: (question, answer, note, colour) — one row, however many checks."""
     cells = "".join(
         f'<div class="check" style="--c:{c}">'
         f'<div class="q">{_esc(q)}</div>'
@@ -105,12 +105,12 @@ def checks(items: list[tuple[str, str, str, str]]) -> str:
         "</div>"
         for q, a, n, c in items
     )
-    return f'<div class="checks">{cells}</div>'
+    return f'<div class="checks" style="--cols:{len(items)}">{cells}</div>'
 
 
 def note(tag: str, heading: str, body: str, colour: str | None = None) -> str:
     """A margin annotation. Deliberately not a filled alert box."""
-    c = colour or theme.SEVERITY_COLOR.get(tag, theme.INK_3)
+    c = colour or theme.severity_colors().get(tag, theme.INK_3)
     return (
         f'<div class="note" style="--c:{c}">'
         f'<div class="h"><span class="tag">{_esc(tag)}</span>{_esc(heading)}</div>'
@@ -129,8 +129,86 @@ def caveat(text: str) -> str:
 
 def aware_mark(aware: str) -> str:
     """WHO AWaRe classification, coloured by how hard we should be avoiding it."""
-    colour = theme.AWARE_COLOR.get(aware, theme.INK_3)
+    colour = theme.aware_colors().get(aware, theme.INK_3)
     return f'<span style="color:{colour};font-weight:600">{_esc(aware)}</span>'
+
+
+# --------------------------------------------------------------------------
+# Icons — inline line-art SVG, so they inherit ink and need no network
+# --------------------------------------------------------------------------
+# Deliberately not emoji: emoji are somebody else's illustration style,
+# they render differently on every platform, and they cannot take the ink
+# colour. These are 1.5px strokes on a 24-unit grid, matching the hairlines.
+_ICONS = {
+    "reception": "<path d='M4 20V7l8-3 8 3v13'/><path d='M9 20v-5h6v5'/><path d='M4 20h16'/>",
+    "doctor": "<path d='M8 3v5a4 4 0 0 0 8 0V3'/><path d='M12 12v3a5 5 0 0 0 10 0v-1'/>"
+              "<circle cx='22' cy='12' r='1.6'/>",
+    "pharmacy": "<rect x='3' y='9' width='18' height='12' rx='2'/>"
+                "<path d='M7 9V6a5 5 0 0 1 10 0v3'/><path d='M12 12v6M9 15h6'/>",
+    "hospital": "<path d='M3 21V8l9-5 9 5v13'/><path d='M12 10v6M9 13h6'/>",
+    "method": "<path d='M4 4h9a3 3 0 0 1 3 3v13a2.5 2.5 0 0 0-2.5-2.5H4z'/>"
+              "<path d='M20 4h-2a3 3 0 0 0-3 3v13a2.5 2.5 0 0 1 2.5-2.5H20z'/>",
+    "sun": "<circle cx='12' cy='12' r='4'/><path d='M12 2v2M12 20v2M2 12h2M20 12h2"
+           "M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4'/>",
+    "moon": "<path d='M21 13.2A9 9 0 1 1 10.8 3a7 7 0 0 0 10.2 10.2z'/>",
+    "clock": "<circle cx='12' cy='12' r='9'/><path d='M12 7v5l3 2'/>",
+    "rupee": "<path d='M6 4h12M6 9h12M16 4c0 4-3 5-6 5l7 10'/><path d='M6 9h4'/>",
+    "alert": "<path d='M12 3l9.5 17H2.5z'/><path d='M12 10v4M12 17.5v.01'/>",
+    "pin": "<path d='M12 21s7-6.3 7-11a7 7 0 1 0-14 0c0 4.7 7 11 7 11z'/>"
+           "<circle cx='12' cy='10' r='2.5'/>",
+}
+
+
+def icon(name: str, size: int = 16, colour: str | None = None) -> str:
+    """A line-art glyph that inherits ink rather than importing a font."""
+    body = _ICONS.get(name)
+    if not body:
+        return ""
+    stroke = colour or "currentColor"
+    return (
+        f"<svg width='{size}' height='{size}' viewBox='0 0 24 24' fill='none' "
+        f"stroke='{stroke}' stroke-width='1.5' stroke-linecap='round' "
+        f"stroke-linejoin='round' style='vertical-align:-2px'>{body}</svg>"
+    )
+
+
+def rail(stops: list[tuple[str, str, str, str]], active: str) -> str:
+    """The journey rail — reception, doctor, pharmacy, and the wider hospital.
+
+    stops: (key, icon name, title, subtitle). The rail exists because the
+    screens are not five unrelated tools; they are four points on one patient's
+    walk through a building, and the navigation should say so.
+    """
+    cells = []
+    seen_active = False
+    for key, glyph, title, subtitle in stops:
+        if key == active:
+            state, seen_active = "on", True
+        else:
+            state = "done" if not seen_active else ""
+        cells.append(
+            f'<div class="stop {state}">'
+            f'<div class="n">{icon(glyph, 15)}</div>'
+            f'<div class="t">{_esc(title)}</div>'
+            f'<div class="d">{_esc(subtitle)}</div>'
+            "</div>"
+        )
+    return f'<div class="rail">{"".join(cells)}</div>'
+
+
+def meter(label: str, value: float, maximum: float, colour: str,
+          display: str | None = None, sub: str = "") -> str:
+    """A labelled horizontal bar. Reads faster than a number in a box."""
+    pct = 0.0 if maximum <= 0 else min(max(value / maximum, 0.0), 1.0) * 100
+    shown = display if display is not None else f"{value:,.0f}"
+    return (
+        f'<div class="meter" style="--c:{colour}">'
+        f'<div class="row"><span>{_esc(label)}</span><b>{_esc(shown)}</b></div>'
+        f'<div class="track"><i style="width:{pct:.1f}%"></i></div>'
+        + (f'<div style="font-size:11px;color:var(--ink-3);margin-top:4px">{sub}</div>'
+           if sub else "")
+        + "</div>"
+    )
 
 
 def spectrum_mark(spectrum: int) -> str:

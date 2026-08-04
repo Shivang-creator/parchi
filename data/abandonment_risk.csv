@@ -1,0 +1,6 @@
+# Indicative figures compiled from published ICMR-AMRSN / WHO GLASS / CDSCO / NPPA / NCVBDC patterns. Reconstructed for demonstration. Not for clinical use.
+days_of_income_min,days_of_income_max,risk,guidance
+0.0,0.5,Low,Affordable within a day's earnings.
+0.5,1.5,Moderate,Costs up to a day and a half of income. Counsel explicitly on completing the course.
+1.5,4.0,High,Several days of income. Substitute to the cheapest equivalent and confirm the patient can actually buy it.
+4.0,999.0,Catastrophic,"Beyond a week of income. This prescription will very likely be abandoned part-way, which is worse than not starting it."

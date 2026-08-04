@@ -1,0 +1,33 @@
+# Indicative figures compiled from published ICMR-AMRSN / WHO GLASS / CDSCO / NPPA / NCVBDC patterns. Reconstructed for demonstration. Not for clinical use.
+antibiotic,timing,advice
+Nitrofurantoin,Take with food,Harmless brown urine is expected. Complete the full course even once burning stops.
+Fosfomycin,"Empty stomach, at bedtime",Dissolve the sachet in half a glass of water. One dose only — do not repeat unless told to.
+Cotrimoxazole,"With food, plenty of water",Stop and return if a rash appears. Avoid in the last weeks of pregnancy.
+Doxycycline,"With food, sitting upright","Do not lie down for 30 minutes. Avoid milk, antacids and iron within 2 hours. Use sun protection."
+Minocycline,With food,May cause dizziness. Avoid antacids within 2 hours.
+Metronidazole,With or after food,No alcohol during the course or for 48 hours after — the reaction is severe.
+Amoxicillin,With or without food,Complete the course. Return if a rash or swelling appears.
+Amoxicillin-Clavulanate,With the first bite of a meal,Taking it with food markedly reduces nausea and diarrhoea.
+Ampicillin,Empty stomach,One hour before or two hours after food.
+Clindamycin,With a full glass of water,Return urgently for severe or watery diarrhoea — this drug carries a real C. difficile risk.
+Azithromycin,With or without food,Short course by design. Do not double the dose if one is missed.
+Cefuroxime,With food,Absorption is much better with a meal.
+Cefixime,With or without food,Complete the course.
+Ciprofloxacin,Empty stomach preferred,"Avoid milk, antacids, calcium and iron within 2 hours. Stop and return for tendon or heel pain."
+Levofloxacin,Empty stomach preferred,Same 2-hour separation from antacids and calcium. Avoid strong sun. Report tendon pain.
+Gentamicin,Injection,Blood levels and kidney function must be monitored. Report any hearing change or ringing immediately.
+Amikacin,Injection,"Levels and creatinine monitored. Report hearing change, ringing or unsteadiness at once."
+Ceftriaxone,Injection,Do not mix with calcium-containing fluids.
+Ceftazidime,Injection,Course completed as prescribed.
+Cefepime,Injection,"Report confusion or twitching, especially with reduced kidney function."
+Cefoperazone-Sulbactam,Injection,Avoid alcohol during and shortly after the course.
+Piperacillin-Tazobactam,Injection,"Kidney function monitored, particularly if vancomycin is also running."
+Ertapenem,Injection,Once daily. Complete the course.
+Meropenem,Injection,Reserve agent. De-escalate as soon as the culture allows.
+Imipenem-Cilastatin,Injection,"Report any twitching or seizure activity, especially in kidney impairment."
+Vancomycin,Slow infusion,Infuse over at least an hour — rapid infusion causes flushing. Trough levels and creatinine monitored.
+Teicoplanin,Injection,Loading doses matter; do not skip them.
+Linezolid,With or without food,"Avoid aged cheese, tap beer and fermented foods. Tell the doctor about any antidepressant. Blood counts monitored beyond two weeks."
+Tigecycline,Infusion,Nausea is common and usually settles.
+Colistin,Infusion,Kidney function checked daily. Report reduced urine output.
+Ceftazidime-Avibactam,Infusion,"Last-line agent, reserved for confirmed resistant organisms."

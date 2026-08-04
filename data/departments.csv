@@ -1,0 +1,10 @@
+# Indicative figures compiled from published ICMR-AMRSN / WHO GLASS / CDSCO / NPPA / NCVBDC patterns. Reconstructed for demonstration. Not for clinical use.
+department,per_doctor_per_hour,doctors,arrival_share
+General Medicine,9.0,3,0.34
+Paediatrics,8.0,2,0.17
+Obstetrics & Gynae,6.5,2,0.14
+Orthopaedics,7.5,1,0.11
+Surgery,6.0,1,0.09
+Dermatology,10.0,1,0.07
+ENT,9.5,1,0.05
+Ophthalmology,9.0,1,0.03

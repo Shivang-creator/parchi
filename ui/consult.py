@@ -62,6 +62,51 @@ def _contribution_chart(result: coverage.CoverageResult) -> go.Figure:
     return fig
 
 
+def _resistance_map(setting: str, year: int) -> go.Figure:
+    """The whole surveillance panel at once — organism against agent.
+
+    Every other view answers one question about one drug. This is the shape of
+    the problem: where the grid is dark, nothing works, and the dark bands run
+    along whole organisms rather than scattering randomly. That is what a
+    resistance crisis looks like from above.
+    """
+    p = theme.palette()
+    organism_index, columns, matrix = coverage._matrix(setting, year)
+    order = sorted(organism_index, key=lambda o: organism_index[o])
+
+    formulary = data.drugs().set_index("antibiotic")
+    drug_order = sorted(columns, key=lambda d: (int(formulary.loc[d, "spectrum"]), d))
+    positions = [columns.index(d) for d in drug_order]
+    values = matrix[:, positions] * 100
+
+    scale = (
+        [[0.0, p.DANGER], [0.45, p.CAUTION], [0.8, p.SAFE], [1.0, p.SAFE]]
+    )
+    fig = go.Figure(
+        go.Heatmap(
+            z=values, x=drug_order, y=order, colorscale=scale, zmin=0, zmax=100,
+            xgap=1.5, ygap=1.5,
+            colorbar=dict(
+                title=dict(text="% susceptible", side="right",
+                           font=dict(size=11, color=p.INK_3)),
+                tickfont=dict(size=10, color=p.INK_3), thickness=11, len=0.85,
+                outlinewidth=0,
+            ),
+            hovertemplate="<b>%{y}</b><br>%{x}<br>%{z:.0f}% susceptible<extra></extra>",
+        )
+    )
+    fig.update_layout(**theme.layout(
+        height=max(430, 26 * len(order) + 190),
+        title=theme.chart_title(f"Susceptibility across the whole panel — {setting}, {year}"),
+        margin=dict(l=8, r=8, t=54, b=8),
+        xaxis=dict(tickangle=-52, tickfont=dict(size=10), side="bottom",
+                   gridcolor="rgba(0,0,0,0)"),
+        yaxis=dict(autorange="reversed", tickfont=dict(size=10.5),
+                   gridcolor="rgba(0,0,0,0)"),
+    ))
+    return fig
+
+
 def _trend_chart(trend, projection, floor: float, drug: str) -> go.Figure:
     fig = go.Figure()
     fig.add_scatter(
@@ -384,9 +429,9 @@ def render() -> None:
 
     # ---------------- show the working ----------------
     st.markdown(c.rule(), unsafe_allow_html=True)
-    t1, t2, t3, t4 = st.tabs(
+    t1, t2, t3, t4, t5 = st.tabs(
         ["Why this number", "What else was considered", "Is it still working",
-         "Two drugs instead of one"]
+         "Two drugs instead of one", "The whole panel"]
     )
 
     with t1:
@@ -506,3 +551,26 @@ def render() -> None:
                 "Gain over best single": f"{scored.coverage_pct - single.coverage_pct:+.1f}",
             })
         st.dataframe(pairs, width="stretch", hide_index=True)
+
+    with t5:
+        st.markdown(
+            "Every other view here answers one question about one drug. This is "
+            "the shape of the problem: **organisms down, agents across, sorted "
+            "narrowest-first.** Blank cells are not missing data — they are drugs "
+            "with no useful activity against that organism at all."
+        )
+        st.plotly_chart(
+            _resistance_map(form["setting"], data.LATEST_YEAR),
+            width="stretch", config={"displayModeBar": False},
+        )
+        st.markdown(
+            c.caveat(
+                "Read it by rows, not cells. The dark bands run along whole "
+                "organisms — <i>Acinetobacter</i> and <i>Klebsiella</i> are dark "
+                "nearly all the way across, which is what it means to say India "
+                "has a carbapenem-resistance problem rather than a drug problem. "
+                "Switch the setting in the sidebar to watch the same grid darken "
+                "from OPD through ward to ICU."
+            ),
+            unsafe_allow_html=True,
+        )

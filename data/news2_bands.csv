@@ -1,0 +1,27 @@
+# Indicative figures compiled from published ICMR-AMRSN / WHO GLASS / CDSCO / NPPA / NCVBDC patterns. Reconstructed for demonstration. Not for clinical use.
+parameter,low,high,points
+Respiration rate,0,8,3
+Respiration rate,9,11,1
+Respiration rate,12,20,0
+Respiration rate,21,24,2
+Respiration rate,25,200,3
+Oxygen saturation,0,91,3
+Oxygen saturation,92,93,2
+Oxygen saturation,94,95,1
+Oxygen saturation,96,100,0
+Systolic blood pressure,0,90,3
+Systolic blood pressure,91,100,2
+Systolic blood pressure,101,110,1
+Systolic blood pressure,111,219,0
+Systolic blood pressure,220,300,3
+Pulse,0,40,3
+Pulse,41,50,1
+Pulse,51,90,0
+Pulse,91,110,1
+Pulse,111,130,2
+Pulse,131,300,3
+Temperature,0,35.0,3
+Temperature,35.1,36.0,1
+Temperature,36.1,38.0,0
+Temperature,38.1,39.0,1
+Temperature,39.1,45.0,2

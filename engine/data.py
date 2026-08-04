@@ -71,6 +71,51 @@ def disease_load() -> pd.DataFrame:
     return _read("disease_load.csv")
 
 
+@functools.lru_cache(maxsize=None)
+def news2_bands() -> pd.DataFrame:
+    return _read("news2_bands.csv")
+
+
+@functools.lru_cache(maxsize=None)
+def news2_response() -> pd.DataFrame:
+    return _read("news2_response.csv")
+
+
+@functools.lru_cache(maxsize=None)
+def departments() -> pd.DataFrame:
+    return _read("departments.csv")
+
+
+@functools.lru_cache(maxsize=None)
+def opd_arrivals() -> pd.DataFrame:
+    return _read("opd_arrivals.csv")
+
+
+@functools.lru_cache(maxsize=None)
+def counselling() -> pd.DataFrame:
+    return _read("counselling.csv")
+
+
+@functools.lru_cache(maxsize=None)
+def pregnancy() -> pd.DataFrame:
+    return _read("pregnancy.csv")
+
+
+@functools.lru_cache(maxsize=None)
+def stock() -> pd.DataFrame:
+    return _read("stock.csv")
+
+
+@functools.lru_cache(maxsize=None)
+def affordability() -> pd.DataFrame:
+    return _read("affordability.csv")
+
+
+@functools.lru_cache(maxsize=None)
+def abandonment_risk() -> pd.DataFrame:
+    return _read("abandonment_risk.csv")
+
+
 # --------------------------------------------------------------------------
 # convenience accessors
 # --------------------------------------------------------------------------

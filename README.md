@@ -36,11 +36,35 @@ clinician to accept or reject.**
 
 ## What it does
 
-Five screens following the arc of a real episode of care: choose the drug,
-settle the bet when the culture returns, prepare for what is coming, and know
-where to send the patient you cannot treat.
+Parchi is not five tools. It is **one patient's walk through a building**, and
+the navigation says so:
 
-### 1 · Consult — the prescription cockpit
+| Stop | Decides | Engine |
+|---|---|---|
+| **Reception** | *when* they are seen | NEWS2 triage + a queue model |
+| **Doctor** | *what* they are given | coverage, dosing, duration, safety |
+| **Pharmacy** | whether they can actually take it | substitution, affordability, stock |
+| **Hospital** | whether the building was ready at all | surge forecast, escalation map |
+
+### 1 · Reception — turning a queue into triage
+
+An Indian OPD is a queue. Patients travel before dawn, arrive together, and are
+seen in the order they reached the window — so the person having a heart attack
+waits behind the person with a rash.
+
+Fixing that needs no equipment. **NEWS2** — the National Early Warning Score 2 —
+is six measurements and ninety seconds, and it is a real validated instrument.
+Parchi scores it (including the single-parameter escalation rule that most
+implementations get wrong), shows every parameter's contribution, and then
+re-sorts the waiting room by acuity, reporting how many places the patient
+moves and how many minutes that saves.
+
+It also models the day. Demand is front-loaded into the 8–11am crush while
+capacity is flat across nine hours, and that mismatch **is** the queue —
+visible the evening before. The output is not a wait time, it is a roster
+decision: *this department needs five doctors today, not three.*
+
+### 2 · Doctor — the prescription cockpit
 
 Enter the patient's body parameters and presentation. Parchi drafts a
 prescription and fires four checks, each of which only speaks when it has
@@ -65,7 +89,7 @@ Then it shows its working: which organism contributed what to the coverage
 number, what the alternatives were, how this drug's effectiveness has moved
 over seven years of surveillance, and whether a combination would do better.
 
-### 2 · Day 3 · Culture — the step everyone skips
+### 3 · Day 3 · Culture — the step everyone skips
 
 Forty-eight hours later the culture settles the bet. De-escalating to the
 narrowest agent that treats the actual isolate is the single highest-value
@@ -76,7 +100,24 @@ sensitivities that list is **authoritative** and overrides the surveillance
 estimate; without it, Parchi refuses to narrow on population data alone,
 because that would be a guess dressed as a recommendation.
 
-### 3 · Surge forecast — what is walking through the door in three weeks
+### 4 · Pharmacy — where a prescription becomes a bill
+
+The last place anything can be changed, and the only place anyone finds out
+what the slip actually costs.
+
+- **Substitution** across brand, generic and Jan Aushadhi tiers.
+- **Affordability**, priced in **days of that household's income** rather than
+  rupees — because ₹1,400 is a routine expense for a salaried family and *five
+  days of earnings* on the MGNREGA wage, and only the second one gets abandoned
+  half-way. A partially taken antibiotic course is worse than none: it selects
+  for resistance without curing anything.
+- **Stock**, because a prescriber who cannot get nitrofurantoin writes a
+  fluoroquinolone. Supply is a stewardship intervention, and the narrow agents
+  are the ones running out.
+- **Pregnancy safety** and **counselling** — the part of dispensing that is
+  free, evidence-based and almost never done.
+
+### 5 · Surge forecast — what is walking through the door in three weeks
 
 A dengue season is not a surprise. The curve repeats annually and peaks in the
 same three months. Hospitals still meet it unprepared, because nobody converts
@@ -94,7 +135,7 @@ loses where a state's annual total jumped by an order of magnitude between
 years, which no seasonal model catches. The app says so on screen rather than
 reporting only the wins.
 
-### 4 · Escalation — the nearest facility that can actually treat this
+### 6 · Escalation — the nearest facility that can actually treat this
 
 "Nearest hospital" is the wrong question. A myocardial infarction needs a
 catheterisation lab; an obstructed labour needs a theatre and blood; a stroke
@@ -115,24 +156,32 @@ tools/shoot.py         screenshots the running app, tab by tab
 
 engine/
   data.py        cached loaders; hospital-antibiogram override
+  triage.py      NEWS2 scoring, queue model, staffing recommendation
   coverage.py    empiric coverage, combinations, de-escalation, trajectory
   dosing.py      Cockcroft-Gault, renal bands, paediatric mg/kg, duration, cost
   safety.py      banned FDCs, class-expanded interaction matching
+  pharmacy.py    substitution, affordability, stock pressure, counselling
   forecast.py    seasonal decomposition, demand conversion, backtesting
   geo.py         golden-hour reachability by capability
 
 ui/
-  theme.py       every colour, the type scale, the Plotly layout
-  components.py  every piece of raw markup
+  theme.py       two palettes, the type scale, the Plotly layout, the nav rail
+  components.py  every piece of raw markup, plus the SVG icon set
+  reception.py   triage and the queue
   consult.py     the prescription cockpit
   culture.py     de-escalation on day three
+  pharmacy.py    the dispensing counter
   surge.py       the forecast screen
   escalate.py    the referral map
-app.py           tab shell + antibiogram upload + method
+  method.py      provenance, model notes, antibiogram upload
+tests/           53 engine tests
+tools/shoot.py   screenshots the running app, stop by stop, in either palette
+app.py           role router
 ```
 
-**Scale:** 31 antibiotics · 17 organisms · 11 infection sites · 3 vector-borne
-diseases across 20 states · 5,271 susceptibility rows · ~5,000 lines of Python.
+**Scale:** 31 antibiotics · 17 organisms · 11 infection sites · 8 OPD
+departments · 3 vector-borne diseases across 20 states · 19 data tables ·
+5,271 susceptibility rows · ~6,600 lines of Python · 53 tests.
 
 ### Design
 
@@ -140,9 +189,25 @@ The app is a *document*, not a dashboard — because a **parchi** is a piece of
 paper. Warm stock with a fine grain, warm near-black ink, one signature ℞ red,
 hairline rules instead of boxes, 3px radii, a Newsreader/IBM Plex pairing, and
 the recommendation rendered as an actual prescription slip with a signature
-rule. Committing to that metaphor is also what keeps it from looking like every
+rule. Committing to that metaphor is what keeps it from looking like every
 other generated dashboard: charcoal-with-a-blue-accent and a six-colour
 semantic rainbow is a costume, not a design.
+
+**Two palettes, one object.** *Paper* is a slip on a desk; *Ink* is the same
+slip under a reading lamp at 2am — warm near-black ground, cream ink, the same
+℞ red lifted for contrast. Dark mode here is deliberately not "the blue-grey
+one".
+
+The switch is implemented through PEP 562 module `__getattr__`: colour tokens
+resolve at *render* time, so every existing `theme.SAFE` call site kept working
+untouched instead of every screen having to thread a palette object through.
+
+**The nav is one control, not two.** A decorative rail plus a button row to
+click is duplicated navigation and duplicated vertical space, so the buttons
+*are* the rail — icon painted on as a background image, subtitle injected
+through `::after`, because a Streamlit button label is plain text. (A side
+effect worth knowing: CSS generated content is folded into the accessible name,
+which is why `tools/shoot.py` selects nav by position rather than by label.)
 
 ### The coverage model
 
@@ -231,10 +296,26 @@ for the licensed real series and nothing downstream changes.
 
 ```bash
 pip install -r requirements.txt
-python build_data.py          # emits the curated CSVs
+python build_data.py          # emits the 19 curated CSVs
 python fetch_facilities.py    # optional: live OSM facility extract
 streamlit run app.py
+
+python -m pytest tests -q     # 53 engine tests
+python tools/shoot.py --theme Ink   # optional: screenshot every stop
 ```
+
+### Tests
+
+53 tests covering the invariants where a silent regression would produce a
+*confident wrong answer* rather than a crash. Several encode bugs that actually
+happened: the stewardship picker recommending colistin for outpatient cystitis,
+the malaria forecast collapsing to zeros, the banned-FDC checker never firing.
+
+The suite was mutation-checked — deliberately breaking `crcl *= 0.85`,
+`TREND_DAMPING` and the Reserve-agent guard to confirm the tests fail. The third
+mutation initially *passed*, which exposed that the colistin test was filtering
+to oral agents and therefore excluding colistin on route alone. It now asserts
+across every site and setting.
 
 No API keys, no model server, no network calls at runtime. The whole thing runs
 offline on a laptop — which is the point, for a clinic with intermittent
