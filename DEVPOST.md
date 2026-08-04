@@ -15,10 +15,10 @@ Parchi — prescription intelligence for Indian clinics
 ## Elevator pitch (200 char)
 
 ```
-An Indian doctor gets 120 seconds per patient. Parchi checks the prescription in that window: will this antibiotic still work here, is the dose right for these kidneys, can the patient afford it.
+An Indian doctor gets 120 seconds per patient. Parchi follows that patient through the building — triage at reception, the prescription itself, and what it costs at the pharmacy counter.
 ```
 
-*(196 characters)*
+*(186 characters)*
 
 ---
 
@@ -51,8 +51,35 @@ asked for.
 
 ### What it does
 
-Parchi is a prescription cockpit. It never prescribes — it drafts, shows its
-full working, and waits for the clinician to accept or reject.
+Parchi is not five tools with a shared logo. It follows **one patient through
+a building**, and the navigation is that walk:
+
+**Reception** decides *when* they are seen. An Indian OPD is a queue: patients
+travel before dawn, arrive together, and are seen in the order they reached the
+window — so the person having a heart attack waits behind the person with a
+rash. Fixing that needs no equipment, only NEWS2: six measurements, ninety
+seconds, a real validated instrument. Parchi scores it, re-sorts the waiting
+room by acuity, and reports how many places the patient moved. It also models
+the day, because demand is front-loaded into the 8–11am crush while capacity is
+flat across nine hours — and that mismatch *is* the queue, visible the evening
+before. The output is a roster decision, not a wait time.
+
+**The doctor** decides *what* they are given. That is the prescription cockpit
+below.
+
+**The pharmacy** decides whether they can actually take it. Substitution across
+brand, generic and Jan Aushadhi tiers — then affordability priced in **days of
+that household's income**, because ₹1,400 is a routine expense for a salaried
+family and *five days of earnings* on the MGNREGA rural wage, and only the
+second one gets abandoned half-way. A partially taken antibiotic course is
+worse than none: it selects for resistance without curing anything. The screen
+also shows which shelves are emptying, because a prescriber who cannot get
+nitrofurantoin writes a fluoroquinolone. Supply is a stewardship intervention.
+
+**The hospital** screens ask whether the building was ready at all.
+
+It never prescribes. It drafts, shows its full working, and waits for the
+clinician to accept or reject.
 
 You enter the patient's body parameters and presentation. Parchi drafts a
 prescription and fires four checks, each of which only speaks when it has
@@ -93,11 +120,20 @@ CSV and national surveillance is replaced wholesale.
 
 ### How we built it
 
-Python, pandas, NumPy, SciPy, Streamlit and Plotly. Four engine modules behind
-three screens, with a hard separation between the data layer, the reasoning and
-the UI. No API keys, no model server, no network calls at runtime — the whole
-thing runs offline on a laptop, which is the point for a clinic with
-intermittent connectivity.
+Python, pandas, NumPy, SciPy, Streamlit and Plotly. **Eight engine modules
+behind seven screens**, with a hard separation between the data layer, the
+reasoning and the UI: `engine/` never imports Streamlit, `ui/` never opens a
+file, and `engine/data.py` is the only module that touches disk. 19 curated
+data tables, ~6,600 lines of Python, 53 tests. No API keys, no model server, no
+network calls at runtime — the whole thing runs offline on a laptop, which is
+the point for a clinic with intermittent connectivity.
+
+Reception runs **NEWS2** as published, including the single-parameter
+escalation rule that most implementations get wrong: a patient can total 3 and
+still need urgent review, because one system deranged enough to score 3 by
+itself means something is badly wrong. The queue is a deterministic model —
+arrivals against per-department throughput — which converts a wait into a
+staffing number.
 
 The coverage model is a marginalisation over organisms:
 
@@ -173,6 +209,19 @@ calculation is a matrix product: pivot susceptibility once into an
 organism × drug array and coverage for the entire formulary is `priors @ matrix`.
 Same arithmetic, agreement to 3×10⁻¹⁶, 200× faster.
 
+**The `background:` shorthand tiled an icon across a whole button.** In dark
+mode the active nav segment rendered its icon about forty times. The active-state
+rule set `background: <colour>`, and that shorthand silently resets
+`background-repeat` to its initial value. Longhand everywhere fixed it.
+
+**A test that passed for the wrong reason.** After writing 53 tests I
+mutation-checked the suite — deliberately breaking three engine constants to
+confirm the tests would fail. Two were caught. The third, flipping the guard
+that keeps WHO *Reserve* agents out of first-line therapy, **survived** — because
+the colistin regression test filtered to oral agents, and colistin is IV-only,
+so it was excluded on route rather than on stewardship. The test now asserts
+across every site and setting, and the mutation is caught.
+
 **Overpass timed out on half the anchors**, twice, which is normal for a free
 shared endpoint at 1am. Added retries with backoff and made the map degrade
 gracefully rather than fail.
@@ -196,7 +245,30 @@ pure black, one signature ℞ red, hairline rules instead of boxes, 3px radii
 because paper does not have 14px rounded corners, and a Newsreader/IBM Plex
 pairing doing the work that boxes and gradients usually do badly. The
 recommendation renders as an actual prescription slip — ℞ glyph, spectrum and
-AWaRe marks along the foot, a dotted signature rule.
+AWaRe marks along the foot, a dotted signature rule. Icons are inline SVG at
+the same 1.5px stroke weight as the hairlines, never emoji: emoji are somebody
+else's illustration style, render differently on every platform, and cannot
+take the ink colour.
+
+**Two palettes, one object.** *Paper* is a slip on a desk; *Ink* is the same
+slip under a reading lamp at 2am — warm near-black ground, cream ink, the same
+℞ red lifted for contrast. Dark mode here is deliberately not "the blue-grey
+one", because adopting the standard dark-dashboard palette would throw away the
+only thing that makes this look designed.
+
+Implementing it cleanly was the interesting part. Colour tokens resolve at
+*render* time through PEP 562 module `__getattr__`, so `theme.SAFE` silently
+means one thing in Paper and another in Ink — and not one of the several
+hundred existing call sites had to be rewritten to thread a palette object
+through.
+
+**The UX flow was the thing that actually needed fixing.** The old build had
+five tabs and a global sidebar that said "The patient" while you were looking
+at a state dengue forecast. Reframing it as one patient's walk through a
+building — reception, doctor, pharmacy — made the navigation mean something.
+And the nav is now one control rather than two: the buttons *are* the rail,
+with the icon painted on as a background image and the subtitle injected
+through `::after`, because a Streamlit button label is plain text.
 
 ### Accomplishments that we're proud of
 
@@ -224,6 +296,10 @@ That the hard part of clinical decision support is not the model — it is
 knowing what the model must refuse to do. Every real improvement in this build
 came from *constraining* the recommender, not strengthening it.
 
+And that a test suite is worth exactly as much as its worst test. Mutation
+checking took ten minutes and found that one of the tests I was proudest of was
+green for a reason that had nothing to do with what it claimed to verify.
+
 Also, concretely: Cockcroft-Gault rather than CKD-EPI, because renal dosing
 references are written against creatinine clearance and it needs only variables
 a registration desk can capture. Why enterococci are intrinsically resistant to
@@ -245,10 +321,10 @@ state-level surge forecasting.
 ## Built with (tags)
 
 ```
-python, pandas, numpy, scipy, streamlit, plotly, openstreetmap, overpass-api,
-health, healthcare, medtech, data-science, antimicrobial-resistance,
-clinical-decision-support, public-health, forecasting, geospatial, india,
-bayesian-inference, time-series, antibiotic-stewardship, playwright
+python, pandas, numpy, scipy, streamlit, plotly, pytest, playwright,
+openstreetmap, overpass-api, health, healthcare, medtech, data-science,
+antimicrobial-resistance, clinical-decision-support, public-health,
+forecasting, geospatial, india, triage, news2, antibiotic-stewardship
 ```
 
 ---
@@ -268,10 +344,11 @@ the 35 MB limit.
 
 ## Image gallery suggestions (3:2 ratio)
 
-1. Consult screen — the prescription slip, the coverage verdict, all four checks
-2. The "why this number" organism-contribution breakdown
-3. Resistance trajectory with the 50% empiric floor crossed
-4. Day 3 · Culture — de-escalation from meropenem, spectrum bands saved
-5. Surge forecast with the capacity-overshoot warning
-6. The backtest panel — model vs naive baseline on held-out months
+1. Doctor — the prescription slip, coverage verdict, all four checks
+2. Reception — NEWS2 triage and the waiting room re-sorted by acuity
+3. Pharmacy — days-of-income affordability and the substitution saving
+4. The resistance heatmap — the whole organism × antibiotic panel
+5. Day 3 · Culture — de-escalation from meropenem, spectrum bands saved
+6. Surge forecast with the capacity-overshoot warning and the backtest
 7. Escalation map with the referral route drawn across Gadchiroli
+8. The same screen in the Ink palette, to show both themes
