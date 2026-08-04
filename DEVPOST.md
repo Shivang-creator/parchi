@@ -364,7 +364,8 @@ forecasting, geospatial, india, triage, news2, antibiotic-stewardship
 
 ## Try it out links
 
-- GitHub repository: `<add repo URL>`
+- GitHub repository: https://github.com/ShirodkarCodes/parchi
+- Live demo: `<paste the Streamlit Cloud URL once deployed>`
 
 ---
 
