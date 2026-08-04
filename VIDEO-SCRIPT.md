@@ -1,8 +1,11 @@
-# Demo video — 3:20
+# Demo video — 4:10 (cap is 5:00)
 
-Short beats long. Judges watch dozens of these; a tight three minutes that
-lands beats five minutes that wander. Max allowed is 5:00, so this leaves room
-if you run slow.
+Short beats long. Judges watch dozens of these; four tight minutes that land
+beat five that wander. ~610 spoken words, which runs about 4:00–4:10 with
+pauses for clicks and charts — comfortably inside the 5:00 cap.
+
+**If you run long, cut the Reception section** (0:18–0:50). It is the least
+essential beat and removing it cleanly saves ~40 seconds.
 
 **Record:** browser window only (not the desktop), 1560×1000 or larger, ~90%
 zoom. `Cmd+Shift+5` on macOS. Do a ten-second mic test first — bad audio kills
@@ -22,7 +25,7 @@ about 150 words a minute.
 
 ---
 
-## 0:00 – 0:18 · Hook
+## 0:00 – 0:20 · Hook
 
 > *Parchi* is what every Indian patient calls the slip the doctor hands them.
 >
@@ -34,7 +37,7 @@ about 150 words a minute.
 
 ---
 
-## 0:18 – 0:50 · Reception
+## 0:20 – 1:00 · Reception
 
 *(Click **Reception**.)*
 
@@ -53,7 +56,7 @@ about 150 words a minute.
 
 ---
 
-## 0:50 – 1:40 · Doctor
+## 1:00 – 2:00 · Doctor
 
 *(Click **Doctor**.)*
 
@@ -85,7 +88,7 @@ about 150 words a minute.
 
 ---
 
-## 1:40 – 2:15 · Pharmacy
+## 2:00 – 2:40 · Pharmacy
 
 *(Click **Pharmacy**.)*
 
@@ -106,7 +109,7 @@ about 150 words a minute.
 
 ---
 
-## 2:15 – 2:50 · Hospital, and the honest part
+## 2:40 – 3:25 · Hospital, and the honest part
 
 *(Click **Hospital**.)*
 
@@ -133,7 +136,7 @@ about 150 words a minute.
 
 ---
 
-## 2:50 – 3:10 · Escalation
+## 3:25 – 3:55 · Escalation
 
 *(Escalation tab. Gadchiroli, STEMI.)*
 
@@ -150,7 +153,7 @@ about 150 words a minute.
 
 ---
 
-## 3:10 – 3:20 · Close
+## 3:55 – 4:10 · Close
 
 *(Click **Ink theme** — one beat, don't explain it.)*
 
@@ -167,11 +170,11 @@ about 150 words a minute.
 
 - **Never narrate code.** The repo is linked; the video is for the demo.
 - Four beats carry the whole video. Slow down at each and let them land:
-  1. `1:05` the nitrofurantoin renal block
-  2. `1:35` the banned combination firing live
-  3. `2:00` five and a half days of income
-  4. `3:00` ten hours to a cath lab
-- The backtest admission at `2:40` is the one judges will remember. Say it
+  1. `1:20` the nitrofurantoin renal block
+  2. `1:50` the banned combination firing live
+  3. `2:25` five and a half days of income
+  4. `3:40` ten hours to a cath lab
+- The backtest admission at `3:05` is the one judges will remember. Say it
   plainly and without apology — it is a strength, not a confession.
 - If a chart takes a beat to draw, keep talking. Never wait in silence.
 - End on "That's Parchi" and stop recording. No sign-off, no thanks.
