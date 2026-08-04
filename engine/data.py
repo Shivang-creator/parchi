@@ -245,4 +245,4 @@ def _susceptibility_source() -> pd.DataFrame:
 
 
 # Rebind the cached loader so the override is honoured everywhere.
-susceptibility = functools.lru_cache(maxsize=None)(_susceptibility_source)
+susceptibility = functools.lru_cache(maxsize=None)(_susceptibility_source)  # noqa: F811

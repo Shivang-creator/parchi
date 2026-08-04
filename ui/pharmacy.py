@@ -195,11 +195,11 @@ def render() -> None:
     if money.is_catastrophic:
         notes.append(c.note(
             "CATASTROPHIC", f"{money.days_of_income:.1f} days of income",
-            f"This is the point at which a course stops being completed. A "
-            f"partially taken antibiotic course is worse than none — it selects "
-            f"for resistance without curing the infection. Substitute, shorten "
-            f"where clinically safe, or refer to a Jan Aushadhi kendra before "
-            f"the patient leaves the counter.",
+            "This is the point at which a course stops being completed. A "
+            "partially taken antibiotic course is worse than none — it selects "
+            "for resistance without curing the infection. Substitute, shorten "
+            "where clinically safe, or refer to a Jan Aushadhi kendra before "
+            "the patient leaves the counter.",
             theme.DANGER))
     for name, category, note_text in review.pregnancy_flags:
         notes.append(c.note(

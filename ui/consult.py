@@ -188,9 +188,15 @@ def _intake() -> dict:
         )
 
         st.markdown("#### Options")
+        # The key is scoped to the setting on purpose. With a fixed key,
+        # Streamlit persists the widget's old value and ignores the new
+        # `value=`, so a patient moved from OPD to ICU stayed silently
+        # restricted to oral agents — hiding every IV drug from an ICU consult.
         oral_only = st.checkbox(
-            "Oral agents only", value=(setting == "OPD"), key="oral_only",
-            help="An outpatient cannot be given an intravenous drug.",
+            "Oral agents only", value=(setting == "OPD"),
+            key=f"oral_only_{setting}",
+            help="An outpatient cannot be given an intravenous drug. Resets "
+                 "when the setting changes.",
         )
         show_moderate = st.checkbox("Include moderate interactions", value=False)
 
@@ -234,7 +240,6 @@ def render() -> None:
     recommendation = coverage.stewardship_choice(viable or ranked, form["setting"])
     choice = recommendation.choice
     dose = dosing.dose_for(choice.antibiotic, patient)
-    cost = dosing.course_cost(choice.antibiotic, form["days"], dose.dose_fraction)
     tier = coverage.adequacy_tier(choice.coverage, form["setting"])
     colour = theme.tier_style(tier)
 
@@ -308,9 +313,6 @@ def render() -> None:
     )
     cost_ratio = (brand_total / cheap_total) if cheap_total else 0
     cost_colour = theme.CAUTION if cost_ratio >= 2.5 else theme.SAFE
-    safety_colour = (
-        theme.DANGER if blocking else theme.CAUTION if alerts else theme.SAFE
-    )
     dur_colour = (
         theme.SAFE if not duration or duration.verdict == "APPROPRIATE"
         else theme.CAUTION
@@ -366,10 +368,10 @@ def render() -> None:
             "RENAL", f"Excluded at CrCl {crcl:.0f}: {names}",
             f"Removed before ranking, not flagged after. "
             f"{best_blocked.antibiotic} covers {best_blocked.coverage_pct:.0f}% "
-            + (f"— <b>better than anything still available</b> — but is "
-               f"contraindicated at this renal function."
+            + ("— <b>better than anything still available</b> — but is "
+               "contraindicated at this renal function."
                if beat_the_field else
-               f"and is contraindicated at this renal function."),
+               "and is contraindicated at this renal function."),
             theme.DANGER,
         ))
 
@@ -474,7 +476,7 @@ def render() -> None:
                 "AWaRe": r.who_aware,
                 "Route": r.route,
                 "Dose": rd.action.title(),
-                f"Course ₹": f"{rc.best_total:,.0f}",
+                "Course ₹": f"{rc.best_total:,.0f}",
             })
         st.dataframe(rows, width="stretch", hide_index=True, height=min(520, 38 * len(rows) + 40))
         st.markdown(

@@ -1,168 +1,181 @@
 # 5-minute demo script
 
-**Target: 4:40.** Record at 1500×1000 or larger, browser at ~90% zoom so the
-four check tiles sit on one row and the slip stays above the fold.
+**Target 4:40.** Record at 1560×1000 or larger, browser at ~90% zoom so the
+check row sits on one line and the slip stays above the fold.
+
+The structure of the video is the structure of the app: **you walk one patient
+through a building.** Say that early and the whole thing hangs together.
 
 ## Before you hit record
 
-Sidebar (drives the Consult tab):
+Open the app, then set each stop up once so you never fumble a dropdown on
+camera. Leave it on **Doctor** when you start.
 
-| Field | Value |
+| Stop | Set to |
 |---|---|
-| Age | 68 · Female · 52 kg |
-| Creatinine | 1.9 |
-| Infection | Urinary tract infection |
-| Setting | OPD |
-| Days of therapy | 5 |
-| Risk factors | Indwelling urinary catheter |
-| Already taking | Tab Sertraline 50 mg / Tab Ramipril 5 mg |
-| Also prescribing | *(empty — you add one live)* |
-| Oral agents only | ✅ |
-
-Other tabs, pre-set before recording so you never fumble a dropdown on camera:
-
-- **Day 3 · Culture** — organism *Acinetobacter baumannii*, currently on
-  *Meropenem*, setting *ICU*
-- **Surge** — Dengue, Kerala, 12 months, 60 beds
-- **Escalation** — *Myocardial infarction (STEMI)*, area **Gadchiroli**
+| **Reception** | defaults are already the sick patient (RR 28, SpO₂ 89, BP 88, pulse 124, 39.2 °C, on oxygen, General Medicine) |
+| **Doctor** | 68 · Female · 52 kg · creatinine **1.9** · UTI · **OPD** · 5 days · risk factor "Indwelling urinary catheter" · already taking Sertraline + Ramipril · **Also prescribing: empty** |
+| **Pharmacy** | Levofloxacin + Linezolid · 7 days · household **MGNREGA rural daily wage** |
+| **Hospital** | Dengue · Kerala · 12 months · 60 beds; second tab Escalation → **Gadchiroli**, *Myocardial infarction (STEMI)* |
 
 ---
 
-## 0:00 – 0:30 · The problem
+## 0:00 – 0:25 · The problem
 
 > *Parchi* is what every Indian patient calls the slip the doctor hands them.
 >
 > A government hospital OPD doctor in India sees a hundred to two hundred
-> patients a day — about two minutes each. In that time they pick a drug. And a
-> culture test takes two to three days and comes out of the patient's own
-> pocket, so most of the time it's never sent at all.
+> patients a day — about two minutes each. This isn't a dashboard. It follows
+> **one patient through the building**: the desk that decides when they're seen,
+> the doctor who decides what they get, and the counter that decides whether
+> they can actually afford to take it.
+
+---
+
+## 0:25 – 1:15 · Reception
+
+*(Click **Reception**.)*
+
+> An Indian OPD is a queue. Patients travel before dawn, arrive together, and
+> get seen in the order they reached the window. So the person having a heart
+> attack waits behind the person with a rash.
 >
-> So every antibiotic decision is a bet placed blind. This is a cockpit for
-> that bet.
+> Fixing that needs no equipment. This is NEWS2 — a real, validated early
+> warning score. Six measurements, ninety seconds.
+
+*(Point at the score, then the parameter chart.)*
+
+> This patient scores 15. Priority one, seen immediately. And you can see
+> exactly why — three parameters are deranged badly enough to score three on
+> their own.
+
+*(Point at the two meters.)*
+
+> By arrival order they'd wait. Sorted by acuity, they're seen now.
+
+*(Scroll to the day chart.)*
+
+> And the crush is predictable. Demand piles into 8 to 11am because people
+> travel at dawn; capacity is flat all day. That mismatch **is** the queue — and
+> it's visible the evening before. So the output isn't a wait time, it's a
+> roster: this department needs five doctors today, not three.
 
 ---
 
-## 0:30 – 1:20 · The draft, and the thing a two-minute consult misses
+## 1:15 – 2:15 · Doctor — the prescription
 
-> Sixty-eight-year-old woman, urinary tract infection, outpatient. Parchi has
-> drafted a prescription — and note the word *drafted*. It never prescribes. It
-> drafts, shows its working, and waits.
+*(Click **Doctor**.)*
 
-*(Point across the four checks.)*
-
-> Will it work. Right dose. Right length. What it costs.
-
-*(Slow down here — this is the strongest moment in the video.)*
-
-> Her creatinine is 1.9. Parchi computed her creatinine clearance — 23. Her
-> kidneys are in severe failure, and nobody typed that in; it came from her age,
-> weight, sex and one lab value.
+> Now the consult. Sixty-eight-year-old woman, urinary infection. Parchi has
+> **drafted** a prescription — it never prescribes. It drafts, shows its
+> working, and waits.
 >
-> Which matters, because the standard drug for her infection is nitrofurantoin
-> — and below a clearance of 30 it doesn't reach the bladder and accumulates
-> instead. So Parchi removed it **before ranking**, not after. That's the note
-> at the bottom.
+> Four checks: will it work, right dose, right length, what it costs.
 
----
+*(Slow down — strongest moment in the video.)*
 
-## 1:20 – 2:00 · Anti-black-box
+> Her creatinine is 1.9. Parchi computed her creatinine clearance: 23. Her
+> kidneys are in severe failure, and nobody typed that in — it came from her
+> age, weight, sex and one lab value.
+>
+> Which matters, because the standard drug for her infection is nitrofurantoin,
+> and below a clearance of 30 it doesn't reach the bladder and accumulates
+> instead. So it was removed **before ranking**, not flagged after.
 
-*(Open "Why this number".)*
+*(Open "Why this number", then "The whole panel".)*
 
-> No clinician should trust a number they can't interrogate. So: every organism
-> that could plausibly have caused this, weighted by how likely it is, and how
-> much of it this drug still covers. Green is covered. Red is what resistance
-> has already taken.
-
-*(Open "Is it still working".)*
-
-> And here's what I didn't expect going in. There's an IDSA rule — don't use a
-> drug empirically unless local susceptibility is above 80%. Apply that rule
-> honestly to Indian data and for several common infections **there is no oral
-> drug left that qualifies.**
-
----
-
-## 2:00 – 2:35 · Cost, safety, and the honest bit
+> Every coverage number opens up. And this is the whole surveillance panel at
+> once — organisms down, drugs across. Read it by rows: *Acinetobacter* and
+> *Klebsiella* are dark nearly all the way across. That's what it means to say
+> India has a resistance crisis rather than a drug problem.
 
 *(Add **Cefixime** and **Azithromycin** in the sidebar "Also prescribing".)*
 
-> Real prescriptions have several lines. Watch what happens when I add two.
->
-> Cefixime plus azithromycin is a **banned** fixed-dose combination in India —
-> CDSCO prohibited it — and it's still prescribed daily. And she's on
-> sertraline, so anything I add gets checked against that too.
-
-*(Point at the cost tile.)*
-
-> Medicines are the largest single piece of out-of-pocket health spending in
-> India, and prescriptions get written by brand name. Parchi prices the whole
-> slip three ways — brand, generic, and Jan Aushadhi.
-
-*(Click Sign, then Override.)*
-
-> The clinician decides. And Parchi counts how often it gets overruled and says
-> so on screen — because a tool that's rejected most of the time is wrong about
-> that population and should be retuned, not trusted harder.
+> Real slips have several lines. Watch — cefixime plus azithromycin is a
+> **banned** fixed-dose combination in India, and it's still prescribed daily.
 
 ---
 
-## 2:35 – 3:10 · Day 3 — the step everyone skips
+## 2:15 – 2:50 · Pharmacy
 
-*(Switch to **Day 3 · Culture**.)*
+*(Click **Pharmacy**.)*
 
-> Forty-eight hours later the culture comes back and the bet can be settled. De-
-> escalating to the narrowest drug that actually treats the isolate is the
-> single highest-value action in stewardship — and the one most reliably
-> skipped. So the patient finishes a week of meropenem for an organism a five-
-> rupee tablet would have killed.
+> The slip reaches the counter. This is the last place anything can change, and
+> the first place anyone finds out what it costs.
 >
-> This screen does that one thing. And when the lab has reported sensitivities,
-> that list is authoritative — it overrides the national estimate, because the
-> isolate in front of you beats any population average.
+> As written: ₹1,456. Substituted to the identical molecules at Jan Aushadhi
+> prices: ₹287. Same drugs — the prescription was just written by brand name.
+
+*(Point at the days-of-income card.)*
+
+> But rupees mean nothing on their own. Priced against what this household
+> actually earns, the branded slip is **five and a half days of income**.
+>
+> That's the number that matters, because a course costing five days of earnings
+> doesn't get half-taken — it gets abandoned. And a partly-taken antibiotic
+> course is worse than none: it breeds resistance without curing anything.
+
+*(Open "The shelf".)*
+
+> And supply is a stewardship problem. Fosfomycin — the *narrowest* drug for
+> this infection — has under half a month of stock. A prescriber who can't get
+> the narrow drug writes the broad one, and everything upstream becomes
+> theoretical.
 
 ---
 
-## 3:10 – 3:55 · Surge, and does it actually work
+## 2:50 – 3:15 · Day 3 — the step everyone skips
 
-*(Switch to **Surge**.)*
+*(Click **Doctor** → **Day 3 · culture** tab.)*
 
-> A dengue season isn't a surprise. The curve repeats every year and peaks in
-> the same three months. Hospitals still meet it unprepared, because nobody
-> turns an epidemic curve into the numbers an administrator can act on.
+> Forty-eight hours later the culture settles the bet. De-escalating to the
+> narrowest drug that treats the actual isolate is the highest-value action in
+> stewardship — and the one most reliably skipped.
 >
-> So: extra OPD screens, admissions, bed-days, and **platelet units**. Set your
-> bed count and it tells you whether you survive the peak.
+> When the lab has reported sensitivities, that list is authoritative. It
+> overrides the national estimate, because the isolate in front of you beats any
+> population average.
 
-*(Scroll to the backtest panel.)*
+---
 
-> And a forecast nobody has scored is just an opinion. So I held out the last
-> twelve months, refit the model on everything before that, and asked it to
-> predict months it had never seen — against the baseline every administrator
-> already has: assume this month looks like the same month last year.
+## 3:15 – 4:00 · Hospital — and does the forecast work
+
+*(Click **Hospital**.)*
+
+> A dengue season isn't a surprise. It peaks in the same three months every
+> year, and hospitals still meet it unprepared — because nobody turns an
+> epidemic curve into numbers an administrator can act on.
+>
+> Extra OPD screens, admissions, bed-days, and platelet units. Set your bed
+> count and it tells you whether you survive the peak.
+
+*(Scroll to the backtest.)*
+
+> And a forecast nobody has scored is an opinion. So I held out the last twelve
+> months, refit on everything before, and predicted months the model had never
+> seen — against the baseline every administrator already carries: assume this
+> month looks like last year's.
 >
 > It beats that baseline on fifteen of eighteen series. **It loses on three** —
-> states whose annual total jumped by an order of magnitude between years, which
-> no seasonal model catches. That's on screen too. I'd rather show you where it
-> fails.
+> states whose annual total jumped by an order of magnitude. That's on screen
+> too. I'd rather show you where it fails.
 
 ---
 
-## 3:55 – 4:30 · Escalation
+## 4:00 – 4:30 · Escalation
 
-*(Switch to **Escalation**. Gadchiroli, STEMI.)*
+*(Escalation tab. Gadchiroli, STEMI.)*
 
-> Last screen — the question a drug can't answer. This patient needs more than I
+> Last question — the one a drug can't answer. This patient needs more than I
 > have.
 >
 > "Nearest hospital" is the wrong question. A heart attack needs a
-> catheterisation lab, not a signboard. So: from this primary health sub-centre
-> in Gadchiroli, where's the nearest facility that can actually open the artery?
+> catheterisation lab, not a signboard. From this sub-centre in Gadchiroli,
+> the nearest facility that can actually open the artery is **over ten hours
+> away**, against a two-hour window. From an equivalent facility in Kerala, it's
+> twenty-one minutes.
 >
-> **Ten and a half hours.** Against a two-hour window. From an equivalent
-> facility in Kerala it's twenty-one minutes.
->
-> These are real coordinates, live from OpenStreetMap. Capability comes from the
+> Real coordinates, live from OpenStreetMap. Capability comes from the
 > facility's tier under Indian Public Health Standards — and only for public
 > facilities, because open data genuinely can't tell you what a private nursing
 > home can do, and I'd rather say that than make it up.
@@ -171,14 +184,15 @@ Other tabs, pre-set before recording so you never fumble a dropdown on camera:
 
 ## 4:30 – 4:40 · Close
 
-> Every figure in here is indicative, compiled from published ICMR, WHO GLASS,
-> CDSCO and NPPA patterns — that's stated on every screen. Point it at a real
-> antibiogram and nothing downstream changes; there's an upload for exactly
-> that.
+*(Click the **Ink theme** button — one beat, then carry on talking.)*
+
+> Every figure here is indicative, compiled from published ICMR, WHO GLASS,
+> CDSCO and NPPA patterns. That's stated on every screen, and you can upload a
+> hospital's own antibiogram and the whole thing re-bases on it.
 >
-> Three engines, five screens, one idea: the data to make these decisions well
-> already exists in India. It just never reaches the room where the decision
-> gets made.
+> Eight engines, seven screens, fifty-three tests. One idea: the data to make
+> these decisions well already exists in India. It just never reaches the room
+> where the decision gets made.
 >
 > That's Parchi.
 
@@ -186,12 +200,19 @@ Other tabs, pre-set before recording so you never fumble a dropdown on camera:
 
 ## Recording notes
 
-- **Don't narrate the code.** Presentation is scored on the demo; the repo is
+- **Don't narrate code.** Presentation is scored on the demo; the repo is
   linked for the technical read.
-- Strongest three moments, in order: the nitrofurantoin renal block (~1:00),
-  the banned FDC firing live (~2:05), and 606 minutes in Gadchiroli (~4:05).
-  Slow down at each.
-- Second-strongest is the backtest admitting it loses on three series. Judges
-  notice honesty; do not rush it.
+- Four strongest beats, in order: the nitrofurantoin renal block (~1:40), the
+  banned FDC firing live (~2:10), five-and-a-half days of income (~2:35), and
+  ten hours to a cath lab (~4:10). Slow down at each.
+- The theme switch at the end is a one-second flourish. Don't dwell on it and
+  don't explain it — let it land and keep talking.
 - If a chart takes a beat to draw, keep talking. Never wait in silence.
 - End on "That's Parchi" and stop. No trailing thanks.
+
+## Recording setup (macOS)
+
+QuickTime → File → New Screen Recording, or `Cmd+Shift+5`. Record the browser
+window only, not the full desktop. Check the mic level on a ten-second test
+before committing to a full take — bad audio sinks a good demo faster than a
+bad UI does.

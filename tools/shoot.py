@@ -21,7 +21,7 @@ from playwright.sync_api import sync_playwright
 
 BRAVE = "/Applications/Brave Browser.app/Contents/MacOS/Brave Browser"
 URL = "http://localhost:8501"
-OUT = Path("/tmp/shots")
+OUT = Path("docs")
 STOPS = ["Reception", "Doctor", "Pharmacy", "Hospital", "Method"]
 
 

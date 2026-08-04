@@ -112,8 +112,8 @@ def render() -> None:
                 drug=f"Priority {result.priority} — {result.band.lower()}",
                 sig=f"NEWS2 {result.score}   ·   review within "
                     f"{result.minutes_to_review} min   ·   {department}",
-                who=f"<b>Registration desk</b> &nbsp;·&nbsp; National Early Warning "
-                    f"Score 2 &nbsp;·&nbsp; six parameters",
+                who="<b>Registration desk</b> &nbsp;·&nbsp; National Early Warning "
+                    "Score 2 &nbsp;·&nbsp; six parameters",
                 why=result.response,
                 accent=band_colour,
                 marks=[
@@ -225,10 +225,10 @@ def render() -> None:
         if needed > current:
             st.markdown(
                 c.note("ROSTER", f"{needed - current} more doctor(s) in {department}",
-                       f"Demand is front-loaded into the 8–11am window because "
-                       f"patients travel at dawn and arrive together. Capacity is "
-                       f"flat across the day. That mismatch is what the queue is — "
-                       f"and it is visible the evening before.",
+                       "Demand is front-loaded into the 8–11am window because "
+                       "patients travel at dawn and arrive together. Capacity is "
+                       "flat across the day. That mismatch is what the queue is — "
+                       "and it is visible the evening before.",
                        theme.CAUTION),
                 unsafe_allow_html=True,
             )
