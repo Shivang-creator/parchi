@@ -72,14 +72,24 @@ as a rupee figure the patient will actually face.
 **Is the combination legal and safe?** CDSCO's banned and irrational fixed-dose
 combinations, plus interactions against the patient's existing medication list.
 
-Then two more screens. A **surge forecast** that turns a state's dengue
-seasonality into the numbers an administrator can act on — extra OPD screens,
-admissions, bed-days, platelet units — because a dengue season is not a
-surprise and hospitals still meet it unprepared. And an **escalation map** that
-answers the last question of a consult: this patient needs more than I have,
-where do I send them, and will they survive the journey? Not the nearest
-hospital — the nearest facility that can actually perform the specific thing
-this emergency needs.
+There is a fifth check, and it is the one Indian prescribing gets wrong most
+often: **is the course the right length?** Not the wrong drug — too many days
+of the right one.
+
+Then three more screens. **Day 3 · Culture** exists because de-escalation is
+the highest-value action in stewardship and the one most reliably skipped: the
+culture comes back, nobody goes and narrows, and the patient finishes a week of
+meropenem for an organism a five-rupee tablet would have killed. A **surge
+forecast** turns a state's dengue, malaria and chikungunya seasonality into the
+numbers an administrator can act on — extra OPD screens, admissions, bed-days,
+platelet units — because a season is not a surprise and hospitals still meet it
+unprepared. And an **escalation map** answers the last question of a consult:
+this patient needs more than I have, where do I send them, and will they
+survive the journey? Not the nearest hospital — the nearest facility that can
+actually perform the specific thing this emergency needs.
+
+Every screen can also be re-based on a hospital's **own antibiogram**: upload a
+CSV and national surveillance is replaced wholesale.
 
 ### How we built it
 
@@ -102,10 +112,17 @@ model shows meropenem + colistin as worth far more than meropenem + imipenem in
 an Indian ICU, which is exactly what the clinical literature says.
 
 The surge forecast is multiplicative seasonal decomposition — a per-state
-seasonal index learned from observed monthly shares, times a least-squares
-annual trend, with uncertainty from an empirical residual quantile rather than
-a distributional assumption. Deliberately the simplest defensible model: seven
-annual data points do not earn anything fancier.
+seasonal index learned from observed monthly shares, times an annual trend
+fitted in log space, with uncertainty from an empirical residual quantile
+rather than a distributional assumption. Deliberately the simplest defensible
+model: seven annual data points do not earn anything fancier.
+
+And it is **backtested**. Refit on data up to a cutoff, then asked to predict
+twelve months it never saw, and scored against the baseline every administrator
+already carries in their head — *assume this month looks like the same month
+last year*. It beats that baseline on 15 of 18 series. It loses on three, all
+of them states whose annual total jumped by an order of magnitude between
+years, which no seasonal model catches. The app reports the losses on screen.
 
 The escalation map pulls live facilities from the OpenStreetMap Overpass API
 and infers capability from facility tier under Indian Public Health Standards.
@@ -136,6 +153,26 @@ which they do cover. Meanwhile vancomycin's missing gram-negative entries were
 *correct* — it genuinely cannot touch them. Separating real intrinsic
 resistance from missing data was the fiddliest part of the whole build.
 
+**A forecast that quietly collapsed to zero.** Malaria has declined so steeply
+in India that a straight-line fit through the annual totals extrapolates below
+zero within a year — and clipping at zero turned entire state forecasts into
+rows of zeros. Case counts are non-negative and move multiplicatively, so the
+trend belongs in log space, where a declining series decays toward zero
+asymptotically instead of crashing through it.
+
+**The banned-combination checker was dead code.** It could match a prohibited
+FDC like cefixime + azithromycin perfectly well — but the UI only ever handed
+it one drug, so it could never fire. Real prescriptions have several lines on
+them. Adding the rest of the slip to the check brought the whole feature to
+life, and immediately surfaced the nephrotoxic triples too.
+
+**A second-long lag on every keystroke.** Scoring every drug and then every
+pair of drugs, one organism at a time through pandas `.loc`, took 1.27 seconds
+— and Streamlit re-runs the entire script on every interaction. The whole
+calculation is a matrix product: pivot susceptibility once into an
+organism × drug array and coverage for the entire formulary is `priors @ matrix`.
+Same arithmetic, agreement to 3×10⁻¹⁶, 200× faster.
+
 **Overpass timed out on half the anchors**, twice, which is normal for a free
 shared endpoint at 1am. Added retries with backoff and made the map degrade
 gracefully rather than fail.
@@ -146,6 +183,20 @@ Crediting every private facility with an ICU would have made the map look much
 better and would have been fiction. Capability is now inferred only for public
 tiers, where IPHS defines a mandated service package. Open data can describe
 India's public health system; it cannot describe the private one.
+
+### Design
+
+The first version looked like every other generated dashboard: charcoal ground,
+blue accent, a six-colour semantic rainbow, everything in equal rounded boxes.
+That is a costume, not a design — it has no point of view.
+
+The fix was sitting in the name. A *parchi* is a piece of paper, so the app is a
+**document**: warm stock with a fine grain, warm near-black ink rather than
+pure black, one signature ℞ red, hairline rules instead of boxes, 3px radii
+because paper does not have 14px rounded corners, and a Newsreader/IBM Plex
+pairing doing the work that boxes and gradients usually do badly. The
+recommendation renders as an actual prescription slip — ℞ glyph, spectrum and
+AWaRe marks along the foot, a dotted signature rule.
 
 ### Accomplishments that we're proud of
 
@@ -160,6 +211,12 @@ does not have.
 Applying the IDSA 80% rule honestly to Indian resistance data also produced a
 genuine finding I did not expect going in: for several common infections, there
 is no longer an oral agent that qualifies for empiric use at all.
+
+The escalation map produced the other one. From a primary health sub-centre in
+Gadchiroli — a real facility, real coordinates, live from OpenStreetMap — the
+nearest catheterisation lab is about **ten and a half hours** away against a
+120-minute window for a heart attack. From an equivalent facility in Kerala it
+is twenty-one minutes. That gap is not a modelling artefact; it is the map.
 
 ### What we learned
 
@@ -191,7 +248,7 @@ state-level surge forecasting.
 python, pandas, numpy, scipy, streamlit, plotly, openstreetmap, overpass-api,
 health, healthcare, medtech, data-science, antimicrobial-resistance,
 clinical-decision-support, public-health, forecasting, geospatial, india,
-bayesian-inference, time-series
+bayesian-inference, time-series, antibiotic-stewardship, playwright
 ```
 
 ---
@@ -211,8 +268,10 @@ the 35 MB limit.
 
 ## Image gallery suggestions (3:2 ratio)
 
-1. Consult screen with the drafted prescription and all four check tiles visible
+1. Consult screen — the prescription slip, the coverage verdict, all four checks
 2. The "why this number" organism-contribution breakdown
-3. Resistance trajectory chart with the 50% floor crossing
-4. Surge forecast with the capacity-overshoot warning
-5. Escalation map with the referral route drawn
+3. Resistance trajectory with the 50% empiric floor crossed
+4. Day 3 · Culture — de-escalation from meropenem, spectrum bands saved
+5. Surge forecast with the capacity-overshoot warning
+6. The backtest panel — model vs naive baseline on held-out months
+7. Escalation map with the referral route drawn across Gadchiroli

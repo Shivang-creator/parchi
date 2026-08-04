@@ -44,12 +44,18 @@ def render() -> None:
     anchors = sorted(frame["anchor"].unique())
     origin_area = c2.selectbox("Referring from (area)", anchors)
 
+    # A referral starts at a small PUBLIC facility — that is the whole scenario.
+    # Sorting the raw list put private paediatric clinics at the top, which made
+    # the default a children's clinic receiving a heart attack.
     area_rows = frame[frame["anchor"] == origin_area]
+    referrers = area_rows[area_rows["tier"].isin(["PHC", "CHC", "Sub-centre"])]
+    if referrers.empty:
+        referrers = area_rows
     origin_name = c3.selectbox(
         "Referring facility",
-        list(area_rows.sort_values("tier_rank")["name"].head(40)),
+        list(referrers.sort_values(["tier_rank", "name"])["name"].head(40)),
     )
-    origin = area_rows[area_rows["name"] == origin_name].iloc[0]
+    origin = referrers[referrers["name"] == origin_name].iloc[0]
 
     spec = geo.EMERGENCIES[emergency]
     result = geo.assess(
@@ -62,23 +68,21 @@ def render() -> None:
     # ------------------------------------------------------------------
     # Verdict
     # ------------------------------------------------------------------
-    m1, m2, m3, m4 = st.columns(4)
-    m1.metric("Needs", spec["capability"])
-    m2.metric("Clock", f"{spec['window_min']} min")
-    m3.metric(
-        "Nearest facility of any kind",
-        f"{result.minutes_to_any:.0f} min",
-        result.nearest_any["tier"],
-    )
+    m1, m2, m3 = st.columns(3)
+    m1.metric("Clock", f"{spec['window_min']} min", spec["capability"],
+              delta_color="off")
+    m2.metric("Nearest facility", f"{result.minutes_to_any:.0f} min",
+              result.nearest_any["tier"], delta_color="off")
     if result.nearest_capable is not None:
-        m4.metric(
+        m3.metric(
             "Nearest that can treat it",
             f"{result.minutes_to_capable:.0f} min",
-            f"+{result.minutes_to_capable - result.minutes_to_any:.0f} min further",
+            f"{result.minutes_to_capable - result.minutes_to_any:+.0f} min further",
             delta_color="inverse",
         )
     else:
-        m4.metric("Nearest that can treat it", "none", "not in dataset")
+        m3.metric("Nearest that can treat it", "none", "not in this extract",
+                  delta_color="off")
 
     if result.reachable:
         st.markdown(c.note(

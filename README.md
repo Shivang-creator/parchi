@@ -36,6 +36,10 @@ clinician to accept or reject.**
 
 ## What it does
 
+Five screens following the arc of a real episode of care: choose the drug,
+settle the bet when the culture returns, prepare for what is coming, and know
+where to send the patient you cannot treat.
+
 ### 1 · Consult — the prescription cockpit
 
 Enter the patient's body parameters and presentation. Parchi drafts a
@@ -50,23 +54,47 @@ something actionable to say:
   are removed before ranking, not flagged after.**
 - **Cost** — brand vs generic vs Jan Aushadhi for the full course, as a rupee
   figure the patient will actually face.
+- **Duration** — course length against evidence-based durations. The commonest
+  overuse in Indian prescribing is not the wrong drug, it is too many days of
+  the right one.
 - **Safety** — CDSCO banned and irrational fixed-dose combinations, plus
-  interactions against the patient's existing medication list.
+  interactions against the patient's existing medication list. Checked across
+  the *whole* slip, not just the antibiotic.
 
 Then it shows its working: which organism contributed what to the coverage
 number, what the alternatives were, how this drug's effectiveness has moved
 over seven years of surveillance, and whether a combination would do better.
 
-### 2 · Surge forecast — what is walking through the door in three weeks
+### 2 · Day 3 · Culture — the step everyone skips
+
+Forty-eight hours later the culture settles the bet. De-escalating to the
+narrowest agent that treats the actual isolate is the single highest-value
+action in stewardship, and the one most reliably skipped — so the patient
+finishes a week of meropenem for an organism a five-rupee tablet would have
+killed. This screen does that one thing. When the lab has reported
+sensitivities that list is **authoritative** and overrides the surveillance
+estimate; without it, Parchi refuses to narrow on population data alone,
+because that would be a guess dressed as a recommendation.
+
+### 3 · Surge forecast — what is walking through the door in three weeks
 
 A dengue season is not a surprise. The curve repeats annually and peaks in the
 same three months. Hospitals still meet it unprepared, because nobody converts
 an epidemiological curve into the numbers an administrator can act on. Parchi
-forecasts state-level cases and translates them into **extra OPD screens,
-admissions, bed-days and platelet units** — then tells you whether your bed
-count survives the peak.
+forecasts state-level cases across dengue, malaria and chikungunya and
+translates them into **extra OPD screens, admissions, bed-days and platelet
+units** — then tells you whether your bed count survives the peak, and stacks
+every disease together because a hospital does not get one outbreak at a time.
 
-### 3 · Escalation — the nearest facility that can actually treat this
+The forecast is **backtested**: refit on data up to a cutoff, then asked to
+predict twelve months it never saw, scored against the baseline every
+administrator already has — *assume this month looks like the same month last
+year*. It beats that baseline on **15 of 18 series**, and loses on three. It
+loses where a state's annual total jumped by an order of magnitude between
+years, which no seasonal model catches. The app says so on screen rather than
+reporting only the wins.
+
+### 4 · Escalation — the nearest facility that can actually treat this
 
 "Nearest hospital" is the wrong question. A myocardial infarction needs a
 catheterisation lab; an obstructed labour needs a theatre and blood; a stroke
@@ -83,22 +111,38 @@ first?**
 ```
 build_data.py          curated data layer -> data/*.csv
 fetch_facilities.py    live OpenStreetMap extract -> data/facilities.csv
+tools/shoot.py         screenshots the running app, tab by tab
 
 engine/
-  data.py        cached loaders
-  coverage.py    empiric coverage, combinations, resistance trajectory
-  dosing.py      Cockcroft-Gault, renal bands, paediatric mg/kg, course cost
+  data.py        cached loaders; hospital-antibiogram override
+  coverage.py    empiric coverage, combinations, de-escalation, trajectory
+  dosing.py      Cockcroft-Gault, renal bands, paediatric mg/kg, duration, cost
   safety.py      banned FDCs, class-expanded interaction matching
-  forecast.py    seasonal decomposition, demand conversion
+  forecast.py    seasonal decomposition, demand conversion, backtesting
   geo.py         golden-hour reachability by capability
 
 ui/
-  theme.py       one visual language
+  theme.py       every colour, the type scale, the Plotly layout
+  components.py  every piece of raw markup
   consult.py     the prescription cockpit
+  culture.py     de-escalation on day three
   surge.py       the forecast screen
   escalate.py    the referral map
-app.py           tab shell
+app.py           tab shell + antibiogram upload + method
 ```
+
+**Scale:** 31 antibiotics · 17 organisms · 11 infection sites · 3 vector-borne
+diseases across 20 states · 5,271 susceptibility rows · ~5,000 lines of Python.
+
+### Design
+
+The app is a *document*, not a dashboard — because a **parchi** is a piece of
+paper. Warm stock with a fine grain, warm near-black ink, one signature ℞ red,
+hairline rules instead of boxes, 3px radii, a Newsreader/IBM Plex pairing, and
+the recommendation rendered as an actual prescription slip with a signature
+rule. Committing to that metaphor is also what keeps it from looking like every
+other generated dashboard: charcoal-with-a-blue-accent and a six-colour
+semantic rainbow is a costume, not a design.
 
 ### The coverage model
 
@@ -144,7 +188,14 @@ gram-positives; cephalosporins have no enterococcal activity. Those holes are
 the model working, not missing data.
 
 **Overrides are counted and displayed.** A tool rejected most of the time is
-wrong about that population and should be retuned, not trusted harder. Parchi
+wrong about that population and should be retuned, not trusted harder.
+
+**The forecast is scored, including where it loses.** A forecast nobody has
+backtested is an opinion.
+
+**Absent infections are absent from the dropdown.** A ventilator-associated
+pneumonia has no outpatient form, so OPD is not offered for it — a nonsense
+query would otherwise return a confident nonsense answer. Parchi
 reports its own override rate on screen.
 
 ---
@@ -196,9 +247,9 @@ Overpass API
 
 ## What's next
 
-- Replace the curated susceptibility panel with a licensed ICMR-AMRSN feed, and
-  ultimately with the **hospital's own antibiogram** — the coverage engine is
-  already parameterised for it, it only wants better numbers.
+- Replace the curated susceptibility panel with a licensed ICMR-AMRSN feed. The
+  **hospital's own antibiogram** already works today: upload a CSV on the
+  Method tab and every engine re-bases on it immediately.
 - SMART on FHIR so the patient parameters arrive from the EMR instead of being
   typed.
 - Feed accept/reject decisions back as a live calibration signal, so the tool

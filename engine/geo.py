@@ -20,6 +20,7 @@ import math
 from dataclasses import dataclass
 from pathlib import Path
 
+import numpy as np
 import pandas as pd
 
 DATA_DIR = Path(__file__).resolve().parent.parent / "data"
@@ -71,6 +72,10 @@ EMERGENCIES = {
 # straight-line distance below already understates the real route.
 ROAD_SPEED_KMH = 32.0
 ROUTE_FACTOR = 1.35     # road distance vs straight line
+
+# Anything closer than this is the same site under another name, not a
+# genuine second facility to refer to.
+CO_LOCATED_KM = 0.25
 
 
 @functools.lru_cache(maxsize=None)
@@ -153,6 +158,17 @@ def assess(
 
     if exclude_name is not None:
         frame = frame[frame["name"] != exclude_name]
+
+    # OpenStreetMap frequently carries the same site twice under slightly
+    # different names — a hospital and its own outpatient block, say. Without
+    # this the "nearest facility" is the origin itself at zero minutes, which
+    # silently zeroes the misrouting cost and reads as a bug on screen.
+    if not frame.empty:
+        separation = np.array([
+            haversine_km(lat, lon, r.latitude, r.longitude)
+            for r in frame.itertuples()
+        ])
+        frame = frame[separation > CO_LOCATED_KM]
 
     if frame.empty:
         return Escalation(emergency, capability, spec["window_min"],
