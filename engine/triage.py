@@ -84,6 +84,14 @@ class Triage:
 def _band_points(parameter: str, value: float) -> int:
     bands = data.news2_bands()
     rows = bands[bands["parameter"] == parameter]
+    # The NEWS2 chart is written at the instrument's precision: whole numbers
+    # for everything except temperature, which is to one decimal. A reading
+    # finer than that (respiration 20.5, temperature 38.05) falls BETWEEN two
+    # published bands, and used to be scored as "outside every band" - three
+    # points and an urgent review for a perfectly well patient. Round to the
+    # chart's precision before looking the band up.
+    whole = ((rows["low"] % 1 == 0) & (rows["high"] % 1 == 0)).all()
+    value = float(round(value, 0 if whole else 1))
     hit = rows[(rows["low"] <= value) & (value <= rows["high"])]
     if hit.empty:
         # Outside every published band means outside the instrument's range,

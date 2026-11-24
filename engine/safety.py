@@ -16,6 +16,7 @@ Two distinct Indian problems live here.
 
 from __future__ import annotations
 
+import re
 from dataclasses import dataclass
 
 from . import data
@@ -70,6 +71,18 @@ class Alert:
 
 def _normalise(name: str) -> str:
     return name.strip().lower()
+
+
+def _mentions(item: str, token: str) -> bool:
+    """Does this med-list line name this drug or class?
+
+    Short class tokens must match as whole words. A bare substring test made
+    "ace" fire on par-ace-tamol and "arb" on calcium c-arb-onate, raising an
+    ACE-inhibitor interaction against the commonest tablet in India.
+    """
+    if len(token) <= 3:
+        return re.search(rf"\b{re.escape(token)}\b", item) is not None
+    return token in item
 
 
 def check_combinations(prescribed: list[str]) -> list[Alert]:
@@ -129,7 +142,7 @@ def check_interactions(
             if len(cleaned) > 2:
                 tokens.extend(_expand(cleaned))
 
-        hit = any(tok in item for item in everything for tok in tokens)
+        hit = any(_mentions(item, tok) for item in everything for tok in tokens)
         if hit:
             alerts.append(
                 Alert(

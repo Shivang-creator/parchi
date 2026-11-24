@@ -334,6 +334,27 @@ def test_triage_priority_orders_correctly():
     assert sick.priority < well.priority        # 1 is seen first
 
 
+def test_news2_reading_between_two_bands_is_not_scored_as_extreme():
+    """Regression: a finer-than-chart reading fell in the gap between two
+    published bands (20 < 20.5 < 21) and was scored 3, the out-of-range value."""
+    well = triage.score(20.4, 96.4, 119.5, 90.4, 38.04)
+    assert well.score == 0 and not well.red_flags, [
+        (o.parameter, o.points) for o in well.observations
+    ]
+    assert triage.score(16, 98, 120, 80, 36.05).score <= 1
+    # Genuinely out-of-range values still score the maximum.
+    assert triage.score(4, 98, 120, 80, 37.0).red_flags
+    assert triage.score(16, 98, 120, 80, 34.96).red_flags
+
+
+def test_simulated_waiting_room_is_mostly_well():
+    """16% of the simulated room is drawn sick; the band gaps used to push
+    more than half of it to Medium or High."""
+    queue = triage.synthetic_queue(200)
+    urgent = queue["band"].isin(["Medium", "High"]).mean()
+    assert urgent < 0.35, urgent
+
+
 def test_queue_sorts_by_acuity_not_arrival():
     queue = triage.synthetic_queue(80)
     ordered = queue.sort_values(["priority", "arrived"])
@@ -522,6 +543,35 @@ def test_reachability_respects_the_clock():
         result = geo.assess(float(row.latitude), float(row.longitude), emergency)
         if result.nearest_capable is not None:
             assert result.reachable == (result.minutes_to_capable <= spec["window_min"])
+
+
+def test_contraindicated_paediatric_dose_is_a_refusal_not_zero_milligrams():
+    child = dosing.Patient(age=8, sex="Male", weight_kg=25, serum_creatinine=3.0)
+    result = dosing.dose_for("Nitrofurantoin", child)
+    assert result.blocked
+    assert result.dose_text == "Do not administer"
+
+
+def test_agent_without_a_paediatric_dose_never_prints_zero_milligrams():
+    child = dosing.Patient(age=6, sex="Female", weight_kg=20, serum_creatinine=0.5)
+    for name in data.antibiotic_names():
+        if float(data.drug_row(name)["peds_mg_per_kg_per_day"]) > 0:
+            continue
+        text = dosing.dose_for(name, child).dose_text
+        assert "0 mg" not in text, (name, text)
+        assert "No paediatric dose" in text
+
+
+def test_short_class_tokens_do_not_match_inside_other_drug_names():
+    """'ace' is in paracetamol and 'arb' is in carbonate; neither is an ACE
+    inhibitor or an ARB."""
+    for meds in (["Tab Paracetamol 650 mg"], ["Tab Calcium carbonate 500 mg"]):
+        titles = [a.title for a in safety.check_interactions(["Cotrimoxazole"], meds, True)]
+        assert not any("ACE" in t for t in titles), (meds, titles)
+    # The real pairing still fires, by class word and by molecule.
+    for meds in (["ACE inhibitor"], ["Tab Ramipril 5 mg"], ["Tab Telmisartan 40"]):
+        titles = [a.title for a in safety.check_interactions(["Cotrimoxazole"], meds, True)]
+        assert any("ACE" in t for t in titles), (meds, titles)
 
 
 # ==========================================================================

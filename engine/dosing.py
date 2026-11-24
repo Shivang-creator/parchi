@@ -105,10 +105,19 @@ def dose_for(antibiotic: str, patient: Patient) -> DoseResult:
         doses = int(meta["doses_per_day"])
         total_mg = per_kg * patient.weight_kg * fraction
         per_dose = total_mg / max(doses, 1)
-        dose_text = (
-            f"{total_mg:.0f} mg/day in {doses} divided doses "
-            f"({per_dose:.0f} mg per dose) — {per_kg:.0f} mg/kg/day x {patient.weight_kg:.0f} kg"
-        )
+        if fraction == 0.0:
+            # Contraindicated at this renal function. Printing the arithmetic
+            # ("0 mg/day in 2 divided doses") reads as a dose; it is a refusal.
+            dose_text = "Do not administer"
+        elif per_kg <= 0:
+            # The formulary carries no mg/kg figure for this agent (fosfomycin,
+            # tigecycline, ceftazidime-avibactam). Zero is a blank, not a dose.
+            dose_text = "No paediatric dose on file — do not extrapolate from the adult dose"
+        else:
+            dose_text = (
+                f"{total_mg:.0f} mg/day in {doses} divided doses "
+                f"({per_dose:.0f} mg per dose) — {per_kg:.0f} mg/kg/day x {patient.weight_kg:.0f} kg"
+            )
     else:
         adult = str(meta["adult_dose"])
         doses = int(meta["doses_per_day"])
