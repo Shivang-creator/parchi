@@ -598,3 +598,61 @@ def test_a_bad_upload_is_rejected_without_raising():
     ok, message = data.load_antibiogram(pd.DataFrame({"nonsense": [1, 2]}))
     assert not ok and "Missing required column" in message
     assert not data.using_custom_antibiogram()
+
+
+def test_one_sessions_antibiogram_is_invisible_to_every_other_session():
+    """Regression: the override was a module global, so on the public server one
+    visitor's upload replaced the resistance data for every other visitor.
+    Each Streamlit session runs its script on its own thread."""
+    import threading
+
+    national = coverage.rank_antibiotics("Urinary tract infection", "OPD")[0].coverage
+    seen: dict[str, object] = {}
+    uploaded, checked = threading.Event(), threading.Event()
+
+    def uploader():
+        frame = data.susceptibility().copy()
+        frame["percent_susceptible"] = 5.0
+        assert data.load_antibiogram(frame)[0]
+        seen["uploader"] = coverage.rank_antibiotics(
+            "Urinary tract infection", "OPD")[0].coverage
+        seen["handle"] = data.current_antibiogram()
+        uploaded.set()
+        checked.wait(5)
+
+    def bystander():
+        uploaded.wait(5)
+        seen["bystander_custom"] = data.using_custom_antibiogram()
+        seen["bystander"] = coverage.rank_antibiotics(
+            "Urinary tract infection", "OPD")[0].coverage
+        checked.set()
+
+    threads = [threading.Thread(target=uploader), threading.Thread(target=bystander)]
+    for t in threads:
+        t.start()
+    for t in threads:
+        t.join(10)
+
+    assert seen["uploader"] < national
+    assert seen["bystander_custom"] is False
+    assert seen["bystander"] == pytest.approx(national)
+
+    # The uploading session gets its table back on its next run, by handle.
+    assert not data.using_custom_antibiogram()
+    data.use_antibiogram(seen["handle"])
+    try:
+        assert coverage.rank_antibiotics(
+            "Urinary tract infection", "OPD")[0].coverage == pytest.approx(seen["uploader"])
+    finally:
+        data.use_antibiogram(None)
+
+
+def test_antibiogram_with_numeric_names_does_not_break_the_organism_picker():
+    frame = data.susceptibility().head(50).copy()
+    frame["organism"] = frame["organism"].astype(object)
+    frame.loc[frame.index[0], "organism"] = 12345
+    assert data.load_antibiogram(frame)[0]
+    try:
+        assert all(isinstance(name, str) for name in data.organisms())
+    finally:
+        data.clear_antibiogram()

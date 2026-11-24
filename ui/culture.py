@@ -12,6 +12,8 @@ skipped action in antibiotic stewardship.
 
 from __future__ import annotations
 
+import html
+
 import streamlit as st
 
 from engine import coverage, data, dosing
@@ -80,9 +82,11 @@ def render() -> None:
                 c.slip(
                     drug=result.recommended,
                     sig=sig,
-                    who=f"<b>{organism}</b> &nbsp;·&nbsp; isolated from a "
+                    # The organism name can come from an uploaded antibiogram,
+                    # and these two fields are rendered as raw HTML.
+                    who=f"<b>{html.escape(organism)}</b> &nbsp;·&nbsp; isolated from a "
                         f"{setting} patient &nbsp;·&nbsp; currently on {current}",
-                    why=result.message.replace("**", ""),
+                    why=html.escape(result.message.replace("**", "")),
                     accent=accent,
                     marks=[
                         ("Spectrum", c.spectrum_mark(int(new_dose["spectrum"]))),
@@ -94,8 +98,8 @@ def render() -> None:
             )
         else:
             st.markdown(
-                c.note("NO NARROW OPTION", f"{organism}", result.message.replace("**", ""),
-                       theme.DANGER),
+                c.note("NO NARROW OPTION", f"{organism}",
+                       html.escape(result.message.replace("**", "")), theme.DANGER),
                 unsafe_allow_html=True,
             )
 

@@ -43,6 +43,10 @@ STOPS = [
 ]
 
 st.session_state.setdefault("stop", "doctor")
+
+# The server process is shared by every visitor. Point the engines at THIS
+# session's antibiogram (or the national panel) before anything reads it.
+data.use_antibiogram(st.session_state.get("antibiogram"))
 st.session_state.setdefault("theme_name", "Paper")
 
 # CSS first: every screen below reads colours from the active palette.

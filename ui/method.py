@@ -34,14 +34,26 @@ def render(pd) -> None:
             "CSV: organism, antibiotic, setting, year, percent_susceptible",
             type=["csv"], label_visibility="collapsed",
         )
-        if uploaded is not None:
+        # Parse each uploaded file once. The widget keeps handing the same
+        # file back on every rerun, which used to re-install it straight after
+        # "Revert to national data" had cleared it.
+        if uploaded is not None and (
+            st.session_state.get("antibiogram_file") != uploaded.file_id
+        ):
+            st.session_state["antibiogram_file"] = uploaded.file_id
             try:
                 frame = pd.read_csv(uploaded, comment="#")
             except Exception as exc:                      # noqa: BLE001
-                st.error(f"Could not read that file: {exc}")
+                result = (False, f"Could not read that file: {exc}")
             else:
-                ok, message = data.load_antibiogram(frame)
-                (st.success if ok else st.error)(message)
+                result = data.load_antibiogram(frame)
+                if result[0]:
+                    # Kept on the session, never on the module: see engine/data.py.
+                    st.session_state["antibiogram"] = data.current_antibiogram()
+            st.session_state["antibiogram_result"] = result
+        if uploaded is not None and "antibiogram_result" in st.session_state:
+            ok, message = st.session_state["antibiogram_result"]
+            (st.success if ok else st.error)(message)
 
     with up2:
         if data.using_custom_antibiogram():
@@ -49,6 +61,8 @@ def render(pd) -> None:
                         unsafe_allow_html=True)
             if st.button("Revert to national data", width="stretch"):
                 data.clear_antibiogram()
+                st.session_state.pop("antibiogram", None)
+                st.session_state.pop("antibiogram_result", None)
                 st.rerun()
         else:
             st.markdown(c.stamp("NATIONAL PATTERN", p.INK_3), unsafe_allow_html=True)

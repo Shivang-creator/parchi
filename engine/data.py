@@ -6,7 +6,9 @@ A single module owns disk access; nothing else in the codebase opens a file.
 
 from __future__ import annotations
 
+import contextvars
 import functools
+import itertools
 from pathlib import Path
 
 import pandas as pd
@@ -32,8 +34,14 @@ def drugs() -> pd.DataFrame:
 
 
 @functools.lru_cache(maxsize=None)
-def susceptibility() -> pd.DataFrame:
+def _national_susceptibility() -> pd.DataFrame:
     return _read("amr_susceptibility.csv")
+
+
+def susceptibility() -> pd.DataFrame:
+    """The national panel, or this session's own antibiogram if one is loaded."""
+    current = _OVERRIDE.get()
+    return current[1] if current else _national_susceptibility()
 
 
 @functools.lru_cache(maxsize=None)
@@ -176,22 +184,37 @@ def organisms_for(site: str, setting: str) -> pd.DataFrame:
 # A hospital's own antibiogram beats national surveillance every time. When one
 # is loaded it replaces the national panel wholesale, and every engine
 # downstream picks it up without changing a line.
-_OVERRIDE: pd.DataFrame | None = None
+#
+# The override is held in a ContextVar, not a module global. A Streamlit server
+# is one Python process shared by every visitor, so a module global made one
+# visitor's upload the resistance data for everybody else on the site until the
+# process restarted. A ContextVar is private to the thread running one
+# session's script; the app re-installs the session's own table at the top of
+# every run (see `use_antibiogram`).
+#
+# The value is (token, frame). The token is unique per upload and is what the
+# engines key their memoised matrices on, so two sessions can never be served
+# each other's derived numbers either.
+_OVERRIDE: contextvars.ContextVar[tuple[int, pd.DataFrame] | None] = (
+    contextvars.ContextVar("parchi_antibiogram", default=None)
+)
+_TOKENS = itertools.count(1)
 
-# Engines memoise derived matrices off the susceptibility table. Swapping the
-# table underneath them without clearing those caches would silently keep
-# serving national numbers while the UI claimed the hospital's own were live.
-_CACHE_CLEARERS: list = []
+
+def antibiogram_token() -> int:
+    """0 for the national panel, otherwise unique to the loaded table."""
+    current = _OVERRIDE.get()
+    return current[0] if current else 0
 
 
-def register_cache(clear_fn) -> None:
-    _CACHE_CLEARERS.append(clear_fn)
+def current_antibiogram() -> tuple[int, pd.DataFrame] | None:
+    """The loaded override as an opaque handle a session can keep."""
+    return _OVERRIDE.get()
 
 
-def _invalidate() -> None:
-    susceptibility.cache_clear()
-    for clear_fn in _CACHE_CLEARERS:
-        clear_fn()
+def use_antibiogram(handle: tuple[int, pd.DataFrame] | None) -> None:
+    """Install a handle from `current_antibiogram()` (or None) for this run."""
+    _OVERRIDE.set(handle)
 
 
 def load_antibiogram(frame: pd.DataFrame) -> tuple[bool, str]:
@@ -201,7 +224,6 @@ def load_antibiogram(frame: pd.DataFrame) -> tuple[bool, str]:
     Returns (ok, message) rather than raising — this is driven from a file
     upload widget where a bad file is expected, not exceptional.
     """
-    global _OVERRIDE
     required = {"organism", "antibiotic", "setting", "year", "percent_susceptible"}
     missing = required - set(frame.columns)
     if missing:
@@ -212,9 +234,15 @@ def load_antibiogram(frame: pd.DataFrame) -> tuple[bool, str]:
         frame["percent_susceptible"], errors="coerce"
     )
     frame["year"] = pd.to_numeric(frame["year"], errors="coerce")
-    frame = frame.dropna(subset=["percent_susceptible", "year"])
+    frame = frame.dropna(
+        subset=["percent_susceptible", "year", "organism", "antibiotic", "setting"]
+    )
     if frame.empty:
         return False, "No usable rows after parsing."
+    # Names are sorted and compared as text downstream; a numeric organism
+    # column would otherwise crash the organism picker.
+    for column in ("organism", "antibiotic", "setting"):
+        frame[column] = frame[column].astype(str).str.strip()
 
     known_drugs = set(antibiotic_names())
     unknown = sorted(set(frame["antibiotic"]) - known_drugs)
@@ -222,8 +250,7 @@ def load_antibiogram(frame: pd.DataFrame) -> tuple[bool, str]:
     if frame.empty:
         return False, "None of the antibiotics in that file are in the formulary."
 
-    _OVERRIDE = frame
-    _invalidate()
+    _OVERRIDE.set((next(_TOKENS), frame))
     note = f"Loaded {len(frame):,} rows covering {frame['organism'].nunique()} organisms."
     if unknown:
         note += f" Ignored {len(unknown)} unrecognised agent(s): {', '.join(unknown[:5])}."
@@ -231,18 +258,8 @@ def load_antibiogram(frame: pd.DataFrame) -> tuple[bool, str]:
 
 
 def clear_antibiogram() -> None:
-    global _OVERRIDE
-    _OVERRIDE = None
-    _invalidate()
+    _OVERRIDE.set(None)
 
 
 def using_custom_antibiogram() -> bool:
-    return _OVERRIDE is not None
-
-
-def _susceptibility_source() -> pd.DataFrame:
-    return _OVERRIDE if _OVERRIDE is not None else _read("amr_susceptibility.csv")
-
-
-# Rebind the cached loader so the override is honoured everywhere.
-susceptibility = functools.lru_cache(maxsize=None)(_susceptibility_source)  # noqa: F811
+    return _OVERRIDE.get() is not None

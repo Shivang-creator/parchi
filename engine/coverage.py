@@ -118,8 +118,15 @@ def _priors_for(site: str, setting: str) -> pd.DataFrame:
 # (organism x drug) array of fractions, and coverage for every drug at once is
 # just `priors @ matrix`. Combinations are an element-wise max between two
 # columns before the same product. Same arithmetic, same answers, ~200x faster.
-@functools.lru_cache(maxsize=64)
 def _matrix(setting: str, year: int) -> tuple[dict, list, np.ndarray]:
+    # Keyed on which susceptibility table is live for this session, so a
+    # hospital's uploaded antibiogram and the national panel never share an
+    # entry.
+    return _matrix_for(setting, year, data.antibiogram_token())
+
+
+@functools.lru_cache(maxsize=64)
+def _matrix_for(setting: str, year: int, _table: int) -> tuple[dict, list, np.ndarray]:
     sus = data.susceptibility()
     frame = sus[(sus["setting"] == setting) & (sus["year"] == year)]
     pivot = frame.pivot_table(
@@ -133,9 +140,13 @@ def _matrix(setting: str, year: int) -> tuple[dict, list, np.ndarray]:
     return organism_index, list(pivot.columns), pivot.to_numpy(dtype=float) / 100.0
 
 
-@functools.lru_cache(maxsize=256)
 def _prior_vector(site: str, setting: str, year: int) -> np.ndarray:
     """Priors aligned to the susceptibility matrix's organism ordering."""
+    return _prior_vector_for(site, setting, year, data.antibiogram_token())
+
+
+@functools.lru_cache(maxsize=256)
+def _prior_vector_for(site: str, setting: str, year: int, _table: int) -> np.ndarray:
     organism_index, _, matrix = _matrix(setting, year)
     vector = np.zeros(matrix.shape[0])
     for _, row in _priors_for(site, setting).iterrows():
@@ -143,10 +154,6 @@ def _prior_vector(site: str, setting: str, year: int) -> np.ndarray:
         if position is not None:
             vector[position] = float(row["prior"])
     return vector
-
-
-data.register_cache(_matrix.cache_clear)
-data.register_cache(_prior_vector.cache_clear)
 
 
 def score_antibiotic(
